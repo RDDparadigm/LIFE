@@ -1,4 +1,6 @@
 {
   "alwaysUpdateLinks": true,
-  "openBehavior": "daily"
+  "openBehavior": "daily",
+  "showUnsupportedFiles": true,
+  "spellcheck": false
 }
