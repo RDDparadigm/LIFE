@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High_School/Narrativa/Gli stili narrativi/La narrativa contemporanea.md",
+                "file": "High_School/Narrativa/La struttura narrativa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "La narrativa contemporanea"
+              "title": "La struttura narrativa"
             }
           }
         ]
@@ -207,11 +207,12 @@
   },
   "active": "fd6c4c567eac279a",
   "lastOpenFiles": [
+    "High_School/Narrativa/La lingua e lo stile.md",
+    "High_School/Narrativa/La struttura narrativa.md",
     "High_School/Narrativa/Gli stili narrativi/La narrazione psicologica.md",
     "High_School/Narrativa/Gli stili narrativi/La narrativa contemporanea.md",
     "High_School/Narrativa/Gli stili narrativi/La narrazione fantastica.md",
     "High_School/Narrativa/Gli stili narrativi/La narrazione realista.md",
-    "High_School/Narrativa/La lingua e lo stile.md",
     "High_School/Narrativa/Gli stili narrativi/La prosa memorialistica.md",
     "copilot/copilot-custom-prompts/Explain like I am 5.md",
     "copilot/copilot-custom-prompts/Translate to Chinese.md",
@@ -233,7 +234,6 @@
     "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
     "copilot/copilot-custom-prompts/Remove URLs.md",
     "copilot/copilot-custom-prompts/Generate glossary.md",
-    "copilot/copilot-custom-prompts/Generate table of contents.md",
     "copilot/copilot-custom-prompts",
     "copilot",
     "Uni/01_Corsi/ANNO_1/Architettura_elab/Teoria/Codice/Load_e_store_01.s",
