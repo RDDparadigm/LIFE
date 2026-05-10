@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dd140bfdb7e2c138",
+        "id": "4d234c3319d27088",
         "type": "tabs",
         "children": [
           {
-            "id": "d5d49725eae6f8cd",
+            "id": "44e2e496a00a3b82",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High_School/Scienze/Le trasformazioni fisiche.md",
+                "file": "High_School/Scienze/Le trasformazioni chimiche.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Le trasformazioni fisiche"
+              "title": "Le trasformazioni chimiche"
             }
           }
         ]
@@ -205,17 +205,21 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "d5d49725eae6f8cd",
+  "active": "44e2e496a00a3b82",
   "lastOpenFiles": [
-    "Journal/Control center.md",
+    "High_School/Scienze/Le trasformazioni chimiche.md",
+    "Journal/Daily/2026-05-10.md",
+    "Journal/Daily/2026-05-09.md",
+    "Journal/Daily/2026-05-02.md",
+    "Journal/Daily/2025-10-30.md",
     "High_School/Scienze/Le trasformazioni fisiche.md",
+    "Journal/Control center.md",
     "High_School/Narrativa/Lo spazio e il tempo.md",
     "High_School/Narrativa/La rappresentazione dei personaggi.md",
     "High_School/Narrativa/Il patto narrativo e i livelli della narrazione.md",
     "High_School/Narrativa/Il narratore e il punto di vista.md",
     "Journal/Daily/2025-11-31.md",
     "Journal/Daily/2025-11-04.md",
-    "Journal/Daily/2026-05-09.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet.md",
     "High_School/Scienze",
     "High_School/Narrativa/La struttura narrativa.md",
@@ -230,10 +234,6 @@
     "copilot/copilot-custom-prompts/Simplify.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
-    "High_School/Narrativa/Gli stili narrativi/La narrazione storica.md",
-    "High_School/Narrativa/Gli stili narrativi/La narrativa di formazione.md",
-    "High_School/Narrativa/Gli stili narrativi/Il giallo.md",
-    "High_School/Narrativa/Gli stili narrativi/La fantascienza.md",
     "High_School/Narrativa/Gli stili narrativi",
     "copilot/copilot-custom-prompts",
     "copilot",
