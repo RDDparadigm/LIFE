@@ -36,3 +36,25 @@ Possiamo rappresentare una **reazione chimica** tramite un'equazione che present
 - La materia è formata da ==atomi==, la sua componente più piccola (indivisibili)
 - Gli atomi di uno **stesso elemento** hanno la stessa forma e massa
 - Gli atomi di uno stesso elemento non possono essere **creati** né **distrutti** 
+
+
+### La struttura degli atomi
+
+Due modelli atomici:
+
+Il modello di ==Thomson== affermava che gli **elettroni** si trovano all'interno di un **protone** distribuiti in maniera casuale (superato da **Rutherford**)
+
+Il modello di ==Rutherford== assume un **nucleo** con carica **positiva**, mentre gli **elettroni** orbitano attorno ad esso, in uno spazio **molto ampio**
+
+
+### Il nucleo atomico
+
+==Numero atomico==: quantità di **protoni** all'interno di un atomo. Definisce l'elemento chimico (si indica con la **lettera Z** es. Z = 5 rappresenta l'elemento dell'azoto)
+
+==Numero di masssa==: risultato della **somma** tra il numero di **protoni** e il numero di **neutroni** di un atomo. Si indica con la lettera A (es. per il Carbonio con Z = 6 abbiamo Z + N = 12)
+
+==Isotopi==: atomi che hanno **diverso** numero di **neutroni**, ma stesso numero di protoni (rispetto all'isotopo di riferimento). Quindi ==tutti== gli elementi sono isotopi
+
+
+### La massa atomica
+
