@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c3cce638de51ef92",
+        "id": "21fa32f046348173",
         "type": "tabs",
         "children": [
           {
-            "id": "a478ea4bbcfb9775",
+            "id": "972a4bbaa302f1dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Journal/Daily/2026-05-12.md",
+                "file": "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Capitolo 1 parte 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-12"
+              "title": "Capitolo 1 parte 1"
             }
           }
         ]
@@ -205,11 +205,15 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "a478ea4bbcfb9775",
+  "active": "5748c23cb5366a11",
   "lastOpenFiles": [
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Lab/Codice/Tips and tricks.md",
+    "Journal/Daily/2026-05-16.md",
+    "Journal/Daily/2026-05-12.md",
     "High_School/Scienze/Gli atomi e le particelle subatomiche.md",
     "High_School/Scienze/Le trasformazioni fisiche.md",
-    "Journal/Daily/2026-05-12.md",
     "Journal/Daily/2026-05-11.md",
     "High_School/Scienze/Le trasformazioni chimiche.md",
     "Journal/Daily/2026-05-10.md",
@@ -231,27 +235,23 @@
     "High_School/Narrativa/Gli stili narrativi/La narrativa contemporanea.md",
     "High_School/Narrativa/Gli stili narrativi/La narrazione fantastica.md",
     "High_School/Narrativa/Gli stili narrativi/La narrazione realista.md",
-    "High_School/Narrativa/Gli stili narrativi/La prosa memorialistica.md",
-    "copilot/copilot-custom-prompts/Explain like I am 5.md",
-    "copilot/copilot-custom-prompts/Translate to Chinese.md",
     "High_School/Narrativa/Gli stili narrativi",
     "copilot/copilot-custom-prompts",
     "copilot",
-    "Uni/01_Corsi/ANNO_1/Architettura_elab/Teoria/Codice/Load_e_store_01.s",
-    "Uni/01_Corsi/ANNO_1/Architettura_elab/Teoria/Codice/Lab1.s",
-    "Uni/01_Corsi/ANNO_1/Architettura_elab/Teoria/Codice/Es_bitShiftEasy.s",
-    "Uni/01_Corsi/ANNO_1/Architettura_elab/Teoria/Codice/addi_li.s",
-    "Uni/01_Corsi/ANNO_1/Architettura_elab/Teoria/Codice",
-    "Uni/01_Corsi/ANNO_1/Architettura_elab/Teoria",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520181727.png",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520181651.png",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520180224.png",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520180140.png",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520180105.png",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520172525.png",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520171758.png",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520170833.png",
-    "Uni/01_Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165421.png"
+    "Uni/Corsi/ANNO_1/Architettura_elab/Teoria/Codice/Load_e_store_01.s",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Teoria/Codice/Lab1.s",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Teoria/Codice/Es_bitShiftEasy.s",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Teoria/Codice/addi_li.s",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Teoria/Codice",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Teoria",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520181727.png",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520181651.png",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520180224.png",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520180140.png",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520180105.png",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520172525.png",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520171758.png",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520170833.png"
   ]
 }
