@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3fb6fdfe2e25418f",
+        "id": "d71360061f39bba1",
         "type": "tabs",
         "children": [
           {
-            "id": "c43e07b2cebe15d5",
+            "id": "8c57577de9eadbdf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/Architettura_elab/Codice/Esempi codice.md",
+                "file": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Esempi codice"
+              "title": "Domande simulazioni"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 444.5
   },
   "right": {
     "id": "ecb5a0688fa12bca",
@@ -205,8 +205,12 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "c43e07b2cebe15d5",
+  "active": "8c57577de9eadbdf",
   "lastOpenFiles": [
+    "Journal/Daily/2026-06-07.md",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande_Lab9.md",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Codice/Esempi codice.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande_Lab8.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domanda cap 2.2-2.3.md",
     "Journal/Daily/2026-06-06.md",
@@ -229,10 +233,6 @@
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande cap 2.1.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande cap 1.6.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande cap 2.10.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domanda cap 2.8.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domanda cap 2.4.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande cap 4.3.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande cap 4.4.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale",
     "Uni/Corsi/ANNO_1/Architettura_elab/Codice/Lab/Lab07/Lab07Es01.s",
     "Uni/Corsi/ANNO_1/Architettura_elab/Codice/Lab/Lab06/Lab06Es06.s",
