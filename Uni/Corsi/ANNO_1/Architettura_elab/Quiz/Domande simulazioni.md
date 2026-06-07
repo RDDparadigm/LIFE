@@ -3005,3 +3005,1892 @@ CPU time = (IC × CPI) / frequenza
 > ```
 >
 > Per ADD e SUB bisogna controllare l’overflow signed.
+
+## 82. Qual è il vantaggio principale di un’architettura a 64 bit rispetto a una a 32 bit?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il vantaggio principale di un’architettura a 64 bit è la possibilità di indirizzare una quantità di memoria molto più grande.
+>
+> Con `n` bit di indirizzo, lo spazio indirizzabile è:
+>
+> ```text
+> 2^n byte
+> ```
+>
+> Quindi:
+>
+> ```text
+> 32 bit → 2^32 byte = 4 GiB
+> ```
+>
+> ```text
+> 64 bit → 2^64 byte
+> ```
+>
+> Una CPU a 64 bit può quindi gestire uno spazio di indirizzamento enormemente più grande rispetto a una CPU a 32 bit.
+>
+> Non è corretto dire che il vantaggio principale sia:
+>
+> - consumare meno energia;
+> - ridurre la dimensione degli eseguibili;
+> - essere più compatibile con software vecchio.
+
+---
+
+## 83. Perché un’architettura a 64 bit può gestire più memoria di una a 32 bit?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Perché gli indirizzi sono rappresentati con più bit.
+>
+> Se gli indirizzi sono lunghi 32 bit:
+>
+> ```text
+> numero indirizzi = 2^32
+> ```
+>
+> Se gli indirizzi sono lunghi 64 bit:
+>
+> ```text
+> numero indirizzi = 2^64
+> ```
+>
+> In una memoria indirizzabile a byte, ogni indirizzo identifica un byte.
+>
+> Quindi aumentando il numero di bit degli indirizzi aumenta enormemente la memoria indirizzabile.
+
+---
+
+## 84. Che cosa significa endianness?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> L’endianness indica l’ordine con cui i byte di una parola multi-byte vengono memorizzati in memoria.
+>
+> Riguarda valori più grandi di un byte, ad esempio:
+>
+> ```text
+> halfword = 2 byte
+> word = 4 byte
+> doubleword = 8 byte
+> ```
+>
+> Non cambia il valore logico del dato, ma cambia l’ordine dei byte in memoria.
+>
+> I due formati principali sono:
+>
+> ```text
+> big-endian
+> little-endian
+> ```
+
+---
+
+## 85. Come funziona il formato little-endian?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nel formato little-endian, il byte meno significativo viene memorizzato all’indirizzo di memoria più basso.
+>
+> Esempio:
+>
+> ```text
+> dato = 0x11223344
+> ```
+>
+> Se viene salvato a partire dall’indirizzo `0`, in little-endian avremo:
+>
+> ```text
+> indirizzo 0 → 0x44
+> indirizzo 1 → 0x33
+> indirizzo 2 → 0x22
+> indirizzo 3 → 0x11
+> ```
+>
+> Quindi:
+>
+> ```text
+> indirizzo più basso → byte meno significativo
+> ```
+>
+> Questa è una trappola classica negli esercizi con `lb`, `lbu`, `lh`, `lhu`, `lw`, `sb`, `sh`, `sw`.
+
+---
+
+## 86. Come funziona il formato big-endian?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nel formato big-endian, il byte più significativo viene memorizzato all’indirizzo di memoria più basso.
+>
+> Esempio:
+>
+> ```text
+> dato = 0x11223344
+> ```
+>
+> Se viene salvato a partire dall’indirizzo `0`, in big-endian avremo:
+>
+> ```text
+> indirizzo 0 → 0x11
+> indirizzo 1 → 0x22
+> indirizzo 2 → 0x33
+> indirizzo 3 → 0x44
+> ```
+>
+> Quindi:
+>
+> ```text
+> indirizzo più basso → byte più significativo
+> ```
+
+---
+
+## 87. Qual è la differenza principale tra big-endian e little-endian?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> La differenza è l’ordine con cui i byte di un dato multi-byte vengono salvati in memoria.
+>
+> In big-endian:
+>
+> ```text
+> il byte più significativo va all’indirizzo più basso
+> ```
+>
+> In little-endian:
+>
+> ```text
+> il byte meno significativo va all’indirizzo più basso
+> ```
+>
+> Esempio con:
+>
+> ```text
+> 0x11223344
+> ```
+>
+> Big-endian:
+>
+> ```text
+> indirizzo 0 → 0x11
+> indirizzo 1 → 0x22
+> indirizzo 2 → 0x33
+> indirizzo 3 → 0x44
+> ```
+>
+> Little-endian:
+>
+> ```text
+> indirizzo 0 → 0x44
+> indirizzo 1 → 0x33
+> indirizzo 2 → 0x22
+> indirizzo 3 → 0x11
+> ```
+
+---
+
+## 88. Perché la risposta “in little-endian il byte più significativo viene memorizzato all’indirizzo più basso” è falsa?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> È falsa perché quella è la definizione di big-endian, non di little-endian.
+>
+> In little-endian:
+>
+> ```text
+> indirizzo più basso → byte meno significativo
+> ```
+>
+> In big-endian:
+>
+> ```text
+> indirizzo più basso → byte più significativo
+> ```
+>
+> Quindi, se una domanda dice:
+>
+> ```text
+> nel formato little-endian, il byte più significativo viene memorizzato all’indirizzo più basso
+> ```
+>
+> bisogna marcarla come falsa.
+
+---
+
+## 89. Gli interrupt sono sincroni o asincroni rispetto al programma in esecuzione?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Gli interrupt sono asincroni rispetto al programma in esecuzione.
+>
+> Significa che possono arrivare in momenti non prevedibili dal programma.
+>
+> Esempio:
+>
+> ```text
+> il programma sta eseguendo delle istruzioni
+> un dispositivo I/O richiede attenzione
+> arriva un interrupt
+> la CPU sospende temporaneamente il flusso normale
+> viene eseguito il gestore dell’interrupt
+> poi si torna al programma
+> ```
+>
+> Sono asincroni perché non dipendono direttamente dall’istruzione attualmente eseguita dal programma.
+
+---
+
+## 90. Che differenza c’è tra interrupt ed eccezione?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un interrupt è solitamente asincrono rispetto al programma.
+>
+> Esempio:
+>
+> ```text
+> un dispositivo I/O segnala che ha terminato un’operazione
+> ```
+>
+> Una eccezione è solitamente sincrona, perché è causata dall’esecuzione di una specifica istruzione.
+>
+> Esempi:
+>
+> ```text
+> divisione per zero
+> accesso non valido alla memoria
+> istruzione illegale
+> syscall/ecall
+> ```
+>
+> Riassunto:
+>
+> ```text
+> interrupt → causato da eventi esterni, asincrono
+> eccezione → causata dal programma, sincrona
+> ```
+
+---
+
+## 91. Chi genera gli interrupt: la CPU o i dispositivi I/O?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Normalmente sono i dispositivi I/O a generare interrupt verso la CPU.
+>
+> La CPU non invia interrupt ai dispositivi quando ha bisogno dei loro servizi.
+>
+> Il flusso corretto è:
+>
+> ```text
+> dispositivo I/O → interrupt → CPU
+> ```
+>
+> L’interrupt serve ad avvisare la CPU che un evento richiede attenzione, ad esempio:
+>
+> - un trasferimento è terminato;
+> - un dato è pronto;
+> - si è verificato un errore;
+> - un dispositivo richiede servizio.
+
+---
+
+## 92. Che cosa deve fare un gestore di interrupt con i registri?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un gestore di interrupt deve preservare lo stato del programma interrotto.
+>
+> In generale deve salvare i registri che modifica e poi ripristinarli prima di tornare al programma interrotto.
+>
+> Non è corretto dire che deve salvare solo i registri di tipo `s`.
+>
+> Il punto non è il nome del registro, ma il fatto che il programma interrotto deve poter riprendere come se nulla fosse successo.
+>
+> Schema:
+>
+> ```text
+> arriva interrupt
+> salvo lo stato necessario
+> eseguo il gestore
+> ripristino lo stato
+> ritorno al programma interrotto
+> ```
+
+---
+
+## 93. Perché la gestione degli interrupt non richiede sempre polling?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Polling e interrupt sono due tecniche diverse.
+>
+> Nel polling:
+>
+> ```text
+> la CPU controlla continuamente lo stato del dispositivo
+> ```
+>
+> Con interrupt:
+>
+> ```text
+> il dispositivo avvisa la CPU quando ha bisogno di attenzione
+> ```
+>
+> Quindi la gestione degli interrupt non richiede sempre polling.
+>
+> Anzi, uno dei vantaggi degli interrupt è proprio evitare che la CPU sprechi tempo controllando continuamente i registri di stato del dispositivo.
+
+---
+
+## 94. Qual è la differenza tra polling e interrupt?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nel polling, la CPU interroga ripetutamente il dispositivo per sapere se è pronto.
+>
+> Esempio:
+>
+> ```text
+> while dispositivo non pronto:
+>     controlla registro di stato
+> ```
+>
+> Vantaggio:
+>
+> ```text
+> semplice da implementare
+> ```
+>
+> Svantaggio:
+>
+> ```text
+> spreca tempo CPU
+> ```
+>
+> Con interrupt, invece, è il dispositivo ad avvisare la CPU.
+>
+> Vantaggio:
+>
+> ```text
+> la CPU può fare altro mentre aspetta
+> ```
+>
+> Svantaggio:
+>
+> ```text
+> gestione più complessa
+> ```
+
+---
+
+## 95. Che cos’è il DMA e perché è utile?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> DMA significa Direct Memory Access.
+>
+> Permette a un dispositivo di trasferire dati direttamente da o verso la memoria principale senza coinvolgere la CPU per ogni singolo byte o word.
+>
+> Schema:
+>
+> ```text
+> CPU configura il DMA
+> DMA trasferisce il blocco di dati
+> DMA avvisa la CPU al termine
+> ```
+>
+> È utile perché riduce il carico sulla CPU nei trasferimenti grandi.
+>
+> Senza DMA, la CPU dovrebbe occuparsi direttamente di molti piccoli trasferimenti tra dispositivo e memoria.
+
+---
+
+## 96. Quali sono i passaggi tipici nella gestione di un interrupt?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> I passaggi tipici sono:
+>
+> 1. Un dispositivo o evento genera un interrupt.
+> 2. La CPU completa o sospende in modo controllato l’esecuzione corrente.
+> 3. Viene salvato lo stato necessario del programma.
+> 4. La CPU salta alla routine di servizio dell’interrupt, detta interrupt handler.
+> 5. L’handler gestisce l’evento.
+> 6. Lo stato salvato viene ripristinato.
+> 7. La CPU ritorna al programma interrotto.
+>
+> L’obiettivo è fare in modo che il programma possa continuare correttamente dopo la gestione dell’interrupt.
+
+---
+
+## 97. Quali sono i principali tranelli sulle domande teoriche di I/O e interrupt?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> I tranelli più comuni sono:
+>
+> ```text
+> “La CPU invia interrupt ai dispositivi”
+> ```
+>
+> Falso: normalmente sono i dispositivi che inviano interrupt alla CPU.
+>
+> ```text
+> “Gli interrupt sono sincroni rispetto al programma”
+> ```
+>
+> Falso: gli interrupt sono tipicamente asincroni.
+>
+> ```text
+> “Gli interrupt richiedono sempre polling”
+> ```
+>
+> Falso: polling e interrupt sono due tecniche diverse.
+>
+> ```text
+> “Il gestore deve salvare solo i registri s”
+> ```
+>
+> Falso: deve preservare lo stato necessario, cioè i registri che rischia di modificare e che servono al programma interrotto.
+>
+> Formula mentale:
+>
+> ```text
+> polling → CPU controlla
+> interrupt → dispositivo avvisa
+> DMA → trasferimento diretto memoria-dispositivo
+> ```
+
+---
+
+## 98. Che cosa significa memoria indirizzabile a byte?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Una memoria indirizzabile a byte significa che ogni indirizzo identifica un singolo byte.
+>
+> Quindi:
+>
+> ```text
+> indirizzo 0 → 1 byte
+> indirizzo 1 → 1 byte
+> indirizzo 2 → 1 byte
+> indirizzo 3 → 1 byte
+> ```
+>
+> Una word da 32 bit occupa 4 byte, quindi 4 indirizzi consecutivi.
+>
+> Esempio:
+>
+> ```text
+> word a indirizzo 0 → usa indirizzi 0, 1, 2, 3
+> word a indirizzo 4 → usa indirizzi 4, 5, 6, 7
+> ```
+>
+> Questo è importante per capire sia l’endianess sia l’allineamento.
+
+---
+
+## 99. Che cos’è l’allineamento in memoria?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> L’allineamento indica se un dato è memorizzato a un indirizzo compatibile con la sua dimensione.
+>
+> Regole tipiche:
+>
+> ```text
+> byte → può stare a qualunque indirizzo
+> halfword da 2 byte → indirizzo multiplo di 2
+> word da 4 byte → indirizzo multiplo di 4
+> doubleword da 8 byte → indirizzo multiplo di 8
+> ```
+>
+> Esempi:
+>
+> ```text
+> word a indirizzo 0 → allineata
+> word a indirizzo 4 → allineata
+> word a indirizzo 2 → non allineata
+> ```
+>
+> L’allineamento è importante perché alcuni processori richiedono accessi allineati o li gestiscono più efficientemente.
+
+---
+
+## 100. Quali domande teoriche conviene aspettarsi oltre alle formule?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Oltre alle formule, conviene aspettarsi domande teoriche su:
+>
+> ```text
+> 32 bit vs 64 bit
+> endianness
+> memoria indirizzabile a byte
+> allineamento
+> load/store signed e unsigned
+> polling
+> interrupt
+> DMA
+> pipeline
+> cache
+> segnali di controllo
+> ALU operation
+> overflow
+> signed vs unsigned
+> ```
+>
+> Per rispondere bene, spesso basta riconoscere la parola chiave:
+>
+> ```text
+> 64 bit → più memoria indirizzabile
+> little-endian → byte meno significativo all’indirizzo più basso
+> big-endian → byte più significativo all’indirizzo più basso
+> interrupt → asincrono, dispositivo avvisa CPU
+> polling → CPU controlla dispositivo
+> DMA → trasferimento diretto memoria-dispositivo
+> ```
+
+
+## 101. Che differenza c’è tra linguaggio assembly e linguaggio macchina?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il linguaggio macchina è il linguaggio effettivamente eseguito dal processore, formato da sequenze di bit.
+>
+> Il linguaggio assembly è una rappresentazione simbolica e leggibile delle istruzioni macchina.
+>
+> Esempio:
+>
+> ```text
+> linguaggio macchina → 0000000 01011 01010 000 01111 0110011
+> assembly           → add x15, x10, x11
+> ```
+>
+> L’assembly è vicino al linguaggio macchina perché spesso c’è una corrispondenza quasi uno-a-uno tra istruzione assembly e istruzione ISA.
+>
+> Però l’assembly aggiunge comodità come:
+>
+> ```text
+> etichette
+> direttive
+> costanti
+> macro
+> pseudo-istruzioni
+> ```
+
+---
+
+## 102. Che cosa fa l’assemblatore?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> L’assemblatore traduce un programma scritto in linguaggio assembly in un programma oggetto in linguaggio macchina.
+>
+> In particolare:
+>
+> ```text
+> legge il programma assembly
+> traduce i codici mnemonici in codici binari
+> risolve etichette e simboli
+> controlla la correttezza sintattica
+> produce un file oggetto
+> ```
+>
+> Attenzione alla nomenclatura:
+>
+> - **assembly** = linguaggio;
+> - **assembler / assemblatore** = programma traduttore.
+
+---
+
+## 103. Che cosa sono le pseudo-istruzioni?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Le pseudo-istruzioni sono istruzioni comode per il programmatore, ma non fanno parte direttamente dell’ISA.
+>
+> L’assemblatore le traduce in una o più istruzioni reali.
+>
+> Esempi tipici:
+>
+> ```asm
+> mv rd, rs
+> ```
+>
+> viene tradotta come:
+>
+> ```asm
+> addi rd, rs, 0
+> ```
+>
+> Oppure:
+>
+> ```asm
+> nop
+> ```
+>
+> può essere tradotta come:
+>
+> ```asm
+> addi x0, x0, 0
+> ```
+>
+> Quindi una pseudo-istruzione non compare come tale nel programma oggetto finale.
+
+---
+
+## 104. Che cosa sono le direttive assembler?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Le direttive assembler non sono istruzioni eseguite dalla CPU.
+>
+> Servono a dare informazioni all’assemblatore su come organizzare il programma.
+>
+> Esempi:
+>
+> ```asm
+> .data
+> .text
+> .globl
+> .word
+> .byte
+> .string
+> .align
+> ```
+>
+> Per esempio:
+>
+> ```asm
+> .data
+> val: .word 10
+> ```
+>
+> dice all’assemblatore di riservare una word in memoria dati e inizializzarla a 10.
+>
+> La CPU non esegue `.data` o `.word`: sono comandi per l’assemblatore.
+
+---
+
+## 105. Che differenza c’è tra macro e procedura?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Una macro è una sequenza di istruzioni a cui viene dato un nome.
+>
+> Quando uso la macro, l’assemblatore sostituisce il nome della macro con il suo corpo.
+>
+> Quindi:
+>
+> ```text
+> macro → espansa durante l’assemblaggio
+> procedura → chiamata durante l’esecuzione
+> ```
+>
+> Differenza fondamentale:
+>
+> ```text
+> macro: il codice viene copiato ogni volta
+> procedura: il codice esiste una volta sola e viene chiamato con jal
+> ```
+>
+> Una macro non richiede `jal` e `ret`, ma può aumentare la dimensione del programma oggetto.
+>
+> Una procedura richiede gestione di `ra`, stack e convenzioni di chiamata, ma evita di duplicare codice.
+
+---
+
+## 106. Che cos’è una forward reference?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Una forward reference è un riferimento a un’etichetta che compare più avanti nel programma.
+>
+> Esempio:
+>
+> ```asm
+> beq t0, t1, fine
+> ...
+> fine:
+> ```
+>
+> Quando l’assemblatore legge `beq t0, t1, fine`, non ha ancora incontrato l’etichetta `fine`.
+>
+> Per questo l’assemblatore deve ricordarsi il riferimento e risolverlo dopo.
+>
+> È uno dei motivi per cui spesso si parla di assemblatore a due passi.
+
+---
+
+## 107. Perché un assemblatore può usare due passi?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un assemblatore a due passi serve soprattutto per risolvere correttamente le etichette, specialmente le forward reference.
+>
+> Nel primo passo:
+>
+> ```text
+> individua tutte le etichette
+> costruisce la symbol table
+> associa ogni etichetta a una posizione nel programma
+> ```
+>
+> Nel secondo passo:
+>
+> ```text
+> traduce le istruzioni
+> sostituisce le etichette con gli indirizzi corretti
+> genera il codice oggetto
+> ```
+>
+> Quindi la symbol table è fondamentale per tradurre correttamente salti e riferimenti simbolici.
+
+---
+
+## 108. Che cos’è la symbol table?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> La symbol table è una tabella usata dall’assemblatore o dal linker per associare simboli a indirizzi o posizioni.
+>
+> Contiene informazioni come:
+>
+> ```text
+> nome dell’etichetta
+> posizione nel codice
+> indirizzo relativo
+> eventuali simboli esterni
+> ```
+>
+> Esempio:
+>
+> ```text
+> .L18 → 0x432
+> .L20 → 0x462
+> ```
+>
+> Serve per tradurre istruzioni che usano etichette simboliche, come branch e jump.
+
+---
+
+## 109. Che cosa fa il linker?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il linker combina più file oggetto in un unico file eseguibile.
+>
+> Il suo lavoro principale è:
+>
+> ```text
+> unire moduli oggetto diversi
+> risolvere riferimenti a simboli esterni
+> aggiornare gli indirizzi
+> collegare codice e librerie
+> ```
+>
+> Esempio:
+>
+> se una procedura A chiama una procedura B che si trova in un altro modulo, il linker deve sostituire il riferimento simbolico a B con l’indirizzo corretto.
+
+---
+
+## 110. Che cosa fa il loader?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il loader carica il programma eseguibile in memoria per permetterne l’esecuzione.
+>
+> Schema:
+>
+> ```text
+> file eseguibile → loader → memoria
+> ```
+>
+> Il loader prepara il programma all’esecuzione, caricando codice e dati nelle zone opportune della memoria.
+>
+> Nella sequenza completa:
+>
+> ```text
+> sorgente C
+> compilatore
+> assembly
+> assemblatore
+> file oggetto
+> linker
+> eseguibile
+> loader
+> memoria
+> ```
+
+---
+
+## 111. Che cos’è un bus?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un bus è un insieme di linee elettriche che collegano i moduli di un elaboratore.
+>
+> Può collegare:
+>
+> ```text
+> CPU
+> memoria
+> dispositivi I/O
+> controller
+> ```
+>
+> Le linee principali sono:
+>
+> ```text
+> linee dati
+> linee indirizzi
+> linee controllo
+> ```
+>
+> Il protocollo del bus stabilisce le regole con cui i dispositivi comunicano.
+
+---
+
+## 112. Che differenza c’è tra linee dati, linee indirizzi e linee di controllo?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Le linee dati trasportano i bit del dato trasferito.
+>
+> ```text
+> più linee dati → più bit trasferiti in una singola operazione
+> ```
+>
+> Le linee indirizzi indicano la sorgente o destinazione del trasferimento.
+>
+> ```text
+> n linee indirizzo → 2^n locazioni indirizzabili
+> ```
+>
+> Le linee di controllo regolano il funzionamento del bus.
+>
+> Esempi:
+>
+> ```text
+> read/write
+> richiesta bus
+> grant
+> interrupt
+> wait
+> clock
+> ```
+
+---
+
+## 113. Come si collega la larghezza del bus alla memoria indirizzabile?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Se il bus indirizzi ha `n` linee, posso rappresentare:
+>
+> ```text
+> 2^n indirizzi
+> ```
+>
+> Se la memoria è indirizzabile a byte:
+>
+> ```text
+> capacità = 2^n byte
+> ```
+>
+> Esempio:
+>
+> ```text
+> 32 linee indirizzo → 2^32 byte = 4 GiB
+> ```
+>
+> Il bus dati invece non determina direttamente la quantità massima di memoria, ma quanti bit posso trasferire alla volta.
+>
+> Esempio:
+>
+> ```text
+> bus dati a 64 bit → trasferisce 64 bit per operazione
+> ```
+
+---
+
+## 114. Che differenza c’è tra bus sincrono e bus asincrono?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un bus sincrono usa una linea di clock comune.
+>
+> Le operazioni avvengono in multipli interi del ciclo di clock.
+>
+> Vantaggio:
+>
+> ```text
+> più semplice da coordinare
+> ```
+>
+> Svantaggio:
+>
+> ```text
+> deve adattarsi ai tempi dei dispositivi più lenti
+> ```
+>
+> Un bus asincrono non usa un clock globale.
+>
+> Usa invece segnali di handshaking.
+>
+> Vantaggio:
+>
+> ```text
+> più flessibile, perché ogni trasferimento dura quanto serve
+> ```
+>
+> Svantaggio:
+>
+> ```text
+> protocollo più complesso
+> ```
+
+---
+
+## 115. Che cos’è l’handshaking in un bus asincrono?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> L’handshaking è un meccanismo di sincronizzazione tra due dispositivi senza usare un clock comune.
+>
+> Schema mentale:
+>
+> ```text
+> il master mette indirizzo e segnali di controllo
+> il master attiva un segnale di richiesta/sincronizzazione
+> il dispositivo risponde quando è pronto
+> i dati vengono trasferiti
+> entrambi disattivano i segnali
+> ```
+>
+> L’idea è:
+>
+> ```text
+> non si assume una durata fissa
+> si aspetta il segnale dell’altro dispositivo
+> ```
+>
+> Per questo il bus asincrono si adatta meglio a dispositivi con tempi diversi.
+
+---
+
+## 116. Perché serve l’arbitraggio del bus?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> L’arbitraggio serve quando più dispositivi vogliono usare il bus contemporaneamente.
+>
+> Se due dispositivi scrivessero sul bus nello stesso momento, ci sarebbe ambiguità o conflitto.
+>
+> L’arbitraggio decide chi ottiene il bus.
+>
+> Meccanismo tipico:
+>
+> ```text
+> richiesta del bus
+> arbitro
+> grant
+> dispositivo autorizzato usa il bus
+> ```
+>
+> Può essere:
+>
+> ```text
+> centralizzato
+> decentralizzato
+> ```
+>
+> Nel daisy chaining, il grant passa lungo una catena di dispositivi: di solito vince quello più vicino all’arbitro.
+
+---
+
+## 117. Che differenza c’è tra dispositivo attivo e passivo su un bus?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un dispositivo attivo può iniziare un trasferimento sul bus.
+>
+> Esempi:
+>
+> ```text
+> CPU
+> DMA controller
+> ```
+>
+> Un dispositivo passivo rimane in attesa di richieste.
+>
+> Esempi:
+>
+> ```text
+> memoria
+> alcune periferiche I/O
+> ```
+>
+> La CPU spesso può comportarsi sia da dispositivo attivo sia da dispositivo passivo, quindi può usare un transceiver.
+
+---
+
+## 118. Che cos’è la località temporale?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> La località temporale dice che, se un programma accede a una certa locazione di memoria, è probabile che vi acceda di nuovo dopo poco tempo.
+>
+> Esempi:
+>
+> ```text
+> variabili usate spesso
+> istruzioni dentro un ciclo
+> valori nello stack durante chiamate ricorsive
+> ```
+>
+> La cache sfrutta questa proprietà tenendo vicini alla CPU i dati e le istruzioni usati di recente.
+
+---
+
+## 119. Che cos’è la località spaziale?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> La località spaziale dice che, se un programma accede a una locazione di memoria, è probabile che acceda presto anche alle locazioni vicine.
+>
+> Esempi:
+>
+> ```text
+> array letti in ordine
+> istruzioni consecutive
+> stringhe percorse carattere per carattere
+> ```
+>
+> Per questo la cache non carica solo una parola, ma un intero blocco.
+>
+> Caricando un blocco, è probabile che i prossimi accessi siano già in cache.
+
+---
+
+## 120. Perché la cache usa blocchi e non singole parole isolate?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> La cache usa blocchi per sfruttare la località spaziale.
+>
+> Se accedo a una parola, è probabile che presto acceda anche alle parole vicine.
+>
+> Quindi quando avviene un miss:
+>
+> ```text
+> non carico solo la parola richiesta
+> carico il blocco che la contiene
+> ```
+>
+> Questo aumenta la probabilità di hit nei prossimi accessi.
+>
+> Attenzione però:
+>
+> ```text
+> aumentare troppo la dimensione del blocco non è sempre conveniente
+> ```
+>
+> perché può aumentare la miss penalty e ridurre il numero di linee disponibili in cache.
+
+---
+
+## 121. Che cosa indicano valid bit e tag in una cache?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il valid bit indica se una linea della cache contiene un dato valido.
+>
+> ```text
+> valid = 0 → linea vuota/non valida
+> valid = 1 → linea utilizzabile
+> ```
+>
+> Il tag serve a capire se il blocco presente in quella linea è proprio quello cercato.
+>
+> In una cache direct mapped:
+>
+> ```text
+> l’index seleziona la linea
+> il valid bit dice se la linea contiene qualcosa di valido
+> il tag viene confrontato con il tag dell’indirizzo richiesto
+> ```
+>
+> C’è hit solo se:
+>
+> ```text
+> valid = 1
+> tag memorizzato = tag richiesto
+> ```
+
+---
+
+## 122. Che differenza c’è tra cache direct mapped, completamente associativa e set-associativa?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nella cache direct mapped, ogni blocco di memoria può andare in una sola linea della cache.
+>
+> ```text
+> linea = numero blocco mod numero linee cache
+> ```
+>
+> Vantaggio:
+>
+> ```text
+> semplice e veloce
+> ```
+>
+> Svantaggio:
+>
+> ```text
+> più conflitti
+> ```
+>
+> Nella cache completamente associativa, un blocco può andare in qualunque linea.
+>
+> Vantaggio:
+>
+> ```text
+> meno conflitti
+> ```
+>
+> Svantaggio:
+>
+> ```text
+> ricerca più costosa, perché bisogna confrontare molti tag
+> ```
+>
+> Nella cache set-associativa, un blocco può andare in un insieme limitato di linee, dette vie.
+>
+> È una soluzione intermedia tra direct mapped e completamente associativa.
+
+---
+
+## 123. Che cos’è la politica LRU nelle cache?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> LRU significa Least Recently Used.
+>
+> Quando bisogna rimpiazzare un blocco in cache, si elimina quello usato meno recentemente.
+>
+> Idea:
+>
+> ```text
+> se un blocco non viene usato da molto tempo,
+> è meno probabile che serva subito
+> ```
+>
+> LRU è utile soprattutto nelle cache associative o set-associative, dove ci sono più candidati nello stesso set.
+
+---
+
+## 124. Che differenza c’è tra write-through e write-back?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Write-through:
+>
+> ```text
+> ogni scrittura in cache aggiorna anche la memoria principale
+> ```
+>
+> Vantaggio:
+>
+> ```text
+> memoria sempre aggiornata
+> ```
+>
+> Svantaggio:
+>
+> ```text
+> più traffico verso la memoria
+> ```
+>
+> Write-back:
+>
+> ```text
+> si scrive solo in cache
+> la memoria viene aggiornata quando il blocco viene rimpiazzato
+> ```
+>
+> Vantaggio:
+>
+> ```text
+> meno traffico verso la memoria
+> ```
+>
+> Svantaggio:
+>
+> ```text
+> implementazione più complessa
+> ```
+>
+> In write-back serve sapere se un blocco è stato modificato, spesso con un dirty bit.
+
+---
+
+## 125. Che differenza c’è tra circuito combinatorio e circuito sequenziale?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un circuito combinatorio produce uscite che dipendono solo dagli ingressi attuali.
+>
+> Esempi:
+>
+> ```text
+> AND
+> OR
+> NOT
+> multiplexer
+> decoder
+> sommatore
+> ALU combinatoria
+> ```
+>
+> Un circuito sequenziale produce uscite che dipendono dagli ingressi e anche da uno stato interno.
+>
+> Esempi:
+>
+> ```text
+> latch
+> flip-flop
+> registri
+> memoria
+> register file
+> ```
+>
+> Quindi:
+>
+> ```text
+> combinatorio → non ha memoria
+> sequenziale → ha memoria/stato
+> ```
+
+---
+
+## 126. Che cos’è un latch SR e qual è il caso vietato?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un latch SR è un circuito sequenziale capace di memorizzare 1 bit.
+>
+> Ha due ingressi principali:
+>
+> ```text
+> S = set
+> R = reset
+> ```
+>
+> Comportamento:
+>
+> ```text
+> S=1, R=0 → memorizza 1
+> S=0, R=1 → memorizza 0
+> S=0, R=0 → mantiene lo stato
+> ```
+>
+> Il caso problematico è:
+>
+> ```text
+> S=1, R=1
+> ```
+>
+> perché può produrre uno stato non valido o instabile.
+>
+> Quindi:
+>
+> ```text
+> S e R non devono essere attivi contemporaneamente
+> ```
+
+---
+
+## 127. Che cos’è un latch D e perché evita il problema del latch SR?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un latch D memorizza il valore dell’ingresso `D` quando il clock/enable lo abilita.
+>
+> Se il clock è attivo:
+>
+> ```text
+> Q segue D
+> ```
+>
+> Se il clock non è attivo:
+>
+> ```text
+> Q mantiene il valore precedente
+> ```
+>
+> Il latch D evita il caso proibito del latch SR perché genera internamente i segnali set/reset a partire da un solo ingresso `D`.
+>
+> Quindi non può capitare di chiedere contemporaneamente:
+>
+> ```text
+> set = 1
+> reset = 1
+> ```
+
+---
+
+## 128. Qual è il problema della trasparenza del latch D?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il latch D è trasparente quando il clock/enable è attivo.
+>
+> Significa che:
+>
+> ```text
+> se D cambia mentre il latch è abilitato,
+> anche Q può cambiare
+> ```
+>
+> Questo può essere un problema nei circuiti con retroazione, perché un valore “sporco” o non ancora stabile può essere memorizzato.
+>
+> Per evitare questo problema si usano spesso flip-flop edge-triggered, che campionano il valore solo sul fronte del clock.
+
+---
+
+## 129. Che differenza c’è tra latch e flip-flop?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un latch è sensibile al livello del clock o dell’enable.
+>
+> Esempio:
+>
+> ```text
+> clock = 1 → il latch può essere trasparente
+> clock = 0 → mantiene il valore
+> ```
+>
+> Un flip-flop è sensibile al fronte del clock.
+>
+> Esempi:
+>
+> ```text
+> fronte di salita
+> fronte di discesa
+> ```
+>
+> Quindi:
+>
+> ```text
+> latch → level-triggered
+> flip-flop → edge-triggered
+> ```
+>
+> Nei datapath sincroni si usano spesso flip-flop o elementi di stato aggiornati sul fronte del clock.
+
+---
+
+## 130. Che cosa sono setup time e hold time?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il setup time è il tempo minimo per cui l’ingresso deve essere stabile prima del fronte attivo del clock.
+>
+> L’hold time è il tempo minimo per cui l’ingresso deve rimanere stabile dopo il fronte attivo del clock.
+>
+> Schema:
+>
+> ```text
+> prima del fronte → setup time
+> dopo il fronte   → hold time
+> ```
+>
+> Se questi vincoli non sono rispettati, l’elemento di memoria può memorizzare un valore sbagliato o instabile.
+
+---
+
+## 131. Come è fatto concettualmente un registro?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un registro è un insieme di flip-flop D raggruppati insieme.
+>
+> Se il registro è a 32 bit:
+>
+> ```text
+> contiene 32 flip-flop D
+> ```
+>
+> Tutti ricevono lo stesso clock.
+>
+> Ogni flip-flop memorizza un bit.
+>
+> Quindi:
+>
+> ```text
+> registro da n bit → n flip-flop
+> ```
+
+---
+
+## 132. Come è fatto concettualmente un register file?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un register file è un insieme di registri leggibili e scrivibili.
+>
+> Per funzionare usa:
+>
+> ```text
+> registri basati su flip-flop D
+> multiplexer per scegliere quale registro leggere
+> decoder per scegliere quale registro scrivere
+> segnali di controllo come RegWrite
+> ```
+>
+> Nel RISC-V, il register file contiene 32 registri interi.
+>
+> Di solito ha:
+>
+> ```text
+> due porte di lettura
+> una porta di scrittura
+> ```
+>
+> Questo permette alle istruzioni R-type di leggere due registri sorgente e scrivere un registro destinazione.
+
+---
+
+## 133. Che differenza c’è tra SRAM e DRAM?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> SRAM significa Static RAM.
+>
+> È realizzata con circuiti simili a flip-flop.
+>
+> Caratteristiche:
+>
+> ```text
+> molto veloce
+> più costosa
+> usata per cache
+> ```
+>
+> DRAM significa Dynamic RAM.
+>
+> È realizzata con condensatori che devono essere rinfrescati periodicamente.
+>
+> Caratteristiche:
+>
+> ```text
+> più lenta della SRAM
+> più economica
+> più densa
+> usata come memoria principale
+> ```
+>
+> Schema mentale:
+>
+> ```text
+> SRAM → cache
+> DRAM → RAM principale
+> ```
+
+---
+
+## 134. Perché il PC viene incrementato di 4 nel datapath RISC-V base?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nel RISC-V base, le istruzioni core sono lunghe 32 bit.
+>
+> 32 bit equivalgono a:
+>
+> ```text
+> 4 byte
+> ```
+>
+> Poiché la memoria è indirizzabile a byte, l’indirizzo dell’istruzione successiva si ottiene facendo:
+>
+> ```text
+> PC = PC + 4
+> ```
+>
+> Quindi nel datapath c’è un sommatore dedicato che calcola:
+>
+> ```text
+> PC + 4
+> ```
+>
+> Attenzione: con istruzioni compresse a 16 bit il discorso può cambiare, ma nel datapath didattico base si assume normalmente PC + 4.
+
+---
+
+## 135. Che ruolo ha l’unità di controllo nel datapath?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> L’unità di controllo decodifica l’istruzione e genera i segnali necessari a far funzionare il datapath.
+>
+> Genera segnali come:
+>
+> ```text
+> RegWrite
+> ALUSrc
+> MemRead
+> MemWrite
+> MemToReg
+> Branch
+> ALUOp
+> ```
+>
+> In pratica decide:
+>
+> ```text
+> quali registri leggere
+> se usare un immediato
+> quale operazione deve fare la ALU
+> se leggere o scrivere memoria
+> se scrivere nel register file
+> come aggiornare il PC
+> ```
+>
+> Senza unità di controllo, il datapath avrebbe i componenti ma non saprebbe come coordinarli.
+
+---
+
+## 136. Che cos’è PCSrc e quando vale 1?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `PCSrc` è il segnale che decide quale sarà il prossimo valore del Program Counter.
+>
+> In un datapath semplice:
+>
+> ```text
+> PCSrc = 0 → PC = PC + 4
+> PCSrc = 1 → PC = indirizzo di branch
+> ```
+>
+> Per una `beq`, il branch viene preso solo se:
+>
+> ```text
+> Branch = 1
+> Zero = 1
+> ```
+>
+> Quindi:
+>
+> ```text
+> PCSrc = Branch AND Zero
+> ```
+>
+> Se `beq` confronta due registri uguali, la ALU produce zero e `Zero = 1`.
+>
+> A quel punto il PC viene aggiornato con l’indirizzo di salto.
+
+---
+
+## 137. Che cosa significa “don’t care” in una tabella di controllo?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un valore `X`, detto don’t care, indica che quel segnale può valere indifferentemente 0 o 1 senza cambiare il comportamento dell’istruzione.
+>
+> Esempio:
+>
+> ```text
+> sw non scrive nel register file
+> ```
+>
+> Quindi per `sw`:
+>
+> ```text
+> RegWrite = 0
+> MemToReg = X
+> ```
+>
+> `MemToReg` non importa, perché non verrà scritto nessun registro.
+>
+> I don’t care sono utili perché permettono di semplificare la logica di controllo.
+
+---
+
+## 138. Perché ALUOp è usato insieme a funct3 e funct7?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `ALUOp` è un controllo generale prodotto dall’unità di controllo principale.
+>
+> Dice alla logica della ALU che tipo di istruzione si sta eseguendo.
+>
+> Schema tipico:
+>
+> ```text
+> ALUOp = 00 → load/store → la ALU fa somma
+> ALUOp = 01 → beq → la ALU fa sottrazione
+> ALUOp = 10 → R-type → guarda funct3 e funct7
+> ```
+>
+> Per le R-type, infatti, l’opcode dice solo che è una istruzione registro-registro.
+>
+> L’operazione precisa, come `add`, `sub`, `and`, `or`, viene determinata dai campi:
+>
+> ```text
+> funct3
+> funct7
+> ```
+
+---
+
+## 139. Quali campi dell’istruzione RISC-V sono sempre importanti da riconoscere?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nei formati RISC-V è importante riconoscere:
+>
+> ```text
+> opcode / codop → bit 6:0
+> rd             → bit 11:7
+> funct3         → bit 14:12
+> rs1            → bit 19:15
+> rs2            → bit 24:20
+> funct7         → bit 31:25
+> ```
+>
+> Regole utili:
+>
+> ```text
+> rs1 è spesso il primo registro sorgente
+> rs2 è il secondo registro sorgente o dato da scrivere nelle store
+> rd è il registro destinazione nelle R-type e nelle load
+> opcode identifica il formato/tipo generale dell’istruzione
+> funct3/funct7 specificano meglio l’operazione
+> ```
+
+---
+
+## 140. Quali sono le risposte secche da ricordare su queste slide teoriche?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Risposte rapide:
+>
+> ```text
+> assembler → traduce assembly in oggetto
+> linker → collega moduli oggetto e risolve simboli esterni
+> loader → carica l’eseguibile in memoria
+> pseudo-istruzione → alias tradotto in istruzioni reali
+> direttiva → comando per l’assemblatore, non per la CPU
+> macro → espansa durante l’assemblaggio
+> procedura → chiamata durante l’esecuzione
+> forward reference → riferimento a etichetta definita dopo
+> symbol table → associa simboli/etichette a indirizzi
+> bus dati → trasferisce dati
+> bus indirizzi → seleziona sorgente/destinazione
+> bus controllo → coordina operazioni
+> bus sincrono → usa clock comune
+> bus asincrono → usa handshaking
+> arbitraggio → decide chi usa il bus
+> località temporale → riuso dello stesso dato a breve
+> località spaziale → uso di dati vicini
+> valid bit → dice se una linea cache è valida
+> tag → verifica se il blocco è quello cercato
+> SRAM → cache
+> DRAM → memoria principale
+> latch → sensibile al livello
+> flip-flop → sensibile al fronte
+> setup time → stabilità prima del fronte
+> hold time → stabilità dopo il fronte
+> PC + 4 → prossima istruzione RISC-V base
+> PCSrc = Branch AND Zero → branch preso
+> ```
+```
+
