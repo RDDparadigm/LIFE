@@ -1665,4 +1665,1343 @@ CPU time = (IC × CPI) / frequenza
 > 14. Il miss rate è percentuale o decimale?
 >     
 > 15. Il risultato richiesto è in decimale, binario o esadecimale?
+
+
+## 52. Quali sono i segnali di controllo principali nel datapath RISC-V monociclo?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> I segnali di controllo principali sono:
 >
+> ```text
+> RegWrite  = abilita la scrittura nel register file
+> ALUSrc    = sceglie il secondo operando della ALU
+> MemRead   = abilita la lettura dalla memoria dati
+> MemWrite  = abilita la scrittura nella memoria dati
+> MemToReg  = sceglie cosa scrivere nel registro destinazione
+> Branch    = indica che l’istruzione è un branch
+> ALUOp     = dice alla ALU che tipo generale di operazione fare
+> ```
+>
+> Significato pratico:
+>
+> - `RegWrite = 1` quando l’istruzione scrive un registro;
+> - `ALUSrc = 1` quando il secondo operando ALU viene dall’immediato;
+> - `MemRead = 1` per le load;
+> - `MemWrite = 1` per le store;
+> - `MemToReg = 1` quando nel registro va scritto il dato letto dalla memoria;
+> - `Branch = 1` per i salti condizionati;
+> - `ALUOp` viene poi combinato con `funct3/funct7` per decidere l’operazione precisa della ALU.
+
+---
+
+## 53. Quali sono i segnali di controllo per un’istruzione R-type?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Le istruzioni R-type fanno operazioni tra due registri e scrivono il risultato in un registro.
+>
+> Esempi:
+>
+> ```asm
+> add rd, rs1, rs2
+> sub rd, rs1, rs2
+> and rd, rs1, rs2
+> or  rd, rs1, rs2
+> slt rd, rs1, rs2
+> ```
+>
+> Segnali tipici:
+>
+> ```text
+> RegWrite = 1
+> ALUSrc   = 0
+> MemRead  = 0
+> MemWrite = 0
+> MemToReg = 0
+> Branch   = 0
+> ALUOp    = 10
+> ```
+>
+> Spiegazione:
+>
+> - scrive un registro, quindi `RegWrite = 1`;
+> - il secondo operando ALU viene da `rs2`, quindi `ALUSrc = 0`;
+> - non legge né scrive memoria dati;
+> - il valore scritto nel registro viene dalla ALU, quindi `MemToReg = 0`;
+> - non è un branch;
+> - `ALUOp = 10` indica che l’operazione precisa dipende da `funct3/funct7`.
+
+---
+
+## 54. Quali sono i segnali di controllo per una load, ad esempio lw?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Una load legge dalla memoria e scrive il dato letto in un registro.
+>
+> Esempio:
+>
+> ```asm
+> lw rd, offset(rs1)
+> ```
+>
+> Segnali tipici:
+>
+> ```text
+> RegWrite = 1
+> ALUSrc   = 1
+> MemRead  = 1
+> MemWrite = 0
+> MemToReg = 1
+> Branch   = 0
+> ALUOp    = 00
+> ```
+>
+> Spiegazione:
+>
+> - scrive in `rd`, quindi `RegWrite = 1`;
+> - la ALU calcola l’indirizzo `rs1 + offset`, quindi usa l’immediato: `ALUSrc = 1`;
+> - legge dalla memoria: `MemRead = 1`;
+> - non scrive in memoria: `MemWrite = 0`;
+> - nel registro va scritto il dato letto dalla memoria: `MemToReg = 1`;
+> - non è un branch;
+> - la ALU deve fare una somma, quindi `ALUOp = 00`.
+
+---
+
+## 55. Quali sono i segnali di controllo per una store, ad esempio sw?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Una store scrive in memoria un valore preso da un registro.
+>
+> Esempio:
+>
+> ```asm
+> sw rs2, offset(rs1)
+> ```
+>
+> Segnali tipici:
+>
+> ```text
+> RegWrite = 0
+> ALUSrc   = 1
+> MemRead  = 0
+> MemWrite = 1
+> MemToReg = X
+> Branch   = 0
+> ALUOp    = 00
+> ```
+>
+> Spiegazione:
+>
+> - non scrive nessun registro, quindi `RegWrite = 0`;
+> - la ALU calcola l’indirizzo `rs1 + offset`, quindi `ALUSrc = 1`;
+> - non legge dalla memoria dati;
+> - scrive nella memoria dati: `MemWrite = 1`;
+> - `MemToReg` è indifferente perché non si scrive nel register file;
+> - non è un branch;
+> - la ALU deve fare una somma, quindi `ALUOp = 00`.
+
+---
+
+## 56. Quali sono i segnali di controllo per un branch, ad esempio beq?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un branch confronta due registri e, se la condizione è vera, aggiorna il PC con l’indirizzo di salto.
+>
+> Esempio:
+>
+> ```asm
+> beq rs1, rs2, label
+> ```
+>
+> Segnali tipici:
+>
+> ```text
+> RegWrite = 0
+> ALUSrc   = 0
+> MemRead  = 0
+> MemWrite = 0
+> MemToReg = X
+> Branch   = 1
+> ALUOp    = 01
+> ```
+>
+> Spiegazione:
+>
+> - non scrive registri;
+> - confronta due registri, quindi `ALUSrc = 0`;
+> - non legge né scrive memoria dati;
+> - `MemToReg` è indifferente;
+> - è un branch, quindi `Branch = 1`;
+> - la ALU viene usata per confrontare, spesso facendo `rs1 - rs2`, quindi `ALUOp = 01`.
+
+---
+
+## 57. Quali sono i segnali di controllo per un’I-type aritmetico, ad esempio addi?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un’I-type aritmetico usa un registro e un immediato, poi scrive il risultato in un registro.
+>
+> Esempio:
+>
+> ```asm
+> addi rd, rs1, imm
+> ```
+>
+> Segnali tipici:
+>
+> ```text
+> RegWrite = 1
+> ALUSrc   = 1
+> MemRead  = 0
+> MemWrite = 0
+> MemToReg = 0
+> Branch   = 0
+> ALUOp    = 10 oppure codice dedicato, dipende dal datapath
+> ```
+>
+> Spiegazione:
+>
+> - scrive in `rd`, quindi `RegWrite = 1`;
+> - il secondo operando ALU è l’immediato, quindi `ALUSrc = 1`;
+> - non accede alla memoria dati;
+> - il valore scritto viene dalla ALU, quindi `MemToReg = 0`;
+> - non è un branch.
+>
+> Nota importante: nei datapath didattici base spesso `ALUOp = 10` indica “guarda funct3/funct7”. Per gli I-type aritmetici può servire una logica di controllo leggermente estesa rispetto alla tabella base `R-type/lw/sw/beq`.
+
+---
+
+## 58. Tabella riassuntiva dei segnali di controllo principali
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Tabella tipica per datapath monociclo:
+>
+> ```text
+> Istruzione | RegWrite | ALUSrc | MemRead | MemWrite | MemToReg | Branch | ALUOp
+> ----------|----------|--------|---------|----------|----------|--------|------
+> R-type    |    1     |   0    |    0    |    0     |    0     |   0    |  10
+> lw        |    1     |   1    |    1    |    0     |    1     |   0    |  00
+> sw        |    0     |   1    |    0    |    1     |    X     |   0    |  00
+> beq       |    0     |   0    |    0    |    0     |    X     |   1    |  01
+> addi      |    1     |   1    |    0    |    0     |    0     |   0    |  10*
+> ```
+>
+> Dove:
+>
+> ```text
+> X = don't care, cioè il valore non importa
+> ```
+>
+> Nota su `addi`:
+>
+> ```text
+> ALUOp = 10* dipende dal datapath didattico usato.
+> ```
+>
+> Nei datapath più completi, gli I-type aritmetici hanno una gestione specifica tramite opcode e funct3.
+
+---
+
+## 59. Perché per lw e sw ALUSrc vale 1?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Per `lw` e `sw`, la ALU serve a calcolare l’indirizzo effettivo di memoria.
+>
+> L’indirizzo si calcola così:
+>
+> ```text
+> indirizzo = contenuto di rs1 + immediato
+> ```
+>
+> Esempio:
+>
+> ```asm
+> lw t0, 8(s1)
+> ```
+>
+> Qui l’indirizzo è:
+>
+> ```text
+> s1 + 8
+> ```
+>
+> Quindi il secondo operando della ALU non viene da `rs2`, ma dall’immediato.
+>
+> Per questo:
+>
+> ```text
+> ALUSrc = 1
+> ```
+
+---
+
+## 60. Perché per R-type ALUSrc vale 0?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Le istruzioni R-type usano due registri come operandi.
+>
+> Esempio:
+>
+> ```asm
+> add rd, rs1, rs2
+> ```
+>
+> La ALU riceve:
+>
+> ```text
+> primo operando = rs1
+> secondo operando = rs2
+> ```
+>
+> Quindi il secondo operando non è un immediato.
+>
+> Per questo:
+>
+> ```text
+> ALUSrc = 0
+> ```
+
+---
+
+## 61. Perché per lw MemToReg vale 1, mentre per R-type vale 0?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `MemToReg` controlla il mux che sceglie cosa scrivere nel registro destinazione.
+>
+> Per una `lw`:
+>
+> ```asm
+> lw rd, offset(rs1)
+> ```
+>
+> il valore da scrivere in `rd` arriva dalla memoria dati.
+>
+> Quindi:
+>
+> ```text
+> MemToReg = 1
+> ```
+>
+> Per una R-type:
+>
+> ```asm
+> add rd, rs1, rs2
+> ```
+>
+> il valore da scrivere in `rd` arriva dalla ALU.
+>
+> Quindi:
+>
+> ```text
+> MemToReg = 0
+> ```
+
+---
+
+## 62. Perché per sw RegWrite vale 0 e MemWrite vale 1?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Una `sw` scrive un valore in memoria, non in un registro.
+>
+> Esempio:
+>
+> ```asm
+> sw rs2, offset(rs1)
+> ```
+>
+> Significa:
+>
+> ```text
+> memoria[rs1 + offset] = rs2
+> ```
+>
+> Quindi:
+>
+> ```text
+> RegWrite = 0
+> ```
+>
+> perché nessun registro viene scritto.
+>
+> ```text
+> MemWrite = 1
+> ```
+>
+> perché viene scritta la memoria dati.
+
+---
+
+## 63. Perché per beq Branch vale 1 e RegWrite vale 0?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `beq` è un salto condizionato.
+>
+> Esempio:
+>
+> ```asm
+> beq rs1, rs2, label
+> ```
+>
+> Significa:
+>
+> ```text
+> se rs1 == rs2, allora PC = indirizzo del branch
+> ```
+>
+> Non scrive nessun registro, quindi:
+>
+> ```text
+> RegWrite = 0
+> ```
+>
+> È un branch, quindi:
+>
+> ```text
+> Branch = 1
+> ```
+>
+> La ALU viene spesso usata per sottrarre:
+>
+> ```text
+> rs1 - rs2
+> ```
+>
+> Se il risultato è zero, il branch viene preso.
+
+
+## 64. Come si interpreta un circuito ALU a più bit come quello dello screenshot?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un’ALU a più bit è costruita collegando più ALU a 1 bit in cascata.
+>
+> Ogni blocco ALU a 1 bit calcola un bit del risultato.
+>
+> Per una ALU a 4 bit:
+>
+> ```text
+> ALU bit 0 → produce Result[0]
+> ALU bit 1 → produce Result[1]
+> ALU bit 2 → produce Result[2]
+> ALU bit 3 → produce Result[3]
+> ```
+>
+> I segnali di controllo come `Ainvert`, `Binvert`, `CarryIn` e `Operation` decidono quale operazione viene eseguita.
+>
+> Il `CarryOut` di un bit entra come `CarryIn` del bit successivo.
+>
+> Esempio:
+>
+> ```text
+> CarryOut bit 0 → CarryIn bit 1
+> CarryOut bit 1 → CarryIn bit 2
+> CarryOut bit 2 → CarryIn bit 3
+> ```
+>
+> Questa struttura serve per fare somme, sottrazioni e confronti bit per bit.
+
+---
+
+## 65. Come si legge il valore di Result in una ALU a 4 bit?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `Result` è il risultato prodotto dalla ALU.
+>
+> In una ALU a 4 bit, ogni ALU a 1 bit produce un singolo bit:
+>
+> ```text
+> Result[0]
+> Result[1]
+> Result[2]
+> Result[3]
+> ```
+>
+> Il risultato finale è la concatenazione di questi bit:
+>
+> ```text
+> Result = Result[3] Result[2] Result[1] Result[0]
+> ```
+>
+> Attenzione all’ordine:
+>
+> - il bit 0 è il meno significativo;
+> - il bit 3 è il più significativo;
+> - quando scrivi il numero in binario, il bit più significativo va a sinistra.
+>
+> Quindi se:
+>
+> ```text
+> Result[3] = 0
+> Result[2] = 1
+> Result[1] = 0
+> Result[0] = 1
+> ```
+>
+> allora:
+>
+> ```text
+> Result = 0101
+> ```
+
+---
+
+## 66. Come si calcola il segnale Zero in una ALU?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il segnale `Zero` vale 1 quando tutti i bit di `Result` sono 0.
+>
+> Cioè:
+>
+> ```text
+> Result = 0000 → Zero = 1
+> ```
+>
+> Se anche un solo bit del risultato vale 1:
+>
+> ```text
+> Result ≠ 0000 → Zero = 0
+> ```
+>
+> In hardware spesso si fa con una OR di tutti i bit del risultato seguita da una NOT.
+>
+> Formula logica:
+>
+> ```text
+> Zero = NOT(Result[0] OR Result[1] OR Result[2] OR Result[3])
+> ```
+>
+> Esempi:
+>
+> ```text
+> Result = 0000 → Zero = 1
+> Result = 0001 → Zero = 0
+> Result = 0100 → Zero = 0
+> Result = 1111 → Zero = 0
+> ```
+
+---
+
+## 67. Come si calcola Overflow in una somma signed?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nell’addizione signed, overflow avviene quando sommi due numeri con lo stesso segno e ottieni un risultato con segno diverso.
+>
+> Casi di overflow:
+>
+> ```text
+> positivo + positivo = negativo
+> negativo + negativo = positivo
+> ```
+>
+> Casi senza overflow:
+>
+> ```text
+> positivo + negativo → mai overflow
+> negativo + positivo → mai overflow
+> ```
+>
+> Formula pratica con i bit di segno:
+>
+> ```text
+> Overflow = 1 se A e B hanno stesso segno e Result ha segno diverso
+> ```
+>
+> In una ALU a 4 bit, il bit di segno è il bit 3:
+>
+> ```text
+> A[3], B[3], Result[3]
+> ```
+
+---
+
+## 68. Come si calcola Overflow usando i carry nella ALU?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> In una somma signed in complemento a 2:
+>
+> ```text
+> Overflow = CarryIn del bit più significativo XOR CarryOut del bit più significativo
+> ```
+>
+> In una ALU a 4 bit, il bit più significativo è il bit 3.
+>
+> Quindi:
+>
+> ```text
+> Overflow = CarryIn_bit3 XOR CarryOut_bit3
+> ```
+>
+> Se i due carry sono uguali:
+>
+> ```text
+> 0 XOR 0 = 0
+> 1 XOR 1 = 0
+> ```
+>
+> non c’è overflow.
+>
+> Se sono diversi:
+>
+> ```text
+> 0 XOR 1 = 1
+> 1 XOR 0 = 1
+> ```
+>
+> allora c’è overflow.
+
+---
+
+## 69. Come si interpreta ALU operation = 000 nel circuito ALU?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nei datapath didattici, spesso `ALU operation = 000` indica l’operazione AND.
+>
+> Quindi:
+>
+> ```text
+> Result = A AND B
+> ```
+>
+> L’AND lavora bit per bit.
+>
+> Esempio:
+>
+> ```text
+> A = 1010
+> B = 1100
+> ```
+>
+> Allora:
+>
+> ```text
+> Result = 1000
+> ```
+>
+> Per ogni bit:
+>
+> ```text
+> 1 AND 1 = 1
+> 1 AND 0 = 0
+> 0 AND 1 = 0
+> 0 AND 0 = 0
+> ```
+>
+> In questo caso `Overflow` normalmente vale 0, perché l’overflow riguarda operazioni aritmetiche signed come somma e sottrazione, non AND.
+>
+> `Zero` vale 1 solo se il risultato è `0000`.
+
+---
+
+## 70. Come si interpreta ALU operation = 001 nel circuito ALU?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nei datapath didattici, spesso `ALU operation = 001` indica l’operazione OR.
+>
+> Quindi:
+>
+> ```text
+> Result = A OR B
+> ```
+>
+> L’OR lavora bit per bit.
+>
+> Esempio:
+>
+> ```text
+> A = 1010
+> B = 1100
+> ```
+>
+> Allora:
+>
+> ```text
+> Result = 1110
+> ```
+>
+> Per ogni bit:
+>
+> ```text
+> 1 OR 1 = 1
+> 1 OR 0 = 1
+> 0 OR 1 = 1
+> 0 OR 0 = 0
+> ```
+>
+> Anche qui `Overflow` normalmente vale 0.
+>
+> `Zero` vale 1 solo se il risultato finale è `0000`.
+
+---
+
+## 71. Come si interpreta ALU operation = 010 nel circuito ALU?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nei datapath didattici, spesso `ALU operation = 010` indica l’addizione.
+>
+> Quindi:
+>
+> ```text
+> Result = A + B
+> ```
+>
+> La somma viene fatta bit per bit propagando il carry:
+>
+> ```text
+> CarryOut bit 0 → CarryIn bit 1
+> CarryOut bit 1 → CarryIn bit 2
+> CarryOut bit 2 → CarryIn bit 3
+> ```
+>
+> Per determinare le uscite:
+>
+> 1. Calcoli la somma binaria.
+> 2. Tieni solo i bit disponibili, ad esempio 4 bit.
+> 3. `Result` è il risultato troncato a 4 bit.
+> 4. `Zero = 1` se `Result = 0000`.
+> 5. `Overflow = 1` solo se c’è overflow signed.
+>
+> Esempio a 4 bit:
+>
+> ```text
+> A = 0111 = +7
+> B = 0001 = +1
+> ```
+>
+> Somma:
+>
+> ```text
+> 0111 + 0001 = 1000
+> ```
+>
+> Interpretato signed a 4 bit:
+>
+> ```text
+> +7 + +1 = -8
+> ```
+>
+> Quindi:
+>
+> ```text
+> Result = 1000
+> Zero = 0
+> Overflow = 1
+> ```
+
+---
+
+## 72. Come si interpreta ALU operation = 110 nel circuito ALU?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nei datapath didattici, spesso `ALU operation = 110` indica la sottrazione.
+>
+> Quindi:
+>
+> ```text
+> Result = A - B
+> ```
+>
+> La sottrazione viene realizzata come:
+>
+> ```text
+> A - B = A + NOT(B) + 1
+> ```
+>
+> In hardware:
+>
+> - `Binvert = 1`;
+> - il carry-in iniziale vale 1;
+> - si usa lo stesso sommatore dell’addizione.
+>
+> Per determinare le uscite:
+>
+> 1. Calcoli `A - B`.
+> 2. Scrivi il risultato in complemento a 2 usando i bit disponibili.
+> 3. `Zero = 1` se il risultato è `0000`.
+> 4. `Overflow = 1` se c’è overflow signed nella sottrazione.
+>
+> Esempio:
+>
+> ```text
+> A = 0011 = +3
+> B = 0011 = +3
+> ```
+>
+> ```text
+> A - B = 0
+> ```
+>
+> Quindi:
+>
+> ```text
+> Result = 0000
+> Zero = 1
+> Overflow = 0
+> ```
+
+---
+
+## 73. Come si interpreta ALU operation = 111 nel circuito ALU?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nei datapath didattici, spesso `ALU operation = 111` indica `slt`, cioè set less than.
+>
+> Significa:
+>
+> ```text
+> Result = 0001 se A < B
+> Result = 0000 altrimenti
+> ```
+>
+> Per `slt` signed, il confronto va fatto interpretando A e B come numeri signed in complemento a 2.
+>
+> L’ALU di solito calcola:
+>
+> ```text
+> A - B
+> ```
+>
+> Poi usa il segnale `less` per mettere a 1 solo il bit meno significativo del risultato.
+>
+> Esempio signed a 4 bit:
+>
+> ```text
+> A = 1111 = -1
+> B = 0001 = +1
+> ```
+>
+> Poiché:
+>
+> ```text
+> -1 < +1
+> ```
+>
+> allora:
+>
+> ```text
+> Result = 0001
+> Zero = 0
+> ```
+>
+> Se invece:
+>
+> ```text
+> A = 0011 = +3
+> B = 1011 = -5
+> ```
+>
+> allora:
+>
+> ```text
+> +3 < -5 è falso
+> ```
+>
+> quindi:
+>
+> ```text
+> Result = 0000
+> Zero = 1
+> ```
+
+---
+
+## 74. Come si determina Result, Zero e Overflow dato un opcode della ALU?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Procedura da seguire:
+>
+> 1. Capisci quale operazione indica il codice ALU.
+>
+> ```text
+> 000 → AND
+> 001 → OR
+> 010 → ADD
+> 110 → SUB
+> 111 → SLT
+> ```
+>
+> 2. Applica l’operazione agli ingressi `A` e `B`.
+>
+> 3. Scrivi il risultato sui bit disponibili, ad esempio 4 bit.
+>
+> 4. Calcola `Zero`:
+>
+> ```text
+> Zero = 1 se Result = 0000
+> Zero = 0 se Result ≠ 0000
+> ```
+>
+> 5. Calcola `Overflow` solo per operazioni aritmetiche signed:
+>
+> ```text
+> ADD
+> SUB
+> SLT, se internamente usa A - B
+> ```
+>
+> Per AND e OR, normalmente:
+>
+> ```text
+> Overflow = 0
+> ```
+
+---
+
+## 75. Esempio: se A = 0000, B = 0000 e ALU operation = 000, quali sono Result, Zero e Overflow?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `ALU operation = 000` indica normalmente AND.
+>
+> Quindi:
+>
+> ```text
+> Result = A AND B
+> ```
+>
+> Con:
+>
+> ```text
+> A = 0000
+> B = 0000
+> ```
+>
+> ottieni:
+>
+> ```text
+> Result = 0000
+> ```
+>
+> Siccome il risultato è tutto zero:
+>
+> ```text
+> Zero = 1
+> ```
+>
+> L’AND non è un’operazione aritmetica signed, quindi:
+>
+> ```text
+> Overflow = 0
+> ```
+>
+> Risultato finale:
+>
+> ```text
+> Result = 0000
+> Zero = 1
+> Overflow = 0
+> ```
+
+---
+
+## 76. Esempio: se A = 0011, B = 0101 e ALU operation = 010, quali sono Result, Zero e Overflow?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `ALU operation = 010` indica normalmente ADD.
+>
+> Quindi:
+>
+> ```text
+> Result = A + B
+> ```
+>
+> Con:
+>
+> ```text
+> A = 0011 = +3
+> B = 0101 = +5
+> ```
+>
+> Somma:
+>
+> ```text
+> 0011 + 0101 = 1000
+> ```
+>
+> A 4 bit:
+>
+> ```text
+> Result = 1000
+> ```
+>
+> Siccome il risultato non è zero:
+>
+> ```text
+> Zero = 0
+> ```
+>
+> Interpretando signed:
+>
+> ```text
+> +3 + +5 = +8
+> ```
+>
+> Ma a 4 bit signed il massimo è:
+>
+> ```text
+> +7
+> ```
+>
+> quindi c’è overflow:
+>
+> ```text
+> Overflow = 1
+> ```
+>
+> Risultato finale:
+>
+> ```text
+> Result = 1000
+> Zero = 0
+> Overflow = 1
+> ```
+
+---
+
+## 77. Esempio: se A = 0100, B = 0100 e ALU operation = 110, quali sono Result, Zero e Overflow?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `ALU operation = 110` indica normalmente SUB.
+>
+> Quindi:
+>
+> ```text
+> Result = A - B
+> ```
+>
+> Con:
+>
+> ```text
+> A = 0100 = +4
+> B = 0100 = +4
+> ```
+>
+> Sottrazione:
+>
+> ```text
+> +4 - +4 = 0
+> ```
+>
+> Quindi:
+>
+> ```text
+> Result = 0000
+> ```
+>
+> Siccome il risultato è zero:
+>
+> ```text
+> Zero = 1
+> ```
+>
+> Non c’è overflow:
+>
+> ```text
+> Overflow = 0
+> ```
+>
+> Risultato finale:
+>
+> ```text
+> Result = 0000
+> Zero = 1
+> Overflow = 0
+> ```
+
+---
+
+## 78. Esempio: se A = 0111, B = 1111 e ALU operation = 010, quali sono Result, Zero e Overflow?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `ALU operation = 010` indica ADD.
+>
+> Quindi:
+>
+> ```text
+> Result = A + B
+> ```
+>
+> Interpretando signed a 4 bit:
+>
+> ```text
+> A = 0111 = +7
+> B = 1111 = -1
+> ```
+>
+> Somma:
+>
+> ```text
+> +7 + (-1) = +6
+> ```
+>
+> In binario:
+>
+> ```text
+> 0111 + 1111 = 0110
+> ```
+>
+> il carry finale viene scartato perché il risultato è a 4 bit.
+>
+> Quindi:
+>
+> ```text
+> Result = 0110
+> Zero = 0
+> Overflow = 0
+> ```
+>
+> Non c’è overflow perché stai sommando numeri di segno diverso.
+
+---
+
+## 79. Esempio: se A = 0111, B = 1111 e ALU operation = 110, quali sono Result, Zero e Overflow?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `ALU operation = 110` indica SUB.
+>
+> Quindi:
+>
+> ```text
+> Result = A - B
+> ```
+>
+> Interpretando signed a 4 bit:
+>
+> ```text
+> A = 0111 = +7
+> B = 1111 = -1
+> ```
+>
+> Quindi:
+>
+> ```text
+> A - B = +7 - (-1) = +8
+> ```
+>
+> Però a 4 bit signed il massimo rappresentabile è:
+>
+> ```text
+> +7
+> ```
+>
+> quindi il risultato va in overflow.
+>
+> A 4 bit il risultato diventa:
+>
+> ```text
+> Result = 1000
+> ```
+>
+> Quindi:
+>
+> ```text
+> Result = 1000
+> Zero = 0
+> Overflow = 1
+> ```
+
+---
+
+## 80. Esempio: se A = 0011, B = 1011 e ALU operation = 111, quali sono Result, Zero e Overflow?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> `ALU operation = 111` indica normalmente `slt`.
+>
+> Quindi:
+>
+> ```text
+> Result = 0001 se A < B
+> Result = 0000 altrimenti
+> ```
+>
+> Interpretando signed a 4 bit:
+>
+> ```text
+> A = 0011 = +3
+> B = 1011 = -5
+> ```
+>
+> La domanda è:
+>
+> ```text
+> +3 < -5 ?
+> ```
+>
+> La risposta è no.
+>
+> Quindi:
+>
+> ```text
+> Result = 0000
+> ```
+>
+> Siccome il risultato è zero:
+>
+> ```text
+> Zero = 1
+> ```
+>
+> Per `slt`, l’overflow dipende dall’implementazione interna, perché spesso viene calcolato facendo `A - B`.
+>
+> Però l’uscita principale da ricordare è:
+>
+> ```text
+> Result = 0000
+> Zero = 1
+> ```
+>
+> Se il circuito espone anche l’overflow della sottrazione interna, va calcolato su:
+>
+> ```text
+> A - B
+> ```
+
+---
+
+## 81. Qual è la tabella rapida delle operazioni ALU più comuni?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Nei circuiti didattici basati sull’ALU del Patterson-Hennessy, la tabella tipica è:
+>
+> ```text
+> ALU operation | Operazione | Significato
+> --------------|------------|----------------
+> 000           | AND        | A AND B
+> 001           | OR         | A OR B
+> 010           | ADD        | A + B
+> 110           | SUB        | A - B
+> 111           | SLT        | set less than
+> ```
+>
+> Da questa tabella si ricavano poi:
+>
+> ```text
+> Result = risultato dell’operazione
+> Zero = 1 se Result è tutto zero
+> Overflow = 1 solo se c’è overflow signed aritmetico
+> ```
+>
+> Per AND e OR:
+>
+> ```text
+> Overflow = 0
+> ```
+>
+> Per ADD e SUB bisogna controllare l’overflow signed.
