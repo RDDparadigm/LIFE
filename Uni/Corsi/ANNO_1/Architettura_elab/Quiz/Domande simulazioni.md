@@ -29,27 +29,73 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > Il periodo di clock è la durata di un singolo ciclo.
-> 
+>
 > Formula:
-> 
+>
 > ```text
 > Tclock = 1 / frequenza
 > ```
-> 
-> Se la frequenza è in Hz, il periodo viene in secondi.
-> 
-> Esempio:
-> 
+>
+> Dove:
+>
 > ```text
-> f = 2 GHz = 2 × 10^9 Hz
-> Tclock = 1 / (2 × 10^9) = 0,5 ns
+> frequenza = cicli al secondo
+> Tclock = durata di un ciclo
 > ```
-> 
-> Quindi un processore a 2 GHz ha un ciclo di clock lungo 0,5 ns.
+>
+> Se la frequenza è in Hz, il periodo viene in secondi.
+>
+> Esempio:
+>
+> ```text
+> f = 2 GHz
+> ```
+>
+> Prima converto:
+>
+> ```text
+> 2 GHz = 2 × 10^9 Hz
+> ```
+>
+> Poi:
+>
+> ```text
+> Tclock = 1 / (2 × 10^9) s
+> ```
+>
+> Separando:
+>
+> ```text
+> Tclock = 0,5 × 10^-9 s
+> ```
+>
+> Poiché:
+>
+> ```text
+> 1 ns = 10^-9 s
+> ```
+>
+> allora:
+>
+> ```text
+> Tclock = 0,5 ns
+> ```
+>
+> Scorciatoia utile:
+>
+> ```text
+> Tclock in ns = 1 / frequenza in GHz
+> ```
+>
+> Quindi:
+>
+> ```text
+> 2 GHz → 1/2 ns = 0,5 ns
+> ```
 
 ---
 
@@ -57,36 +103,66 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > La formula fondamentale è:
-> 
+>
 > ```text
 > CPU time = IC × CPI × Tclock
 > ```
-> 
+>
 > Dove:
-> 
+>
 > ```text
 > IC = Instruction Count, cioè numero di istruzioni eseguite
 > CPI = cicli medi per istruzione
 > Tclock = periodo di clock
 > ```
-> 
-> Poiché:
-> 
+>
+> Siccome:
+>
 > ```text
 > Tclock = 1 / frequenza
 > ```
-> 
-> si può anche scrivere:
-> 
+>
+> allora puoi anche usare:
+>
 > ```text
 > CPU time = (IC × CPI) / frequenza
 > ```
-> 
-> Questa è una delle formule più importanti per gli esercizi.
+>
+> Esempio:
+>
+> ```text
+> IC = 6 × 10^9 istruzioni
+> CPI = 2
+> frequenza = 1,5 GHz = 1,5 × 10^9 Hz
+> ```
+>
+> Sostituisco:
+>
+> ```text
+> CPU time = (6 × 10^9 × 2) / (1,5 × 10^9)
+> ```
+>
+> Calcolo:
+>
+> ```text
+> CPU time = (12 × 10^9) / (1,5 × 10^9)
+> ```
+>
+> I `10^9` si semplificano:
+>
+> ```text
+> CPU time = 12 / 1,5 = 8 s
+> ```
+>
+> Quindi il tempo di esecuzione è:
+>
+> ```text
+> 8 secondi
+> ```
 
 ---
 
@@ -94,32 +170,66 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > Il numero totale di cicli si calcola così:
-> 
+>
 > ```text
 > cicli totali = IC × CPI
 > ```
-> 
+>
 > Dove:
-> 
+>
 > ```text
 > IC = numero di istruzioni
 > CPI = cicli medi per istruzione
 > ```
-> 
-> Una volta trovati i cicli totali, il tempo si calcola con:
-> 
+>
+> Poi, se vuoi il tempo:
+>
+> ```text
+> tempo = cicli totali / frequenza
+> ```
+>
+> oppure:
+>
 > ```text
 > tempo = cicli totali × Tclock
 > ```
-> 
-> oppure:
-> 
+>
+> Esempio:
+>
 > ```text
-> tempo = cicli totali / frequenza
+> IC = 5 × 10^9 istruzioni
+> CPI = 3
+> frequenza = 2 GHz
+> ```
+>
+> Prima calcolo i cicli totali:
+>
+> ```text
+> cicli totali = 5 × 10^9 × 3
+> cicli totali = 15 × 10^9 cicli
+> ```
+>
+> Poi calcolo il tempo:
+>
+> ```text
+> tempo = (15 × 10^9) / (2 × 10^9)
+> ```
+>
+> Semplifico:
+>
+> ```text
+> tempo = 15 / 2 = 7,5 s
+> ```
+>
+> Quindi:
+>
+> ```text
+> cicli totali = 15 × 10^9
+> tempo = 7,5 secondi
 > ```
 
 ---
@@ -128,31 +238,51 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > Se il programma contiene più tipi di istruzioni, il CPI medio si calcola con una media pesata:
-> 
+>
 > ```text
 > CPI medio = Σ(percentuale_i × CPI_i)
 > ```
-> 
+>
+> Le percentuali vanno convertite in numeri decimali.
+>
 > Esempio:
-> 
+>
 > ```text
 > 50% istruzioni ALU, CPI = 1
-> 30% load/store, CPI = 2
-> 20% branch, CPI = 3
+> 30% istruzioni load/store, CPI = 2
+> 20% istruzioni branch, CPI = 3
 > ```
-> 
-> Allora:
-> 
+>
+> Converto le percentuali:
+>
 > ```text
-> CPI medio = 0,5×1 + 0,3×2 + 0,2×3
-> CPI medio = 0,5 + 0,6 + 0,6 = 1,7
+> 50% = 0,5
+> 30% = 0,3
+> 20% = 0,2
 > ```
-> 
-> Attenzione: le percentuali vanno trasformate in numeri decimali.
+>
+> Applico la formula:
+>
+> ```text
+> CPI medio = 0,5 × 1 + 0,3 × 2 + 0,2 × 3
+> ```
+>
+> Calcolo:
+>
+> ```text
+> CPI medio = 0,5 + 0,6 + 0,6
+> CPI medio = 1,7
+> ```
+>
+> Quindi il CPI medio del programma è:
+>
+> ```text
+> 1,7
+> ```
 
 ---
 
@@ -160,24 +290,65 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > Se non hai le percentuali ma il numero di istruzioni per ogni classe, usa:
-> 
+>
 > ```text
 > CPI medio = Σ(IC_i × CPI_i) / IC_totale
 > ```
-> 
+>
 > Dove:
-> 
+>
 > ```text
 > IC_i = numero di istruzioni della classe i
 > CPI_i = CPI della classe i
 > IC_totale = numero totale di istruzioni
 > ```
-> 
-> Prima si calcolano i cicli totali prodotti da ogni classe, poi si divide per il numero totale di istruzioni.
+>
+> Esempio:
+>
+> ```text
+> 2 × 10^9 istruzioni ALU, CPI = 1
+> 1 × 10^9 istruzioni load/store, CPI = 3
+> 1 × 10^9 istruzioni branch, CPI = 2
+> ```
+>
+> Prima calcolo il totale delle istruzioni:
+>
+> ```text
+> IC_totale = 2 × 10^9 + 1 × 10^9 + 1 × 10^9
+> IC_totale = 4 × 10^9
+> ```
+>
+> Poi calcolo i cicli totali pesati:
+>
+> ```text
+> cicli ALU = 2 × 10^9 × 1 = 2 × 10^9
+> cicli load/store = 1 × 10^9 × 3 = 3 × 10^9
+> cicli branch = 1 × 10^9 × 2 = 2 × 10^9
+> ```
+>
+> Sommo:
+>
+> ```text
+> cicli totali = 2 × 10^9 + 3 × 10^9 + 2 × 10^9
+> cicli totali = 7 × 10^9
+> ```
+>
+> Ora:
+>
+> ```text
+> CPI medio = (7 × 10^9) / (4 × 10^9)
+> CPI medio = 7 / 4 = 1,75
+> ```
+>
+> Quindi:
+>
+> ```text
+> CPI medio = 1,75
+> ```
 
 ---
 
@@ -185,31 +356,87 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
-> Si usa:
-> 
+> [!answer]- Risposta
+> Quando il testo dà:
+>
+> ```text
+> numero di istruzioni
+> CPI
+> frequenza in GHz
+> ```
+>
+> devi usare:
+>
 > ```text
 > CPU time = (IC × CPI) / frequenza
 > ```
-> 
+>
+> Ricordati di convertire i GHz in Hz:
+>
+> ```text
+> 1 GHz = 10^9 Hz
+> ```
+>
 > Esempio:
-> 
+>
 > ```text
-> IC = 10^9 istruzioni
-> CPI = 2
-> frequenza = 4 GHz = 4 × 10^9 Hz
+> Un programma ha 8 × 10^9 istruzioni.
+> Il processore ha CPI = 2,5.
+> La frequenza è 5 GHz.
+> Quanto tempo impiega?
 > ```
-> 
-> Allora:
-> 
+>
+> Dati:
+>
 > ```text
-> CPU time = (10^9 × 2) / (4 × 10^9)
-> CPU time = 2 / 4 = 0,5 s
+> IC = 8 × 10^9
+> CPI = 2,5
+> frequenza = 5 GHz = 5 × 10^9 Hz
 > ```
-> 
-> Attenzione a convertire sempre i GHz in Hz.
+>
+> Formula:
+>
+> ```text
+> tempo = (IC × CPI) / frequenza
+> ```
+>
+> Sostituisco:
+>
+> ```text
+> tempo = (8 × 10^9 × 2,5) / (5 × 10^9)
+> ```
+>
+> Calcolo il numeratore:
+>
+> ```text
+> 8 × 2,5 = 20
+> ```
+>
+> Quindi:
+>
+> ```text
+> tempo = (20 × 10^9) / (5 × 10^9)
+> ```
+>
+> Semplifico:
+>
+> ```text
+> tempo = 20 / 5 = 4 s
+> ```
+>
+> Risposta:
+>
+> ```text
+> 4 secondi
+> ```
+>
+> Se il quiz chiede solo il numero, scrivi:
+>
+> ```text
+> 4
+> ```
 
 ---
 
