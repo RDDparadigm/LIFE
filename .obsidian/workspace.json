@@ -11,14 +11,12 @@
             "id": "182adadeb47c6041",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/PROG_2/Codice/TOREAD.md",
-                "mode": "source",
-                "source": false
+                "file": "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_1_GDB.pdf"
               },
-              "icon": "lucide-file",
-              "title": "TOREAD"
+              "icon": "lucide-file-text",
+              "title": "L0_1_GDB"
             }
           }
         ]
@@ -207,10 +205,20 @@
   },
   "active": "182adadeb47c6041",
   "lastOpenFiles": [
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_0_Premessa.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/Esercizi_L1.2_TDD.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/0.1-Introduzione_Birke.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Codice/TOREAD.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.2-Alberi_binari_parte_2_no_animazioni.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.2-Alberi_binari_parte_2_con_animazioni.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.1-Alberi_binari_parte_1_no_animazioni.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.1-Alberi_binari_parte_1_con_animazioni.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/8.0-Ricorsione_Liste_Linkate_no_animazioni.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/8.0-Ricorsione_Liste_Linkate_con_animazioni.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/7.3-ADT_void_no_animazione.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/7.2-ADT_Insieme_no_animazione.pdf",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Argomenti trattati.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Codice",
     "Uni/Corsi/ANNO_1/PROG_2/TOREAD per esame.md",
     "High_School/Storia/Capitolo 8/Lezione 33 - I seguaci di Silla.md",
     "High_School/Storia/Capitolo 8/Lezione 32 - Il tempo dei capi militari.md",
@@ -233,16 +241,6 @@
     "High_School/Storia/Capitolo 3/Lezione 13 - Pochi ma uguali.md",
     "High_School/Storia/Capitolo 2/Lezione 9 - I signori delle rocche.md",
     "High_School/Storia/Capitolo 2/Lezione 8 - I dominatori del mare.md",
-    "High_School/Storia/Capitolo 2/Lezione 12 - Il cielo dei Greci.md",
-    "High_School/Storia/Capitolo 8",
-    "High_School/Storia/Capitolo 7",
-    "High_School/Storia/Capitolo 6",
-    "High_School/Storia/Capitolo 5 - Dalle poleis ai regni",
-    "High_School/Storia/Capitolo 4- Dall'età di Pericle alla guerra del Peloponneso",
-    "High_School/Storia/Capitolo 3",
-    "High_School/Storia/Capitolo 2",
-    "High_School/Storia/Capitolo 1",
-    "High_School/Storia",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
