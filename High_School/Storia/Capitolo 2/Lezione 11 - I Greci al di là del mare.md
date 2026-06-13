@@ -1,0 +1,5 @@
+Polis Greche -> Disuguaglianze sociali -> Necessità di colonizzare -> Due direzioni principali (Nord-Est e Occidente) -> Supporto delle polis ai coloni (==ecista, oracolo==) -> Incontri con tribù autoctone (scontri o collaborazione)
+
+Equa divisione delle terre nelle colonie -> Doppia cittadinanza con la madrepatria (==mètropolis==) -> Rinascita della scrittura e nascita della filosofia in alcune colonie -> Sviluppo di leggi scritte -> Non tutte le polis colonizzarono (es. Atene e Sparta) -> Alcune colonie divennero polis (es. Napoli, Agrigento)
+
+Miglioramento vita -> Specializzazione (es. artigianato, ceramica, pittura) -> Progressi navigazione (da 50 remi a triremi: 2 vele, 3 file rematori) -> Rostri su navi da guerra (sfondamento chiglie) -> Introduzione moneta (Lidi: lingotti argento -> elettro -> oro/argento) -> Introduzione interessi -> Debitori insolventi (perdita terre, rischio schiavitù)

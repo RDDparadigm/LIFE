@@ -1,0 +1,2 @@
+
+Statuette in marmo insulare -> precisione nelle forme geometriche -> nel 1900 Evans rinnova il palazzo di Cnosso modificando altamente le tecniche Micenee -> statuetta in terracotta (Dea dei serpenti) -> vasi in ceramica (stile Kamares) o brocche con stile vegetale o acquatico e giare che riprendevano fauna stilizzata ed armi utilizzate nei sacrifici animali

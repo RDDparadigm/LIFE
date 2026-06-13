@@ -1,0 +1,18 @@
+
+- Espressione algebrica (espressione dove compaiono numeri e lettere)
+	- Intera (non compaiono divisori con variabili o potenze delle variabili con esponente negativo)
+	- Fratta
+- Monomio (espressione algebrica, prodotto tra numeri e lettere)
+- Forma normale di un monomio (un solo numero e lettere non ripetute)
+- Coefficiente (numero)
+- Parte letterale (le lettere)
+- Grado di un monomio (complessivo o rispetto ad una variabile)
+- Monomi simili (stessa parte letterale)
+- Monomi uguali (stesso coefficiente)
+- Monomi opposti (coefficienti opposti)
+- Somma algebrica (valida per monomi simili)
+- Riduzione dei termini simili (quando calcoliamo la somma algebrica)
+- Moltiplicazione di monomi
+- Potenze di monomi
+- Divisione di monomi (ogni parte letterale di A deve esisere in B, condizione necessaria)
+- M.C.D e mcm tra monomi

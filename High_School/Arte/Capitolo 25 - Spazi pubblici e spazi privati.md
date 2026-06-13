@@ -1,0 +1,2 @@
+
+Basilica civile d'ispirazione Greca ed Etrusco-Italica -> il Foro come fulcro della vita politica -> edifici religiosi di stile Ellenistico (Tempio di Ercole) -> lo stile ortogonale delle città -> il teatro e l'anfiteatro -> i santuari su terrazze -> la casa (atrium, impluvium)
