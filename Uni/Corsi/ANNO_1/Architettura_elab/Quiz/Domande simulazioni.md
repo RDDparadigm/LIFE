@@ -5119,7 +5119,7 @@ CPU time = (IC × CPI) / frequenza
 > PC + 4 → prossima istruzione RISC-V base
 > PCSrc = Branch AND Zero → branch preso
 > ```
-```
+
 ---
 
 ## 141. Che cos’è l’architettura di Von Neumann?
