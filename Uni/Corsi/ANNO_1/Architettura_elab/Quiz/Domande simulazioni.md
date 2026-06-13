@@ -29,27 +29,73 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > Il periodo di clock è la durata di un singolo ciclo.
-> 
+>
 > Formula:
-> 
+>
 > ```text
 > Tclock = 1 / frequenza
 > ```
-> 
-> Se la frequenza è in Hz, il periodo viene in secondi.
-> 
-> Esempio:
-> 
+>
+> Dove:
+>
 > ```text
-> f = 2 GHz = 2 × 10^9 Hz
-> Tclock = 1 / (2 × 10^9) = 0,5 ns
+> frequenza = cicli al secondo
+> Tclock = durata di un ciclo
 > ```
-> 
-> Quindi un processore a 2 GHz ha un ciclo di clock lungo 0,5 ns.
+>
+> Se la frequenza è in Hz, il periodo viene in secondi.
+>
+> Esempio:
+>
+> ```text
+> f = 2 GHz
+> ```
+>
+> Prima converto:
+>
+> ```text
+> 2 GHz = 2 × 10^9 Hz
+> ```
+>
+> Poi:
+>
+> ```text
+> Tclock = 1 / (2 × 10^9) s
+> ```
+>
+> Separando:
+>
+> ```text
+> Tclock = 0,5 × 10^-9 s
+> ```
+>
+> Poiché:
+>
+> ```text
+> 1 ns = 10^-9 s
+> ```
+>
+> allora:
+>
+> ```text
+> Tclock = 0,5 ns
+> ```
+>
+> Scorciatoia utile:
+>
+> ```text
+> Tclock in ns = 1 / frequenza in GHz
+> ```
+>
+> Quindi:
+>
+> ```text
+> 2 GHz → 1/2 ns = 0,5 ns
+> ```
 
 ---
 
@@ -57,36 +103,66 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > La formula fondamentale è:
-> 
+>
 > ```text
 > CPU time = IC × CPI × Tclock
 > ```
-> 
+>
 > Dove:
-> 
+>
 > ```text
 > IC = Instruction Count, cioè numero di istruzioni eseguite
 > CPI = cicli medi per istruzione
 > Tclock = periodo di clock
 > ```
-> 
-> Poiché:
-> 
+>
+> Siccome:
+>
 > ```text
 > Tclock = 1 / frequenza
 > ```
-> 
-> si può anche scrivere:
-> 
+>
+> allora puoi anche usare:
+>
 > ```text
 > CPU time = (IC × CPI) / frequenza
 > ```
-> 
-> Questa è una delle formule più importanti per gli esercizi.
+>
+> Esempio:
+>
+> ```text
+> IC = 6 × 10^9 istruzioni
+> CPI = 2
+> frequenza = 1,5 GHz = 1,5 × 10^9 Hz
+> ```
+>
+> Sostituisco:
+>
+> ```text
+> CPU time = (6 × 10^9 × 2) / (1,5 × 10^9)
+> ```
+>
+> Calcolo:
+>
+> ```text
+> CPU time = (12 × 10^9) / (1,5 × 10^9)
+> ```
+>
+> I `10^9` si semplificano:
+>
+> ```text
+> CPU time = 12 / 1,5 = 8 s
+> ```
+>
+> Quindi il tempo di esecuzione è:
+>
+> ```text
+> 8 secondi
+> ```
 
 ---
 
@@ -94,32 +170,66 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > Il numero totale di cicli si calcola così:
-> 
+>
 > ```text
 > cicli totali = IC × CPI
 > ```
-> 
+>
 > Dove:
-> 
+>
 > ```text
 > IC = numero di istruzioni
 > CPI = cicli medi per istruzione
 > ```
-> 
-> Una volta trovati i cicli totali, il tempo si calcola con:
-> 
+>
+> Poi, se vuoi il tempo:
+>
+> ```text
+> tempo = cicli totali / frequenza
+> ```
+>
+> oppure:
+>
 > ```text
 > tempo = cicli totali × Tclock
 > ```
-> 
-> oppure:
-> 
+>
+> Esempio:
+>
 > ```text
-> tempo = cicli totali / frequenza
+> IC = 5 × 10^9 istruzioni
+> CPI = 3
+> frequenza = 2 GHz
+> ```
+>
+> Prima calcolo i cicli totali:
+>
+> ```text
+> cicli totali = 5 × 10^9 × 3
+> cicli totali = 15 × 10^9 cicli
+> ```
+>
+> Poi calcolo il tempo:
+>
+> ```text
+> tempo = (15 × 10^9) / (2 × 10^9)
+> ```
+>
+> Semplifico:
+>
+> ```text
+> tempo = 15 / 2 = 7,5 s
+> ```
+>
+> Quindi:
+>
+> ```text
+> cicli totali = 15 × 10^9
+> tempo = 7,5 secondi
 > ```
 
 ---
@@ -128,31 +238,51 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > Se il programma contiene più tipi di istruzioni, il CPI medio si calcola con una media pesata:
-> 
+>
 > ```text
 > CPI medio = Σ(percentuale_i × CPI_i)
 > ```
-> 
+>
+> Le percentuali vanno convertite in numeri decimali.
+>
 > Esempio:
-> 
+>
 > ```text
 > 50% istruzioni ALU, CPI = 1
-> 30% load/store, CPI = 2
-> 20% branch, CPI = 3
+> 30% istruzioni load/store, CPI = 2
+> 20% istruzioni branch, CPI = 3
 > ```
-> 
-> Allora:
-> 
+>
+> Converto le percentuali:
+>
 > ```text
-> CPI medio = 0,5×1 + 0,3×2 + 0,2×3
-> CPI medio = 0,5 + 0,6 + 0,6 = 1,7
+> 50% = 0,5
+> 30% = 0,3
+> 20% = 0,2
 > ```
-> 
-> Attenzione: le percentuali vanno trasformate in numeri decimali.
+>
+> Applico la formula:
+>
+> ```text
+> CPI medio = 0,5 × 1 + 0,3 × 2 + 0,2 × 3
+> ```
+>
+> Calcolo:
+>
+> ```text
+> CPI medio = 0,5 + 0,6 + 0,6
+> CPI medio = 1,7
+> ```
+>
+> Quindi il CPI medio del programma è:
+>
+> ```text
+> 1,7
+> ```
 
 ---
 
@@ -160,24 +290,65 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
+> [!answer]- Risposta
 > Se non hai le percentuali ma il numero di istruzioni per ogni classe, usa:
-> 
+>
 > ```text
 > CPI medio = Σ(IC_i × CPI_i) / IC_totale
 > ```
-> 
+>
 > Dove:
-> 
+>
 > ```text
 > IC_i = numero di istruzioni della classe i
 > CPI_i = CPI della classe i
 > IC_totale = numero totale di istruzioni
 > ```
-> 
-> Prima si calcolano i cicli totali prodotti da ogni classe, poi si divide per il numero totale di istruzioni.
+>
+> Esempio:
+>
+> ```text
+> 2 × 10^9 istruzioni ALU, CPI = 1
+> 1 × 10^9 istruzioni load/store, CPI = 3
+> 1 × 10^9 istruzioni branch, CPI = 2
+> ```
+>
+> Prima calcolo il totale delle istruzioni:
+>
+> ```text
+> IC_totale = 2 × 10^9 + 1 × 10^9 + 1 × 10^9
+> IC_totale = 4 × 10^9
+> ```
+>
+> Poi calcolo i cicli totali pesati:
+>
+> ```text
+> cicli ALU = 2 × 10^9 × 1 = 2 × 10^9
+> cicli load/store = 1 × 10^9 × 3 = 3 × 10^9
+> cicli branch = 1 × 10^9 × 2 = 2 × 10^9
+> ```
+>
+> Sommo:
+>
+> ```text
+> cicli totali = 2 × 10^9 + 3 × 10^9 + 2 × 10^9
+> cicli totali = 7 × 10^9
+> ```
+>
+> Ora:
+>
+> ```text
+> CPI medio = (7 × 10^9) / (4 × 10^9)
+> CPI medio = 7 / 4 = 1,75
+> ```
+>
+> Quindi:
+>
+> ```text
+> CPI medio = 1,75
+> ```
 
 ---
 
@@ -185,31 +356,87 @@ CPU time = (IC × CPI) / frequenza
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
-**Note mie:**
+**Note mie:**  
 
-> [!answer]- Risposta  
-> Si usa:
-> 
+> [!answer]- Risposta
+> Quando il testo dà:
+>
+> ```text
+> numero di istruzioni
+> CPI
+> frequenza in GHz
+> ```
+>
+> devi usare:
+>
 > ```text
 > CPU time = (IC × CPI) / frequenza
 > ```
-> 
+>
+> Ricordati di convertire i GHz in Hz:
+>
+> ```text
+> 1 GHz = 10^9 Hz
+> ```
+>
 > Esempio:
-> 
+>
 > ```text
-> IC = 10^9 istruzioni
-> CPI = 2
-> frequenza = 4 GHz = 4 × 10^9 Hz
+> Un programma ha 8 × 10^9 istruzioni.
+> Il processore ha CPI = 2,5.
+> La frequenza è 5 GHz.
+> Quanto tempo impiega?
 > ```
-> 
-> Allora:
-> 
+>
+> Dati:
+>
 > ```text
-> CPU time = (10^9 × 2) / (4 × 10^9)
-> CPU time = 2 / 4 = 0,5 s
+> IC = 8 × 10^9
+> CPI = 2,5
+> frequenza = 5 GHz = 5 × 10^9 Hz
 > ```
-> 
-> Attenzione a convertire sempre i GHz in Hz.
+>
+> Formula:
+>
+> ```text
+> tempo = (IC × CPI) / frequenza
+> ```
+>
+> Sostituisco:
+>
+> ```text
+> tempo = (8 × 10^9 × 2,5) / (5 × 10^9)
+> ```
+>
+> Calcolo il numeratore:
+>
+> ```text
+> 8 × 2,5 = 20
+> ```
+>
+> Quindi:
+>
+> ```text
+> tempo = (20 × 10^9) / (5 × 10^9)
+> ```
+>
+> Semplifico:
+>
+> ```text
+> tempo = 20 / 5 = 4 s
+> ```
+>
+> Risposta:
+>
+> ```text
+> 4 secondi
+> ```
+>
+> Se il quiz chiede solo il numero, scrivi:
+>
+> ```text
+> 4
+> ```
 
 ---
 
@@ -4892,5 +5119,318 @@ CPU time = (IC × CPI) / frequenza
 > PC + 4 → prossima istruzione RISC-V base
 > PCSrc = Branch AND Zero → branch preso
 > ```
-```
 
+---
+
+## 141. Che cos’è l’architettura di Von Neumann?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> L’architettura di Von Neumann è un modello di calcolatore in cui **dati e istruzioni sono memorizzati nella stessa memoria principale**.
+>
+> La CPU legge dalla memoria sia:
+>
+> - le istruzioni da eseguire;
+> - i dati su cui le istruzioni devono operare.
+>
+> La CPU è composta da:
+>
+> - unità di controllo;
+> - unità aritmetico-logica, cioè ALU;
+> - registri;
+> - bus interni che collegano le varie parti.
+>
+> L’idea fondamentale è che il programma sia memorizzato in memoria come sequenza di bit, esattamente come i dati. La CPU esegue poi le istruzioni una alla volta seguendo il ciclo di fetch-decode-execute.
+
+---
+
+## 142. Quali sono le parti principali della CPU in una macchina di Von Neumann?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> In una macchina di Von Neumann, la CPU è composta principalmente da:
+>
+> - **unità di controllo**, che coordina l’esecuzione delle istruzioni;
+> - **ALU**, cioè unità aritmetico-logica, che esegue operazioni aritmetiche e logiche;
+> - **registri**, cioè piccole memorie molto veloci interne alla CPU;
+> - **bus interni**, che permettono ai dati di spostarsi tra registri, ALU e altre parti della CPU.
+>
+> I registri, l’ALU e i bus interni formano il **data path**, cioè il percorso lungo cui i dati si muovono durante l’esecuzione delle istruzioni.
+
+---
+
+## 143. Che cos’è il data path in una CPU di Von Neumann?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il **data path** è l’organizzazione interna della CPU attraverso cui passano i dati durante l’esecuzione delle istruzioni.
+>
+> È formato principalmente da:
+>
+> - registri;
+> - ALU;
+> - bus interni.
+>
+> Il suo compito è far arrivare gli operandi all’ALU, eseguire l’operazione richiesta e salvare il risultato in un registro o, se necessario, in memoria.
+>
+> In modo semplice: il data path è la “strada interna” percorsa dai dati dentro la CPU.
+
+---
+
+## 144. Che cos’è un registro in una CPU di Von Neumann?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Un registro è una piccola memoria molto veloce interna alla CPU.
+>
+> Serve a contenere dati temporanei durante l’esecuzione delle istruzioni.
+>
+> I registri sono importanti perché l’ALU non lavora direttamente su dati lontani in memoria, ma usa valori disponibili rapidamente nei registri.
+>
+> Per esempio, in un’istruzione aritmetica, due operandi possono essere letti dai registri, passare attraverso l’ALU e il risultato può essere scritto di nuovo in un registro.
+>
+> Quindi i registri rendono più veloce l’elaborazione perché evitano accessi continui alla memoria principale.
+
+---
+
+## 145. Quali sono i due registri importanti citati nell’organizzazione della CPU di Von Neumann?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Due registri fondamentali nella CPU di Von Neumann sono:
+>
+> - **Program Counter**, abbreviato **PC**;
+> - **Instruction Register**, abbreviato **IR**.
+>
+> Il **PC** contiene l’indirizzo della prossima istruzione da eseguire.
+>
+> L’**IR** contiene l’istruzione appena prelevata dalla memoria.
+>
+> Durante il ciclo di esecuzione, la CPU usa il PC per sapere dove andare a leggere la prossima istruzione, poi mette quell’istruzione nell’IR per poterla decodificare ed eseguire.
+
+---
+
+## 146. Che cos’è il Program Counter?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il **Program Counter**, o **PC**, è un registro che contiene l’indirizzo della prossima istruzione da eseguire.
+>
+> Durante la fase di fetch, la CPU usa il valore del PC per andare in memoria e leggere l’istruzione successiva.
+>
+> Dopo aver prelevato l’istruzione, il PC viene aggiornato per puntare all’istruzione seguente.
+>
+> Quindi il PC permette alla CPU di eseguire il programma in ordine, istruzione dopo istruzione.
+>
+> Nei salti o nelle branch, il PC può essere modificato per cambiare il flusso di esecuzione.
+
+---
+
+## 147. Che cos’è l’Instruction Register?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> L’**Instruction Register**, o **IR**, è il registro che contiene l’istruzione appena letta dalla memoria.
+>
+> Dopo la fase di fetch, l’istruzione viene copiata dalla memoria all’IR.
+>
+> A quel punto l’unità di controllo può analizzare l’istruzione, cioè fare la fase di decode, per capire:
+>
+> - che tipo di istruzione è;
+> - quali registri usa;
+> - se deve accedere alla memoria;
+> - quale operazione deve far eseguire al data path.
+>
+> Quindi l’IR serve a conservare l’istruzione corrente mentre la CPU la decodifica ed esegue.
+
+---
+
+## 148. Che cos’è il ciclo fetch-decode-execute?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il ciclo **fetch-decode-execute** è il ciclo con cui la CPU esegue le istruzioni.
+>
+> È composto da tre fasi principali:
+>
+> 1. **Fetch**: la CPU preleva dalla memoria la prossima istruzione da eseguire.
+> 2. **Decode**: la CPU interpreta l’istruzione e capisce che operazione deve svolgere.
+> 3. **Execute**: la CPU esegue l’istruzione, usando ALU, registri e memoria se necessario.
+>
+> Dopo aver eseguito un’istruzione, la CPU torna alla fase di fetch e ripete il ciclo con l’istruzione successiva.
+>
+> Questo è il comportamento base di una CPU in una macchina di Von Neumann.
+
+---
+
+## 149. Quali sono i passi dettagliati del ciclo di esecuzione di un’istruzione?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> La CPU esegue ogni istruzione seguendo una serie di passi elementari:
+>
+> 1. preleva l’istruzione successiva dalla memoria e la mette nell’Instruction Register;
+> 2. aggiorna il Program Counter per indicare l’istruzione seguente;
+> 3. determina il tipo dell’istruzione appena letta;
+> 4. se l’istruzione usa una parola in memoria, determina dove si trova;
+> 5. se necessario, carica quella parola in un registro della CPU;
+> 6. esegue l’istruzione;
+> 7. torna al primo passo per eseguire l’istruzione successiva.
+>
+> Questo ciclo viene ripetuto continuamente finché il programma è in esecuzione.
+
+---
+
+## 150. Qual è il ruolo dell’unità di controllo nel ciclo fetch-decode-execute?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> L’unità di controllo coordina l’esecuzione del ciclo di fetch-decode-execute.
+>
+> In particolare:
+>
+> - legge le istruzioni dalla memoria centrale, cioè fetch;
+> - determina il tipo di istruzione, cioè decode;
+> - imposta il data path per eseguire l’operazione richiesta, cioè execute.
+>
+> Si può vedere l’unità di controllo come la parte della CPU che “interpreta” le istruzioni e decide quali segnali attivare per muovere i dati nei registri, nell’ALU e nella memoria.
+>
+> Senza l’unità di controllo, il data path avrebbe i componenti fisici, ma non saprebbe quando usarli e in che ordine.
+
+---
+
+## 151. Che cosa significa dire che la memoria principale contiene sia istruzioni sia dati?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Significa che nella macchina di Von Neumann non esistono due memorie separate, una per le istruzioni e una per i dati.
+>
+> La **main memory** contiene entrambe le cose:
+>
+> - le istruzioni del programma;
+> - i dati usati dal programma.
+>
+> Entrambi sono rappresentati come sequenze di bit.
+>
+> È la CPU, attraverso il ciclo fetch-decode-execute, a interpretare una certa sequenza di bit come istruzione oppure come dato, in base al momento e al modo in cui la sta usando.
+>
+> Questa è una delle caratteristiche fondamentali dell’architettura di Von Neumann.
+
+---
+
+## 152. Che cosa si intende per ciclo del data path?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Il ciclo del data path è il processo con cui due operandi vengono fatti passare attraverso l’ALU e il risultato viene memorizzato.
+>
+> In modo semplificato:
+>
+> 1. due operandi vengono letti dai registri;
+> 2. gli operandi arrivano all’ALU tramite i bus interni;
+> 3. l’ALU esegue l’operazione richiesta;
+> 4. il risultato viene scritto in un registro.
+>
+> Questo ciclo descrive il funzionamento interno della CPU durante molte istruzioni aritmetiche e logiche.
+
+---
+
+## 153. Che differenza c’è tra istruzioni registro-registro e registro-memoria?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Le istruzioni **registro-registro** lavorano solo su valori contenuti nei registri.
+>
+> Per esempio:
+>
+> ```asm
+> add x5,x6,x7
+> ```
+>
+> Qui la CPU legge `x6` e `x7`, li manda all’ALU e scrive il risultato in `x5`.
+>
+> Le istruzioni **registro-memoria**, invece, coinvolgono sia un registro sia la memoria.
+>
+> Per esempio, una load carica un dato dalla memoria in un registro:
+>
+> ```asm
+> lw x5,0(x6)
+> ```
+>
+> oppure una store salva in memoria un dato contenuto in un registro:
+>
+> ```asm
+> sw x5,0(x6)
+> ```
+>
+> Nella CPU di Von Neumann, memoria e registri collaborano continuamente, ma le operazioni dell’ALU avvengono nel data path interno della CPU.
+
+---
+
+## 154. Come spiegheresti all’orale il funzionamento generale di una CPU di Von Neumann?
+
+**Stato:** 🔴  
+**Ultimo ripasso:**  
+**Note mie:**  
+
+> [!answer]- Risposta
+> Una CPU di Von Neumann funziona leggendo ed eseguendo istruzioni memorizzate nella memoria principale.
+>
+> La memoria contiene sia istruzioni sia dati, entrambi rappresentati come sequenze di bit.
+>
+> La CPU usa il **Program Counter** per sapere dove si trova la prossima istruzione. Durante la fase di fetch, l’istruzione viene letta dalla memoria e caricata nell’**Instruction Register**.
+>
+> Poi l’unità di controllo decodifica l’istruzione e imposta il data path. Il data path, formato da registri, ALU e bus interni, esegue concretamente l’operazione.
+>
+> Se servono dati dalla memoria, la CPU li carica nei registri. Se deve salvare un risultato, lo scrive in un registro o in memoria.
+>
+> Dopo l’esecuzione, il ciclo ricomincia con l’istruzione successiva.
+>
+> Quindi il funzionamento generale è:
+>
+> ```text
+> fetch → decode → execute → fetch → decode → execute → ...
+> ```
+>
+> Questa sequenza è il cuore dell’esecuzione dei programmi in una macchina di Von Neumann.
+
+---
