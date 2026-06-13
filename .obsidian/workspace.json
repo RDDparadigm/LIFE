@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d71360061f39bba1",
+        "id": "325a183806b2acaf",
         "type": "tabs",
         "children": [
           {
-            "id": "8c57577de9eadbdf",
+            "id": "35a5ac896c7f098a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Domande simulazioni"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -205,10 +205,12 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "8c57577de9eadbdf",
+  "active": "35a5ac896c7f098a",
   "lastOpenFiles": [
-    "Journal/Daily/2026-06-07.md",
+    "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/TOREAD per esame.md",
+    "Journal/Daily/2026-06-13.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
+    "Journal/Daily/2026-06-07.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande_Lab9.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Codice/Esempi codice.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande_Lab8.md",
@@ -231,8 +233,6 @@
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande cap 5.2.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domanda cap 2.6-2.7.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande cap 2.1.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande cap 1.6.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande cap 2.10.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale",
     "Uni/Corsi/ANNO_1/Architettura_elab/Codice/Lab/Lab07/Lab07Es01.s",
     "Uni/Corsi/ANNO_1/Architettura_elab/Codice/Lab/Lab06/Lab06Es06.s",
