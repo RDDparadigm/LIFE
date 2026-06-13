@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "25c98a63e050ebd2",
+        "id": "e819510d4c26d0eb",
         "type": "tabs",
         "children": [
           {
-            "id": "76eec1f53946f202",
+            "id": "182adadeb47c6041",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
+                "file": "copilot/copilot-custom-prompts/Explain like I am 5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Domande simulazioni"
+              "title": "Explain like I am 5"
             }
           }
         ]
@@ -205,11 +205,11 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "76eec1f53946f202",
+  "active": "182adadeb47c6041",
   "lastOpenFiles": [
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
     "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/TOREAD per esame.md",
     "Journal/Daily/2026-06-13.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
     "Journal/Daily/2026-06-07.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande_Lab9.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Codice/Esempi codice.md",
