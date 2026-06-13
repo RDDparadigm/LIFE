@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "325a183806b2acaf",
+        "id": "25c98a63e050ebd2",
         "type": "tabs",
         "children": [
           {
-            "id": "35a5ac896c7f098a",
+            "id": "76eec1f53946f202",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "Domande simulazioni"
             }
           }
         ]
@@ -205,7 +205,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "35a5ac896c7f098a",
+  "active": "76eec1f53946f202",
   "lastOpenFiles": [
     "Uni/Corsi/ANNO_1/FONDAMENTI_INFORMATICA/TOREAD per esame.md",
     "Journal/Daily/2026-06-13.md",
