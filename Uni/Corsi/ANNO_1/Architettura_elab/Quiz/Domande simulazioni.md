@@ -5120,6 +5120,8 @@ CPU time = (IC × CPI) / frequenza
 > PCSrc = Branch AND Zero → branch preso
 > ```
 ```
+---
+
 ## 141. Che cos’è l’architettura di Von Neumann?
 
 **Stato:** 🔴  
