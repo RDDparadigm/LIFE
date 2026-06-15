@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e819510d4c26d0eb",
+        "id": "8f3b62ab67ad4a5f",
         "type": "tabs",
         "children": [
           {
-            "id": "182adadeb47c6041",
+            "id": "f7e00ad6bdc4e180",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_1_GDB.pdf"
+                "file": "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/3-Allocazione_Memoria.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "L0_1_GDB"
+              "title": "3-Allocazione_Memoria"
             }
           }
         ]
@@ -76,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 444.5
+    "width": 319.5
   },
   "right": {
     "id": "ecb5a0688fa12bca",
@@ -155,8 +155,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -165,8 +165,8 @@
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
+              "icon": "lucide-ghost",
+              "title": "copilot-chat-view"
             }
           },
           {
@@ -188,23 +188,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "omnisearch:Omnisearch": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "182adadeb47c6041",
+  "active": "f7e00ad6bdc4e180",
   "lastOpenFiles": [
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/2-Compilazione_TestDrivenDevelopment.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/1-DatiComposti.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_1_GDB.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_0_Premessa.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/Esercizi_L1.2_TDD.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/0.1-Introduzione_Birke.pdf",
@@ -214,9 +216,6 @@
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.1-Alberi_binari_parte_1_no_animazioni.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.1-Alberi_binari_parte_1_con_animazioni.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/8.0-Ricorsione_Liste_Linkate_no_animazioni.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/8.0-Ricorsione_Liste_Linkate_con_animazioni.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/7.3-ADT_void_no_animazione.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/7.2-ADT_Insieme_no_animazione.pdf",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Argomenti trattati.md",
     "Uni/Corsi/ANNO_1/PROG_2/TOREAD per esame.md",
