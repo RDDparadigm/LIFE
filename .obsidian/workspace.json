@@ -11,10 +11,14 @@
             "id": "47d7e3026bac2706",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Allocazione memoria.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Allocazione memoria"
             }
           }
         ]
@@ -182,7 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 452.5
+    "width": 263.5
   },
   "left-ribbon": {
     "hiddenItems": {
