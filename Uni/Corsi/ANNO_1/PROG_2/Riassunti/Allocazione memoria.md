@@ -559,7 +559,7 @@ int *p = malloc(sizeof(*p));
 
 - riceve il numero di byte da allocare;
     
-- restituisce un puntatore al primo byte dell’area allocata;
+- restituisce un **puntatore al primo byte** dell’area allocata;
     
 - restituisce `NULL` se l’allocazione fallisce.
     
@@ -600,17 +600,12 @@ if (p == NULL) {
     // gestisci errore
 }
 
-使用 p
+// usa p
 
 free(p);
 p = NULL;
 ```
 
-Nota: nella riga sopra “使用 p” significa “usa p”; negli appunti finali puoi sostituirlo con un commento italiano:
-
-```c
-// usa p
-```
 
 ---
 
