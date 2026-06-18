@@ -1046,7 +1046,7 @@ v++; // ERRORE
 
 Perché?
 
-Il nome dell’array non è una variabile puntatore modificabile.
+Il nome dell’array ==non è una variabile puntatore== modificabile.
 
 `v` può essere usato come indirizzo del primo elemento, ma non posso cambiare il valore di `v`.
 
@@ -1203,7 +1203,7 @@ sto passando a `free` un indirizzo diverso da quello restituito da `malloc`.
 
 Questo è sbagliato.
 
-La `free` deve ricevere esattamente il puntatore originale restituito da `malloc`.
+La `free` deve ricevere esattamente il ==puntatore originale== restituito da `malloc`.
 
 Soluzione:
 
