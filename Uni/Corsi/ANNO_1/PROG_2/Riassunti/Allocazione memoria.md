@@ -39,13 +39,13 @@ In C è fondamentale capire **dove vive una variabile in memoria**, **quanto dur
 
 Una variabile può essere allocata principalmente in tre zone:
 
-|Tipo di memoria|Dove|Gestione|Esempi|
-|---|---|---|---|
-|Memoria statica|area statica|automatica dal programma|variabili globali, variabili locali `static`|
-|Memoria automatica|stack|automatica|variabili locali normali, parametri di funzione|
-|Memoria dinamica|heap|esplicita dal programmatore|memoria ottenuta con `malloc`|
+| Tipo di memoria    | Dove         | Gestione                    | Esempi                                          |
+| ------------------ | ------------ | --------------------------- | ----------------------------------------------- |
+| Memoria statica    | area statica | automatica dal programma    | variabili globali, variabili locali `static`    |
+| Memoria automatica | stack        | automatica                  | variabili locali normali, parametri di funzione |
+| Memoria dinamica   | heap         | esplicita dal programmatore | memoria ottenuta con `malloc`                   |
 
-La distinzione più importante è questa:
+La distinzione più importante è questa che segue:
 
 > Le variabili automatiche e statiche vengono gestite dal linguaggio/runtime.  
 > La memoria dinamica deve essere gestita manualmente dal programmatore con `malloc` e `free`.
