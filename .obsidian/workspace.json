@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cf764e145b24f243",
+        "id": "9b4d61636693b185",
         "type": "tabs",
         "children": [
           {
-            "id": "47d7e3026bac2706",
+            "id": "22c29e9368da58b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -204,7 +204,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "47d7e3026bac2706",
+  "active": "22c29e9368da58b9",
   "lastOpenFiles": [
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Allocazione memoria.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti",

@@ -47,8 +47,8 @@ Una variabile può essere allocata principalmente in tre zone:
 
 La distinzione più importante è questa che segue:
 
-> Le variabili automatiche e statiche vengono gestite dal linguaggio/runtime.  
-> La memoria dinamica deve essere gestita manualmente dal programmatore con `malloc` e `free`.
+> Le variabili automatiche e statiche vengono gestite dal ==linguaggio/runtime==.  
+> La memoria ==dinamica== deve essere **gestita manualmente** dal programmatore con `malloc` e `free`.
 
 ---
 
@@ -68,11 +68,11 @@ La variabile `x`:
 
 - nasce quando la funzione viene chiamata;
     
-- vive nello stack;
+- ==vive nello stack==;
     
 - muore quando la funzione termina;
     
-- non conserva il valore tra una chiamata e l’altra.
+- **non conserva** il valore tra una chiamata e l’altra.
     
 
 Esempio:
@@ -128,9 +128,9 @@ Qui `counter`:
     
 - viene inizializzata una sola volta;
     
-- mantiene il suo valore tra una chiamata e l’altra;
+- **mantiene** il suo valore tra una chiamata e l’altra;
     
-- vive in memoria statica, non nello stack.
+- vive in ==memoria statica==, non nello stack.
     
 
 Esempio completo:
@@ -186,13 +186,13 @@ void f(void) {
 }
 ```
 
-`x` non si può usare fuori da `f`, ma continua a esistere anche quando `f` termina.
+`x` **non si può usare fuori** da `f`, ma continua a esistere anche quando `f` termina.
 
 ---
 
 # 4. Variabili globali
 
-Una variabile globale è dichiarata fuori da ogni funzione.
+Una variabile globale è dichiarata ==fuori da ogni funzione==.
 
 Esempio:
 
@@ -223,13 +223,13 @@ Output:
 
 Una variabile globale:
 
-- vive in memoria statica;
+- vive in ==memoria statica==;
     
 - esiste per tutta la durata del programma;
     
 - è visibile nel file da dove viene dichiarata in poi;
     
-- può essere resa accessibile anche da altri file usando `extern`.
+- può essere resa **accessibile anche da altri** file usando `extern`.
     
 
 ## Attenzione
@@ -315,7 +315,7 @@ Questa è una definizione:
 int x = 0;
 ```
 
-La definizione alloca memoria.
+La definizione ==alloca memoria==.
 
 La dichiarazione con `extern` no.
 
@@ -366,10 +366,10 @@ extern int contatoreInterno; // ERRORE concettuale: non posso accedervi
 
 ## Riassunto dei due usi di `static`
 
-|Dove uso `static`|Effetto|
-|---|---|
-|Dentro una funzione|la variabile mantiene il valore tra le chiamate|
-|Fuori da una funzione|la variabile/funzione è visibile solo nel file corrente|
+| Dove uso `static`     | Effetto                                                 |
+| --------------------- | ------------------------------------------------------- |
+| Dentro una funzione   | la variabile mantiene il valore tra le chiamate         |
+| Fuori da una funzione | la variabile/funzione è visibile solo nel file corrente |
 
 ---
 
@@ -391,7 +391,7 @@ Una funzione normale:
 void f(void);
 ```
 
-è implicitamente `extern`, quindi può essere vista anche da altri file se dichiarata con un prototipo.
+è implicitamente `extern`, quindi **può essere vista** anche da altri file se dichiarata con un prototipo.
 
 Per questo di solito non si scrive:
 
@@ -425,7 +425,7 @@ Schema concettuale:
 
 ## Area programma
 
-Contiene il codice compilato ed eseguibile.
+Contiene il ==codice compilato ed eseguibile==.
 
 Esempio: le istruzioni macchina corrispondenti al tuo `main`, alle tue funzioni, ecc.
 
@@ -475,7 +475,7 @@ Quando `f` termina, spariscono.
 
 ## Heap
 
-Contiene memoria allocata dinamicamente.
+Contiene memoria ==allocata dinamicamente==.
 
 Esempio:
 
@@ -506,7 +506,7 @@ Qui ci sono due cose diverse:
 
 Se `p` è una variabile locale, allora:
 
-- `p` vive nello stack;
+- `p` vive **nello stack**;
     
 - la memoria ottenuta con `malloc` vive nell’heap.
     
