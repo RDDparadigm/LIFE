@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8f3b62ab67ad4a5f",
+        "id": "cf764e145b24f243",
         "type": "tabs",
         "children": [
           {
-            "id": "f7e00ad6bdc4e180",
+            "id": "47d7e3026bac2706",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/3-Allocazione_Memoria.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "3-Allocazione_Memoria"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -202,8 +200,12 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "f7e00ad6bdc4e180",
+  "active": "47d7e3026bac2706",
   "lastOpenFiles": [
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Allocazione memoria.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/4-TipoOpaco_Coesione.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/3-Allocazione_Memoria.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/2-Compilazione_TestDrivenDevelopment.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/1-DatiComposti.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_1_GDB.pdf",
@@ -212,10 +214,6 @@
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/0.1-Introduzione_Birke.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Codice/TOREAD.md",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.2-Alberi_binari_parte_2_no_animazioni.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.2-Alberi_binari_parte_2_con_animazioni.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.1-Alberi_binari_parte_1_no_animazioni.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.1-Alberi_binari_parte_1_con_animazioni.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/8.0-Ricorsione_Liste_Linkate_no_animazioni.pdf",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Argomenti trattati.md",
     "Uni/Corsi/ANNO_1/PROG_2/TOREAD per esame.md",
