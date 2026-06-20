@@ -11,14 +11,14 @@
             "id": "22c29e9368da58b9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Tipo opaco.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Tipo opaco"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -167,8 +167,8 @@
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "copilot-chat-view"
+              "icon": "message-square",
+              "title": "Copilot"
             }
           },
           {
@@ -186,7 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 469.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,8 +206,10 @@
   },
   "active": "22c29e9368da58b9",
   "lastOpenFiles": [
-    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Allocazione memoria.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Tipo opaco.md",
+    "copilot/copilot-conversations/Con_il_plugin_di_obsidian_non_riesco_a_fare_commit.@20260620_092548.md",
+    "copilot/copilot-conversations",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Allocazione memoria.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/4-TipoOpaco_Coesione.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/3-Allocazione_Memoria.pdf",
@@ -218,7 +220,6 @@
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/Esercizi_L1.2_TDD.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/0.1-Introduzione_Birke.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Codice/TOREAD.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.2-Alberi_binari_parte_2_no_animazioni.pdf",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Argomenti trattati.md",
     "Uni/Corsi/ANNO_1/PROG_2/TOREAD per esame.md",
@@ -241,7 +242,6 @@
     "High_School/Storia/Capitolo 3/Lezione 15 - L'impero contro le città.md",
     "High_School/Storia/Capitolo 3/Lezione 14 - L'aristocrazia e il popolo.md",
     "High_School/Storia/Capitolo 3/Lezione 13 - Pochi ma uguali.md",
-    "High_School/Storia/Capitolo 2/Lezione 9 - I signori delle rocche.md",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
