@@ -884,7 +884,7 @@ modulus(c)
 argument(c)
 ```
 
-Questa è una soluzione “agnostica” perché il client, pur vedendo la rappresentazione, non dovrebbe dipendere da essa.
+Questa è una soluzione “agnostica” perché il client, ==pur vedendo la rappresentazione==, non dovrebbe dipendere da essa.
 
 ---
 
@@ -1007,7 +1007,7 @@ fabs(x)
 
 ## Perché le macro sono delicate?
 
-Perché sono sostituzioni testuali fatte dal preprocessore.
+Perché sono ==sostituzioni testuali fatte dal preprocessore==.
 
 Esempio pericoloso:
 
