@@ -7,7 +7,7 @@
 	2) Quando chiede il save word devo guardare solo l'esadecimale (non più la memoria)
 	3) Se c'è l'==unsigned== bisogna ricordare che si deve riempire i byte restanti con gli zero
 	4) Se c'è una store e viene chiesto il byte a un indirizzo che sfora, bisogna guardare il valore che c'è in memoria, perché significa che quella porzione di memoria è rimasta invariata
-3) Quando capita la domanda sul circuito
+3) Quando capita la domanda sul ==circuito==
 	1) Mapping delle operazioni
 
 | ALU operation | Operazione | Cosa fa        | Result                          | Overflow                           |     |
@@ -45,3 +45,11 @@ Trucchetto
 | `0010` | `1000` | `+2 - (-8)`       | `1010` | `1`      |
 | `0011` | `0001` | `+3 - +1`         | `0010` | `0`      |
 | `1000` | `0001` | `-8 - +1`         | `0111` | `1`      |
+
+4) Quando capita la domanda sulla ==cache con tag e linea==
+	1) Il tag corrisponde alle prime cifre decimali. La linea alle restanti
+	2) Per indicare il tag data la rispettiva linea, bisogna guardare l'ultimo stato della cache per quella rispettiva linea
+	3) Per contare hit o miss bisogna guardare anche il tag. Se la linea è 000 e il tag è 10, c'è HIT solo se troviamo un'altra chiamata alla cache con stessa linea e stesso tag. Se il tag è diverso, allora è un MISS
+
+
+5) Quando capita 

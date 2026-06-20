@@ -1781,7 +1781,7 @@ real = a1 * a2 - b1 * b2;
 imag = a1 * b2 + b1 * a2;
 ```
 
-## Errore 5: confrontare `double` con `==`
+## Errore 5: confrontare `double` con ==
 
 Da evitare:
 
