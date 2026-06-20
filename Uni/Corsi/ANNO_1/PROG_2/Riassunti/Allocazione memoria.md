@@ -1385,7 +1385,7 @@ Questa dichiarazione alloca memoria per una variabile `l` di tipo `Libro`.
 
 Il `typedef struct { ... } Libro;` definisce un tipo.
 
-Non alloca memoria per un libro specifico.
+==Non alloca memoria== per un libro specifico.
 
 La memoria viene allocata quando scrivo:
 
@@ -1879,7 +1879,7 @@ Ma anche:
 p->titolo = l.titolo;
 ```
 
-non va bene, perché gli array in C non si assegnano con `=`.
+non va bene, perché gli array in C non si assegnano con '='.
 
 Per copiare stringhe bisogna usare, ad esempio:
 
