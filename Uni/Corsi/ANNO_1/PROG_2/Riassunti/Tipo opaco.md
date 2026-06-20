@@ -466,7 +466,7 @@ Per ridurre l’accoppiamento possiamo usare un **tipo di dato opaco**.
 
 Un tipo opaco è un tipo di cui il client conosce l’esistenza, ma non conosce la struttura interna.
 
-In C si può ottenere dichiarando nel file `.h` solo un puntatore a una `struct` non definita.
+In C si può ottenere dichiarando nel file `.h` solo un ==puntatore a una== `struct` ==non definita==.
 
 ## ADTcomplexOps.h
 
