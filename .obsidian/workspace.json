@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f8d876e36998ddc7",
+        "id": "59394f3f102bce3b",
         "type": "tabs",
         "children": [
           {
-            "id": "79912c4acae0afee",
+            "id": "c88ad80df80f92ed",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Reading/Atomic Habits.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Atomic Habits"
             }
           }
         ]
@@ -200,8 +204,12 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "14655ead18c286c9",
+  "active": "c88ad80df80f92ed",
   "lastOpenFiles": [
+    "Reading/Atomic Habits.md",
+    "Reading/Untitled",
+    "Reading",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and trick.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Void.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Ricorsione_e_liste_linkate.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Files.md",
@@ -227,8 +235,6 @@
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/1-DatiComposti.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_1_GDB.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_0_Premessa.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/Esercizi_L1.2_TDD.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/0.1-Introduzione_Birke.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Codice/TOREAD.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Argomenti trattati.md",
@@ -236,8 +242,6 @@
     "High_School/Storia/Capitolo 8/Lezione 33 - I seguaci di Silla.md",
     "High_School/Storia/Capitolo 8/Lezione 32 - Il tempo dei capi militari.md",
     "High_School/Storia/Capitolo 8/Lezione 31 - La riforma impossibile.md",
-    "High_School/Storia/Capitolo 7/Lezione 30 - L'impero il suo prezzo i suoi frutti.md",
-    "High_School/Storia/Capitolo 7/Lezione 29 - Al di là dell'Adriatico.md",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
