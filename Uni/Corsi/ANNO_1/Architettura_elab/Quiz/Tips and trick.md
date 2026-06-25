@@ -52,4 +52,5 @@ Trucchetto
 	3) Per contare hit o miss bisogna guardare anche il tag. Se la linea è 000 e il tag è 10, c'è HIT solo se troviamo un'altra chiamata alla cache con stessa linea e stesso tag. Se il tag è diverso, allora è un MISS
 
 
-5) Quando capita 
+5) Quando capita la domanda su ==processori e clock==
+	1) Se chiedono ==numero di cicli== -> non considerare la **frequenza di clock** 
