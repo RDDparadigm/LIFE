@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d8233983591aca13",
+        "id": "f8d876e36998ddc7",
         "type": "tabs",
         "children": [
           {
-            "id": "f338c0092f12e292",
+            "id": "79912c4acae0afee",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and trick.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Tips and trick"
+              "title": "New tab"
             }
           }
         ]
@@ -204,8 +200,18 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "f338c0092f12e292",
+  "active": "14655ead18c286c9",
   "lastOpenFiles": [
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Void.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Ricorsione_e_liste_linkate.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Files.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Complessita_Computazionale.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Cicli.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Alberi_binari_2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Alberi_binari_1.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-coda.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Stack.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Insieme.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Pila-Stack-Set.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Liste Linkate.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Allocazione memoria.md",
@@ -232,16 +238,6 @@
     "High_School/Storia/Capitolo 8/Lezione 31 - La riforma impossibile.md",
     "High_School/Storia/Capitolo 7/Lezione 30 - L'impero il suo prezzo i suoi frutti.md",
     "High_School/Storia/Capitolo 7/Lezione 29 - Al di là dell'Adriatico.md",
-    "High_School/Storia/Capitolo 7/Lezione 28 - Il nemico assoluto.md",
-    "High_School/Storia/Capitolo 7/Lezione 26 - Prove di impero.md",
-    "High_School/Storia/Capitolo 6/Lezione 25 - Le nuove forme del potere.md",
-    "High_School/Storia/Capitolo 6/Lezione 24 - La città e il cielo.md",
-    "High_School/Storia/Capitolo 6/Lezione 23 - Storie di eroi e di re.md",
-    "High_School/Storia/Capitolo 6/Lezione 22 - I signori dei metalli.md",
-    "High_School/Storia/Capitolo 5 - Dalle poleis ai regni/Lezione 20 - Fino ai confini del mondo.md",
-    "High_School/Storia/Capitolo 5 - Dalle poleis ai regni/Lezione 19 - L'impossibile egemonia.md",
-    "High_School/Storia/Capitolo 4- Dall'età di Pericle alla guerra del Peloponneso/Lezione 18 - La guerra totale.md",
-    "High_School/Storia/Capitolo 4- Dall'età di Pericle alla guerra del Peloponneso/Lezione 17 - Arte e pensiero nell'Atene del V secolo.md",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
