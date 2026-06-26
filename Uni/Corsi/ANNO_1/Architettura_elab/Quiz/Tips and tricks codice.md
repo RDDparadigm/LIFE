@@ -210,11 +210,11 @@ lw t3, 0(t2)          # t3 = array[i]
 
 Dove:
 
-|Registro|Significato|
-|---|---|
-|`a0`|base array|
-|`t0`|indice `i`|
-|`t3`|valore `array[i]`|
+| Registro | Significato       |
+| -------- | ----------------- |
+| `a0`     | base array        |
+| `t0`     | indice `i`        |
+| `t3`     | valore `array[i]` |
 
 > [!tip]  
 > `slli t1, t0, 2` equivale a `t1 = t0 * 4`.
