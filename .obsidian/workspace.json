@@ -20,8 +20,23 @@
               "icon": "diff",
               "title": "Diff: workspace.json"
             }
+          },
+          {
+            "id": "0be91dcc50f4dccc",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "conflict-files-obsidian-git.md",
+                "bFile": "conflict-files-obsidian-git.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: conflict-files-obsidian-git"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,8 +219,27 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "fc1cffed9b4a450b",
+  "active": "0be91dcc50f4dccc",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Void.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Tipo opaco.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Ricorsione_e_liste_linkate.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Ricorsione.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Puntatori a funzione.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Liste Linkate.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Files.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Complessita_Computazionale.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Cicli.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Allocazione memoria.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Alberi_binari_2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Alberi_binari_1.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-coda.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Stack.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Insieme.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti",
+    "Reading/Atomic Habits.md",
+    "Reading",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and trick.md",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/1-DatiComposti.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/0.1-Introduzione_Birke.pdf",
@@ -216,8 +250,6 @@
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.2-Alberi_binari_parte_2_con_animazioni.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.1-Alberi_binari_parte_1_no_animazioni.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.1-Alberi_binari_parte_1_con_animazioni.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/8.0-Ricorsione_Liste_Linkate_no_animazioni.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/8.0-Ricorsione_Liste_Linkate_con_animazioni.pdf",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Argomenti trattati.md",
     "Uni/Corsi/ANNO_1/PROG_2/TOREAD per esame.md",
@@ -225,23 +257,6 @@
     "High_School/Storia/Capitolo 8/Lezione 32 - Il tempo dei capi militari.md",
     "High_School/Storia/Capitolo 8/Lezione 31 - La riforma impossibile.md",
     "High_School/Storia/Capitolo 7/Lezione 30 - L'impero il suo prezzo i suoi frutti.md",
-    "High_School/Storia/Capitolo 7/Lezione 29 - Al di là dell'Adriatico.md",
-    "High_School/Storia/Capitolo 7/Lezione 28 - Il nemico assoluto.md",
-    "High_School/Storia/Capitolo 7/Lezione 26 - Prove di impero.md",
-    "High_School/Storia/Capitolo 6/Lezione 25 - Le nuove forme del potere.md",
-    "High_School/Storia/Capitolo 6/Lezione 24 - La città e il cielo.md",
-    "High_School/Storia/Capitolo 6/Lezione 23 - Storie di eroi e di re.md",
-    "High_School/Storia/Capitolo 6/Lezione 22 - I signori dei metalli.md",
-    "High_School/Storia/Capitolo 5 - Dalle poleis ai regni/Lezione 20 - Fino ai confini del mondo.md",
-    "High_School/Storia/Capitolo 5 - Dalle poleis ai regni/Lezione 19 - L'impossibile egemonia.md",
-    "High_School/Storia/Capitolo 4- Dall'età di Pericle alla guerra del Peloponneso/Lezione 18 - La guerra totale.md",
-    "High_School/Storia/Capitolo 4- Dall'età di Pericle alla guerra del Peloponneso/Lezione 17 - Arte e pensiero nell'Atene del V secolo.md",
-    "High_School/Storia/Capitolo 4- Dall'età di Pericle alla guerra del Peloponneso/Lezione 16 - Nel segno di Pericle.md",
-    "High_School/Storia/Capitolo 3/Lezione 15 - L'impero contro le città.md",
-    "High_School/Storia/Capitolo 3/Lezione 14 - L'aristocrazia e il popolo.md",
-    "High_School/Storia/Capitolo 3/Lezione 13 - Pochi ma uguali.md",
-    "High_School/Storia/Capitolo 2/Lezione 9 - I signori delle rocche.md",
-    "High_School/Storia/Capitolo 2/Lezione 8 - I dominatori del mare.md",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
