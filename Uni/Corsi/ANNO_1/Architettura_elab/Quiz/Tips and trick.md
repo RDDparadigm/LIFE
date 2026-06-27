@@ -10,6 +10,8 @@
 3) Quando capita la domanda sul ==circuito==
 	1) Mapping delle operazioni
 
+Il valore '**zero**' assume ==1== solo quando 'result == 0000' 
+
 | ALU operation | Operazione | Cosa fa        | Result                          | Overflow                           |     |
 | ------------- | ---------- | -------------- | ------------------------------- | ---------------------------------- | --- |
 | `0000`        | AND        | `a AND b`      | risultato bit a bit             | `0`                                |     |
@@ -54,3 +56,11 @@ Trucchetto
 
 5) Quando capita la domanda su ==processori e clock==
 	1) Se chiedono ==numero di cicli== -> non considerare la **frequenza di clock** 
+
+6) Quando capita la domanda su ==Program counter==
+	1) Se c'è il codice con architettura annessa, bisogna:
+		1) Leggere il codice assembly
+		2) Vedere se le istruzioni mandano o non mandano all'istruzione branch
+		3) Ricordare che le istruzioni che portano alle etichette cambiano il PC in base a quante istruzioni sono state 'saltate'
+	2) Se c'è solo un lungo codice assembly
+		1) Di solito viene chiesto il PC a seguito di una jal. Bisogna seguire la jal e verificare il PC dopo l'offset
