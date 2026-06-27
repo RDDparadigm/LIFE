@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e819510d4c26d0eb",
+        "id": "d38c8e7d68e5edaf",
         "type": "tabs",
         "children": [
           {
-            "id": "182adadeb47c6041",
+            "id": "fc1cffed9b4a450b",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "split-diff-view",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_1_GDB.pdf"
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file-text",
-              "title": "L0_1_GDB"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -195,7 +197,6 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
@@ -203,11 +204,13 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "182adadeb47c6041",
+  "active": "fc1cffed9b4a450b",
   "lastOpenFiles": [
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and trick.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/1-DatiComposti.pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/0.1-Introduzione_Birke.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_0_Premessa.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/Esercizi_L1.2_TDD.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/0.1-Introduzione_Birke.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Codice/TOREAD.md",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.2-Alberi_binari_parte_2_no_animazioni.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.2-Alberi_binari_parte_2_con_animazioni.pdf",
@@ -215,8 +218,6 @@
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/9.1-Alberi_binari_parte_1_con_animazioni.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/8.0-Ricorsione_Liste_Linkate_no_animazioni.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/8.0-Ricorsione_Liste_Linkate_con_animazioni.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/7.3-ADT_void_no_animazione.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/7.2-ADT_Insieme_no_animazione.pdf",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
     "Uni/Corsi/ANNO_1/PROG_2/Lab/Argomenti trattati.md",
     "Uni/Corsi/ANNO_1/PROG_2/TOREAD per esame.md",
