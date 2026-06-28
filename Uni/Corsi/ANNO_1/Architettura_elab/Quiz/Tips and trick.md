@@ -10,6 +10,8 @@
 3) Quando capita la domanda sul ==circuito==
 	1) Mapping delle operazioni
 
+Il valore '**zero**' assume ==1== solo quando 'result == 0000' 
+
 | ALU operation | Operazione | Cosa fa        | Result                          | Overflow                           |     |
 | ------------- | ---------- | -------------- | ------------------------------- | ---------------------------------- | --- |
 | `0000`        | AND        | `a AND b`      | risultato bit a bit             | `0`                                |     |
@@ -54,3 +56,46 @@ Trucchetto
 
 5) Quando capita la domanda su ==processori e clock==
 	1) Se chiedono ==numero di cicli== -> non considerare la **frequenza di clock** 
+	2) Se chiedono ==istruzioni al secondo== -> frequenza (ghz) / CPI
+	3) Se chiedono ==tempo== -> num istruzioni (ignorare la potenza, es. 6 * 10^9, considero solo il 6) * CPI / frequenza
+
+6) Quando capita la domanda su ==Program counter==
+	1) Se c'è il codice con ==architettura annessa==, bisogna:
+		1) Leggere il codice assembly
+		2) Vedere se le istruzioni mandano o non mandano all'istruzione branch
+		3) Ricordare che le istruzioni che portano alle etichette cambiano il PC in base a quante istruzioni sono state 'saltate'
+	2) Se c'è solo un lungo ==codice assembly==
+		1) Di solito viene chiesto il PC a seguito di una jal. Bisogna seguire la jal e verificare il PC dopo l'offset
+
+7) Quando capita la domanda sul valutare ==pseudoistruzioni corrispondenti==
+	1) Metterle su ares e vedere dalla tab **disasm**
+
+8) Quando capita la domanda sul determinare il valore del campo immediato dato un estratto assembly
+	1) Guardo l'indirizzo dell'**istruzione corrente**
+	2) Guardo l'indirizzo di destinazione del salto, cioé il **target**
+	3) Faccio offset = target - PC
+	4) Se chiede il valore **effettivamente codificato** allora ==divido per 2==
+
+9) Quando capita la domanda sul ==speed-up== della CPU
+	1) Guardare l'istruzione **più lenta**
+	2) Calcolare il tempo medio del nuovo: es. 50% con 500 psi diventa 250psi. E sommare tutti i psi 
+	3) Per lo **speed-up**: tempo medio vecchio / tempo medio nuovo
+
+10) Quando capita la domanda sul calcolo dello ==spazio della cache==
+	1) **numero linee**: dimensione cache dati / dimensione blocco
+	2) **index bits** : log2(numero linee)
+	3) **offset bits** : log2(dimensione del blocco in byte)
+	4) **tag**: 32 - index bits - offset bits
+	5) **bit totali** : tag + valid(sempre 1) * bit + (tag + valid(sempre 1) * numero linee)
+	6) Ricordarsi di convertire 1KB = 1024byte = 8192bit
+
+11) Quando capita la domanda sul ==mappare l'istruzione==
+
+| Istruzione | Esempio | ALUSrc | RegWrite | MemRead | MemWrite | Branch | MemtoReg | ALUOp |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| Tipo R | `add x1, x2, x3` | 0 | 1 | 0 | 0 | 0 | 0 | 10 |
+| Tipo I aritmetica | `addi x1, x2, 5` | 1 | 1 | 0 | 0 | 0 | 0 | dipende |
+| `lw` | `lw x1, 0(x2)` | 1 | 1 | 1 | 0 | 0 | 1 | 00 |
+| `sw` | `sw x1, 0(x2)` | 1 | 0 | 0 | 1 | 0 | X | 00 |
+| `beq` | `beq x1, x2, label` | 0 | 0 | 0 | 0 | 1 | X | 01 |
+
