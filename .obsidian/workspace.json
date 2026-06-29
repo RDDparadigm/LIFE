@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "6e2d2e37e0ef08f3",
+        "id": "7ec60110c7841617",
         "type": "tabs",
         "children": [
           {
-            "id": "8bcb05cb7fad2390",
+            "id": "2af67e76f9b23deb",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
-            }
-          },
-          {
-            "id": "97cfe4538b0f2386",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks Teoria.md",
-                "bFile": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks Teoria.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Tips and tricks Teoria"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -219,7 +200,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "97cfe4538b0f2386",
+  "active": "14655ead18c286c9",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
