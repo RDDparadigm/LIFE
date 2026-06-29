@@ -6,7 +6,7 @@ Una ==reazione chimica== è un processo che **altera** la struttura di cui è co
 L'==analisi chimica== sono tecniche di laboratorio con cui si determina la qualità e la quantità della materia a seguito della **reazione chimica** 
 
 Possiamo rappresentare una **reazione chimica** tramite un'equazione che presenta le seguenti componenti:
-- ==Reagente/i==: Sostanze di partenza ^11e43d
+- ==Reagente/i==: Sostanze di partenza
 - ==Prodotto==: Risultato del reagente
 - ==Frecce di relazione==: Distinguiamo reazioni **irreversibili** (solo una freccia a → b) e reazioni **reversibili** (da a → b e viceversa)
 - ==SImboli di stato==: contraddistinguono lo stato della materia (es. g per gas, s per solido..)
