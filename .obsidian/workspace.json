@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "59394f3f102bce3b",
+        "id": "6e2d2e37e0ef08f3",
         "type": "tabs",
         "children": [
           {
-            "id": "c88ad80df80f92ed",
+            "id": "8bcb05cb7fad2390",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks codice.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Tips and tricks codice"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
+            }
+          },
+          {
+            "id": "97cfe4538b0f2386",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks Teoria.md",
+                "bFile": "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks Teoria.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Tips and tricks Teoria"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,12 +219,19 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "c88ad80df80f92ed",
+  "active": "97cfe4538b0f2386",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks codice.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks Teoria.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks Teoria.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Progetti/Lab 6.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Progetti/Lab 5.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Progetti/Lab 2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Progetti",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/preparazione_teorica_prog2_C.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/allenamento_esame_prog2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks codice.md",
     "Reading/Atomic Habits.md",
     "Reading/Untitled",
     "Reading",
@@ -229,19 +251,12 @@
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Tipo opaco.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Ricorsione.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Puntatori a funzione.md",
-    "copilot/copilot-conversations/Con_il_plugin_di_obsidian_non_riesco_a_fare_commit.@20260620_092548.md",
     "copilot/copilot-conversations",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/4-TipoOpaco_Coesione.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/3-Allocazione_Memoria.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/2-Compilazione_TestDrivenDevelopment.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/1-DatiComposti.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_1_GDB.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Lab/Slide/L0_0_Premessa.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Codice/TOREAD.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Lab/Argomenti trattati.md",
-    "Uni/Corsi/ANNO_1/PROG_2/TOREAD per esame.md",
-    "High_School/Storia/Capitolo 8/Lezione 33 - I seguaci di Silla.md",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
