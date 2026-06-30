@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7ec60110c7841617",
+        "id": "59e7573a539142ab",
         "type": "tabs",
         "children": [
           {
-            "id": "2af67e76f9b23deb",
+            "id": "6ad085118cfe5601",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Reading/Dictionary/P.md",
-                "bFile": "Reading/Dictionary/P.md",
-                "aRef": ""
+                "file": "Reading/Atomic Habits.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: P"
+              "icon": "lucide-file",
+              "title": "Atomic Habits"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 371.5
   },
   "right": {
     "id": "ecb5a0688fa12bca",
@@ -204,10 +204,14 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "2af67e76f9b23deb",
+  "active": "6ad085118cfe5601",
   "lastOpenFiles": [
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande slide - IO.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Domande simulazioni.md",
+    "High_School/Scienze/Le trasformazioni chimiche/Le trasformazioni chimiche.md",
+    "High_School/Scienze/Le trasformazioni chimiche/Esercizi.md",
+    "High_School/Scienze/Le trasformazioni chimiche",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks Teoria.md",
+    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande slide - IO.md",
     "Reading/Dictionary/P.md",
     "Reading/Atomic Habits.md",
     "Reading/Dictionary/P/Untitled.md",
@@ -215,7 +219,6 @@
     "Reading/Dictionary/P",
     "Reading/Dictionary",
     "conflict-files-obsidian-git.md",
-    "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Tips and tricks Teoria.md",
     "Uni/Corsi/ANNO_1/PROG_2/Progetti/Lab 6.md",
     "Uni/Corsi/ANNO_1/PROG_2/Progetti/Lab 5.md",
     "Uni/Corsi/ANNO_1/PROG_2/Progetti/Lab 2.md",
@@ -235,13 +238,10 @@
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-coda.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Stack.md",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Insieme.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Pila-Stack-Set.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Liste Linkate.md",
     "copilot/copilot-conversations",
     "Uni/Corsi/ANNO_1/PROG_2/Riassunti",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/4-TipoOpaco_Coesione.pdf",
     "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/3-Allocazione_Memoria.pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Theory/Slide/2-Compilazione_TestDrivenDevelopment.pdf",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
