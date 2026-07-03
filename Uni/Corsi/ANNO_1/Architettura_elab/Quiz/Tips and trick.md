@@ -86,7 +86,7 @@ Trucchetto
 	2) **index bits** : log2(numero linee)
 	3) **offset bits** : log2(dimensione del blocco in byte)
 	4) **tag**: 32 - index bits - offset bits
-	5) **bit totali** : tag + valid(sempre 1) * bit + (tag + valid(sempre 1) * numero linee)
+	5) **bit totali** : (tag + valid(sempre 1) * bit della dimensione cache) + (tag + valid(sempre 1) * numero linee)
 	6) Ricordarsi di convertire 1KB = 1024byte = 8192bit
 
 11) Quando capita la domanda sul ==mappare l'istruzione==
