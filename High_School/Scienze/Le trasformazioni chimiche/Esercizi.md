@@ -12,8 +12,8 @@ Soluzione: Secondo la legge di Lavoisier, la materia in eccesso non viene perdut
 
 Soluzione:
 
-1. Applichiamo la legge di Lavoisier, quindi 36,03 + 96 = 132,03g di diossido di carbonio
-2. Applichiamo la legge di Proust, per cui il rapporto tra carbonio ed ossigeno è 36,03 / 96,00 = 0,3753 (ovvero, per 1 grammo di ossigeno servono 0,3753 grammi di carbonio)
+1. Applichiamo la ==legge di Lavoisier==, quindi 36,03 + 96 = 132,03g di diossido di carbonio
+2. Applichiamo la ==legge di Proust==, per cui il rapporto tra carbonio ed ossigeno è 36,03 / 96,00 = 0,3753 (ovvero, per 1 grammo di ossigeno servono 0,3753 grammi di carbonio)
 3. Dividiamo il totale per i valori degli elementi
 	1. (132,03g / 36,03g) * 100 = 27,29%
 	2. (132,03g / 96,00g) * 100 = 72,71%
@@ -41,5 +41,5 @@ Soluzione:
 2) Applichiamo la legge di Lavoisier
 	1) 299,68g + 425,4g = 721,5g
 	2) 299,68g + 709,0g = 1008,7g
-3) Applichiamo la legge di Dalton per le masse di cloro
+3) Applichiamo la ==legge di Dalton== per le masse di cloro
 	1) 425,4g / 709,0g = 0,6. Quindi, il rapporto tra le due masse è 6:10, oppure, semplificando la frazione, 3:5
