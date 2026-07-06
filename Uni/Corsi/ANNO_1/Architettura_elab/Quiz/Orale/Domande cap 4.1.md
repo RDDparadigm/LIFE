@@ -417,9 +417,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 19. Perché il secondo ingresso dell’ALU deve poter provenire sia da un registro sia da un immediato?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:** Domanda facile
 
 > [!answer]- Risposta
 > Perché istruzioni diverse richiedono sorgenti diverse per gli operandi dell’ALU.
@@ -442,9 +442,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 20. A cosa serve l’estensione del segno nell’implementazione di istruzioni come `lw`, `sw` e `beq`?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Attenzione al segno 
 
 > [!answer]- Risposta
 > L’estensione del segno serve a portare l’immediato contenuto nell’istruzione alla dimensione del datapath, cioè 32 bit, mantenendone il valore e il segno.
@@ -464,9 +464,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 21. Perché nelle istruzioni `lw` e `sw` l’ALU viene usata per calcolare un indirizzo?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/26
+**Note mie:**  Attenzione alla distinzione tra registro e valore del registro
 
 > [!answer]- Risposta
 > Nelle istruzioni `lw` e `sw`, l’indirizzo effettivo di memoria è dato dalla somma tra:
@@ -488,9 +488,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 22. Quali sono le differenze principali tra l’esecuzione di `lw` e `sw` nel datapath?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Attenzione al tipo di operazione che fanno (memread, memwrite, regread, regwrite)
 
 > [!answer]- Risposta
 > `lw` e `sw` usano entrambe l’ALU per calcolare l’indirizzo effettivo, ma differiscono nel verso del trasferimento dati.
@@ -514,9 +514,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 23. Quali segnali di controllo compaiono nello schema base del datapath RISC-V e a cosa servono?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Sono una manciata, fattibili
 
 > [!answer]- Risposta
 > Nello schema base compaiono segnali di controllo come:
@@ -536,9 +536,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 24. A cosa serve il segnale `RegWrite`?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Non dimenticare le operazioni dell'ALU
 
 > [!answer]- Risposta
 > Il segnale `RegWrite` abilita la scrittura nel banco dei registri.
@@ -560,9 +560,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 25. A cosa servono i segnali `MemRead` e `MemWrite`?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟢
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  EASYYYYYY
 
 > [!answer]- Risposta
 > `MemRead` e `MemWrite` controllano la memoria dati.
@@ -577,9 +577,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 26. Perché la memoria istruzioni e la memoria dati sono rappresentate come due blocchi distinti nello schema?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Ricordare la distinzione tra architettura Von Neumann e Harvard
 
 > [!answer]- Risposta
 > Sono rappresentate come due blocchi distinti per semplificare il datapath e mostrare chiaramente due funzioni diverse:
@@ -593,9 +593,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 27. Quali componenti hardware sono necessari per eseguire il fetch di un’istruzione?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  E' più facile di quanto sembri
 
 > [!answer]- Risposta
 > Per eseguire il fetch servono principalmente:
@@ -611,9 +611,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 28. Perché il PC viene incrementato di 4?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟢
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Facile, non bisogna neanche pensarci
 
 > [!answer]- Risposta
 > Il PC viene incrementato di 4 perché le istruzioni RISC-V considerate sono lunghe 32 bit, cioè 4 byte.
@@ -628,9 +628,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 29. Qual è la differenza tra il dato scritto nel registro per una istruzione aritmetico-logica e per una `lw`?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Facile, bisogna fermarsi e rifletterci un attimo (c'entra sempre l'ALU)
 
 > [!answer]- Risposta
 > In una istruzione aritmetico-logica, il dato scritto nel registro destinazione proviene dall’ALU.
@@ -655,9 +655,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 30. Perché l’unità di controllo deve conoscere il tipo di istruzione?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟢  
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Beccata al primo colpo
 
 > [!answer]- Risposta
 > L’unità di controllo deve conoscere il tipo di istruzione perché istruzioni diverse usano il datapath in modi diversi.
@@ -675,9 +675,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 31. Che cosa significa che molte unità funzionali sono condivise tra istruzioni diverse?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟢 
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  One shot
 
 > [!answer]- Risposta
 > Significa che lo stesso componente hardware viene usato per compiti diversi a seconda dell’istruzione.
@@ -695,9 +695,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 32. Perché la semplicità e regolarità dell’ISA RISC-V facilita l’implementazione del processore?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Banale ma la risposta dev'essere un poco ragionata
 
 > [!answer]- Risposta
 > La semplicità e regolarità di RISC-V facilitano l’implementazione perché rendono più prevedibile il formato delle istruzioni e l’uso delle unità hardware.
@@ -716,9 +716,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 33. Che cosa succede in generale dopo le prime fasi comuni di fetch e lettura dei registri?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Non è difficile. Viene chiesto come si comportano le varie istruzioni
 
 > [!answer]- Risposta
 > Dopo il fetch e la lettura dei registri, il comportamento dipende dalla classe dell’istruzione.
@@ -748,9 +748,9 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 34. Si spieghi come deve essere configurato il datapath per eseguire `beq x11, x12, LABEL`.
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡  
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Da ripetere ma fattibile
 
 > [!answer]- Risposta
 > Per eseguire:
@@ -899,8 +899,8 @@ Nel campo **Note mie** puoi aggiungere dubbi, esempi o collegamenti con esercizi
 
 ## 41. In che modo l’implementazione del processore influenza ciclo di clock e CPI?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
+**Stato:** 🟡  
+**Ultimo ripasso:**  06/07/2026
 **Note mie:**  
 
 > [!answer]- Risposta
