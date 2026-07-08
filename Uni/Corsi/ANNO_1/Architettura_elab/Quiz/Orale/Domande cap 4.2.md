@@ -153,9 +153,9 @@ Durante il ripasso:
 
 ## 8. Qual è il ruolo del clock in un circuito sequenziale?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡  
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Ricordarsi della differenza tra sincroni e asincroni
 
 > [!answer]- Risposta
 > Il **clock** serve a sincronizzare l’aggiornamento degli elementi di stato.
@@ -168,9 +168,9 @@ Durante il ripasso:
 
 ## 9. Cosa significa che un elemento di stato è sensibile ai fronti?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  E' sufficiente ricordarsi quando c'è l'aggiornamento dello stato
 
 > [!answer]- Risposta
 > Un elemento di stato è **sensibile ai fronti** se aggiorna il proprio contenuto solo in corrispondenza di un fronte del clock.
@@ -184,26 +184,11 @@ Durante il ripasso:
 
 ---
 
-## 10. Cosa si intende per metodologia di temporizzazione?
+## 10. Perché è importante temporizzare correttamente lettura e scrittura?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
-
-> [!answer]- Risposta
-> La **metodologia di temporizzazione** definisce quando i segnali possono essere letti e scritti in modo sicuro.
->
-> Serve a garantire che i dati letti da un elemento di stato siano stabili e validi quando vengono usati dalla logica combinatoria o scritti in un altro elemento di stato.
->
-> Senza una metodologia di temporizzazione, si rischierebbe di leggere dati mentre stanno cambiando, ottenendo risultati imprevedibili.
-
----
-
-## 11. Perché è importante temporizzare correttamente lettura e scrittura?
-
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡 
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Riflettere sul possibile conflitto
 
 > [!answer]- Risposta
 > È importante perché, se lettura e scrittura avvenissero in modo non controllato, un elemento potrebbe leggere un dato mentre un altro lo sta modificando.
@@ -218,11 +203,11 @@ Durante il ripasso:
 
 ---
 
-## 12. Si descriva il funzionamento generale di un circuito sincrono con elementi di stato e logica combinatoria.
+## 11. Si descriva il funzionamento generale di un circuito sincrono con elementi di stato e logica combinatoria.
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡  
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Un po' puntigliosa
 
 > [!answer]- Risposta
 > In un circuito sincrono, gli elementi di stato vengono aggiornati solo in corrispondenza del fronte attivo del clock.
@@ -238,7 +223,7 @@ Durante il ripasso:
 
 ---
 
-## 13. Cosa rappresenta la Figura 4.3?
+## 12. Cosa rappresenta la Figura 4.3?
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  
@@ -259,11 +244,11 @@ Durante il ripasso:
 
 ---
 
-## 14. Perché la logica combinatoria deve avere tempo sufficiente per produrre il risultato?
+## 13. Perché la logica combinatoria deve avere tempo sufficiente per produrre il risultato?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡  
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Puntiglioso, skippabile se non c'è tempo
 
 > [!answer]- Risposta
 > La logica combinatoria deve avere tempo sufficiente perché il risultato deve essere stabile prima del successivo fronte di clock.
@@ -281,11 +266,11 @@ Durante il ripasso:
 
 ---
 
-## 15. Cosa determina la durata minima del ciclo di clock?
+## 13. Cosa determina la durata minima del ciclo di clock?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡  
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Ripetizione del 12 con qualche aggiunta
 
 > [!answer]- Risposta
 > La durata minima del ciclo di clock è determinata dal tempo necessario affinché un dato:
@@ -298,11 +283,11 @@ Durante il ripasso:
 
 ---
 
-## 16. Cosa significa che il clock regola il passaggio da uno stato al successivo?
+## 14. Cosa significa che il clock regola il passaggio da uno stato al successivo?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Simile a 12 e 13
 
 > [!answer]- Risposta
 > Significa che il processore evolve solo in corrispondenza dei fronti attivi del clock.
@@ -315,10 +300,10 @@ Durante il ripasso:
 
 ---
 
-## 17. Cosa si intende per segnale di controllo?
+## 15. Cosa si intende per segnale di controllo?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
+**Stato:** 🟡  
+**Ultimo ripasso:**  06/07/2026
 **Note mie:**  
 
 > [!answer]- Risposta
@@ -335,7 +320,7 @@ Durante il ripasso:
 
 ---
 
-## 18. Cosa significa che un segnale è asserito?
+## 16. Cosa significa che un segnale è asserito?
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  

@@ -18,7 +18,7 @@ All’orale conviene saper collegare ogni tecnologia al suo ruolo: **SRAM per le
 
 ## 1. Quali sono le principali tecnologie usate nella gerarchia delle memorie?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -38,7 +38,7 @@ All’orale conviene saper collegare ogni tecnologia al suo ruolo: **SRAM per le
 
 ## 2. Che differenza c’è tra SRAM e DRAM?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -59,7 +59,7 @@ All’orale conviene saper collegare ogni tecnologia al suo ruolo: **SRAM per le
 
 ## 3. Perché la SRAM viene usata per realizzare le cache?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -76,7 +76,7 @@ All’orale conviene saper collegare ogni tecnologia al suo ruolo: **SRAM per le
 
 ## 4. Perché la DRAM viene usata come memoria principale?
 
-**Stato:** 🔴  
+**Stato:** 🟡
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -110,7 +110,7 @@ All’orale conviene saper collegare ogni tecnologia al suo ruolo: **SRAM per le
 
 ## 6. Che cos’è il refresh della DRAM e perché è necessario?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
