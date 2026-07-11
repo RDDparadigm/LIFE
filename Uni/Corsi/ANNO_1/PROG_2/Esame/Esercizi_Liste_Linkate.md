@@ -327,16 +327,36 @@ IntList cloneList(IntList ls);
 
 ```c
 IntList cloneList(IntList ls) {
-    IntList result = NULL;
+    IntList newList = NULL;
     IntList tail = NULL;
 
-    for (IntList current = ls;
-         current != NULL;
-         current = current->next) {
-        appendInt(&result, &tail, current->data);
+    for (IntList currEl = ls;
+         currEl != NULL;
+         currEl = currEl->next) {
+
+        IntList newNode = malloc(sizeof *newNode);
+
+        if (newNode == NULL) {
+            return newList;
+        }
+
+        newNode->data = currEl->data;
+        newNode->next = NULL;
+		
+        if (newList == NULL) {
+	        // e il primo nodo
+            newList = newNode;
+            tail = newNode;
+        } else {
+	        // esistono già dei nodi
+            tail->next = newNode;
+            
+            // sposta la coda all'ultimo  elemento
+            tail = newNode; 
+        }
     }
 
-    return result;
+    return newList;
 }
 ```
 
@@ -379,19 +399,35 @@ CharList uppercaseToLowercaseList(CharList ls);
 
 ```c
 CharList uppercaseToLowercaseList(CharList ls) {
-    CharList result = NULL;
-    CharList tail = NULL;
 
-    for (CharList current = ls;
-         current != NULL;
-         current = current->next) {
-        if (current->data >= 'A' && current->data <= 'Z') {
-            char lower = (char)(current->data - 'A' + 'a');
-            appendChar(&result, &tail, lower);
-        }
-    }
+    CharList newList = NULL;
+    CharList tail = NULL;
 
-    return result;
+    for (CharList chlist = ls; chlist != NULL; chlist = chlist -> next) {
+
+		// verifica i maiuscoli
+        if (isupper((unsigned char) chlist->data)) {
+        
+            CharList newNode = malloc(sizeof *newNode);
+            if (newNode == NULL) {
+                return newList;
+            }
+            
+            // prende solo i caratteri maiuscoli
+            newNode->data = tolower((unsigned char) chlist->data);
+            newNode->next = NULL;
+
+            if (newList == NULL) {
+                newList = newNode;
+                tail = newNode;
+            } else {
+                tail->next = newNode;
+                tail = newNode;
+            }
+        }
+    }
+
+    return newList;
 }
 ```
 
@@ -429,19 +465,36 @@ IntList everyKth(IntList ls, size_t k) {
         return NULL;
     }
 
-    IntList result = NULL;
+    IntList newList = NULL;
     IntList tail = NULL;
+
     size_t index = 0;
 
-    for (IntList current = ls;
-         current != NULL;
-         current = current->next, index++) {
+    for (IntList currEl = ls;
+         currEl != NULL;
+         currEl = currEl->next, index++) {
+
         if (index % k == 0) {
-            appendInt(&result, &tail, current->data);
+            IntList newNode = malloc(sizeof *newNode);
+
+            if (newNode == NULL) {
+                return newList;
+            }
+
+            newNode->data = currEl->data;
+            newNode->next = NULL;
+
+            if (newList == NULL) {
+                newList = newNode;
+                tail = newNode;
+            } else {
+                tail->next = newNode;
+                tail = newNode;
+            }
         }
     }
 
-    return result;
+    return newList;
 }
 ```
 
@@ -500,20 +553,46 @@ IntList duplicateNegatives(IntList ls);
 
 ```c
 IntList duplicateNegatives(IntList ls) {
-    IntList result = NULL;
-    IntList tail = NULL;
 
-    for (IntList current = ls;
-         current != NULL;
-         current = current->next) {
-        appendInt(&result, &tail, current->data);
+    IntList newList = NULL;
+    IntList tail = NULL;
 
-        if (current->data < 0) {
-            appendInt(&result, &tail, current->data);
-        }
-    }
+    for (IntList currEl = ls; currEl != NULL; currEl = currEl -> next) {
 
-    return result;
+        IntList newNode = malloc(sizeof *newNode);
+
+        if (newNode == NULL) {
+            return newList;
+        }
+
+        newNode -> data = currEl -> data;
+        newNode -> next = NULL;
+
+        if (newList == NULL) {
+            newList = newNode;
+            tail = newNode;
+        } else {
+            tail -> next = newNode;
+            tail = newNode;
+        }
+
+		// inserimento del duplicato. Devo creare un nuovo nodo
+        if (currEl->data < 0) { 
+	        IntList duplicate = malloc(sizeof *duplicate); 
+	        
+	        if (duplicate == NULL) { 
+		        return newList; 
+		    } 
+		    
+		    duplicate->data = currEl->data;
+		    duplicate->next = NULL; 
+		    
+		    tail->next = duplicate; 
+		    tail = duplicate; 
+		}
+    }
+
+    return newList;
 }
 ```
 
@@ -546,24 +625,36 @@ IntList compressRuns(IntList ls);
 
 ```c
 IntList compressRuns(IntList ls) {
-    IntList result = NULL;
-    IntList tail = NULL;
 
-    if (ls == NULL) {
-        return NULL;
-    }
+    IntList newList = NULL;
+    IntList tail = NULL;
 
-    appendInt(&result, &tail, ls->data);
+    for (IntList currEl = ls; currEl != NULL; currEl = currEl -> next) {
 
-    for (IntList current = ls->next;
-         current != NULL;
-         current = current->next) {
-        if (current->data != tail->data) {
-            appendInt(&result, &tail, current->data);
-        }
-    }
+        IntList newNode = malloc(sizeof *newNode);
 
-    return result;
+        if (newNode == NULL) {
+            return newList;
+        }
+
+        newNode -> data = currEl -> data;
+        newNode -> next = NULL;
+
+        if (newList == NULL) {
+            newList = newNode;
+            tail = newNode;
+        } else {
+            tail -> next = newNode;
+            tail = newNode;
+        }
+
+        while (currEl -> next != NULL && currEl -> next -> data == currEl -> data) {
+            currEl = currEl -> next;
+        }
+    }
+
+    return newList;
+
 }
 ```
 
@@ -597,23 +688,38 @@ IntList increasingPrefix(IntList ls);
 
 ```c
 IntList increasingPrefix(IntList ls) {
-    if (ls == NULL) {
-        return NULL;
-    }
 
-    IntList result = NULL;
-    IntList tail = NULL;
-    IntList current = ls;
+    IntList newList = NULL;
+    IntList tail = NULL;
 
-    appendInt(&result, &tail, current->data);
+    for (IntList currEl = ls; currEl != NULL; currEl = currEl -> next) {
+        // significa che c'è almeno un elemento nella nuova lista e che l'elemento corrente
+        // di currEl ha un valore non è strettamente maggiore del precedente. quindi abbiamo terminato
 
-    while (current->next != NULL &&
-           current->data < current->next->data) {
-        current = current->next;
-        appendInt(&result, &tail, current->data);
-    }
+        if (tail != NULL && currEl -> data <= tail -> data) {
+            return newList;
+        }
 
-    return result;
+        // altrimenti inseriamo il nodo nella nuova lista
+        IntList newNode = malloc(sizeof *newNode);
+
+        if (newNode == NULL) {
+            return newList;
+        }
+
+        newNode -> data = currEl -> data;
+        newNode -> next = NULL;
+
+        if (newList == NULL) {
+            newList = newNode;
+            tail = newNode;
+        } else {
+            tail -> next = newNode;
+            tail = newNode;
+        }
+    }
+    return newList;
+
 }
 ```
 
@@ -642,35 +748,39 @@ bool insertSortedUnique(IntList *lsPtr, int value);
 
 ```c
 bool insertSortedUnique(IntList *lsPtr, int value) {
-    if (lsPtr == NULL) {
+    IntList previousEl = NULL;
+    IntList currEl = *lsPtr;
+
+    while (currEl != NULL && currEl->data < value) {
+        previousEl = currEl;
+        currEl = currEl->next;
+    }
+
+    /* Il valore è già presente. */
+    if (currEl != NULL && currEl->data == value) {
         return false;
     }
 
-    IntList *linkPtr = lsPtr;
+    IntList newNode = malloc(sizeof *newNode);
 
-    while (*linkPtr != NULL && (*linkPtr)->data < value) {
-        linkPtr = &(*linkPtr)->next;
-    }
-
-    if (*linkPtr != NULL && (*linkPtr)->data == value) {
+    if (newNode == NULL) {
         return false;
     }
 
-    IntList node = newIntNode(value);
-    node->next = *linkPtr;
-    *linkPtr = node;
+    newNode->data = value;
+    newNode->next = currEl;
+
+    if (previousEl == NULL) {
+        /* Lista vuota oppure inserimento prima della testa. */
+        *lsPtr = newNode;
+    } else {
+        /* Inserimento al centro oppure in fondo. */
+        previousEl->next = newNode;
+    }
+
     return true;
 }
 ```
-
-### Perché è elegante
-
-`linkPtr` punta sempre al campo che deve essere aggiornato:
-
-- inizialmente alla variabile testa;
-- successivamente al campo `next` di un nodo.
-
-Non servono casi separati per inserimento in testa e in mezzo.
 
 ### Complessità
 
@@ -692,6 +802,43 @@ bool deleteFirst(IntList *lsPtr, int value);
 ```
 
 ### Soluzione semplice
+
+```c
+bool deleteFirst(IntList *lsPtr, int value) {
+
+    IntList prevEl = NULL;
+    IntList currEl = *lsPtr;
+    
+    while (currEl != NULL && currEl -> data != value) {
+        prevEl = currEl;
+        currEl = currEl -> next;
+    }
+
+    // sono arrivato alla fine senza trovare occorrenze oppure la lista era vuota in partenza, niente da rimuovere
+    if (currEl == NULL) {
+        return false;
+    }
+
+    // recupero il nodo corrente
+    IntList node = currEl;
+
+    // spostamento della testa
+    if (prevEl == NULL) {
+        *lsPtr = currEl -> next;
+    } else {
+        // sgancio il nodo
+        prevEl -> next = currEl -> next;
+    }
+
+    free(node);
+    node = NULL;
+
+    return true;
+
+}
+```
+
+### Soluzione ottimizzata
 
 ```c
 bool deleteFirst(IntList *lsPtr, int value) {
@@ -735,6 +882,48 @@ size_t deleteAll(IntList *lsPtr, int value);
 ```
 
 ### Soluzione semplice
+
+```c
+size_t deleteAll(IntList *lsPtr, int value) {
+
+    IntList prevEl = NULL;
+    IntList currEl = *lsPtr;
+
+    size_t occ = 0;
+
+    while (currEl != NULL) {
+
+        if (currEl -> data == value) {
+            IntList temp = currEl;
+
+            // rimuovo in testa
+            if (prevEl == NULL) {
+                *lsPtr = currEl -> next;
+                currEl = currEl -> next;
+            } else {
+	            // rimuovo in mezzo, devo aggiornare anche currEl
+	            // perché non c'è il for e dopo non viene aggiornato 
+                prevEl -> next = currEl -> next;
+                currEl = currEl -> next;
+            }
+            
+            // libero la memoria
+            free(temp);
+            temp = NULL;
+            
+            occ++;
+        } else {
+	        // altrimenti porto avanti prevEl
+            prevEl = currEl;
+            currEl = currEl -> next;
+        }
+    }
+    return occ;
+
+}
+```
+
+### Soluzione ottimizzata
 
 ```c
 size_t deleteAll(IntList *lsPtr, int value) {
