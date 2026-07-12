@@ -978,11 +978,12 @@ void reverseIterative(IntList *lsPtr) {
     IntList previous = NULL;
     IntList current = *lsPtr;
 
+	// pattern (salva, gira, avanza, avanza)
     while (current != NULL) {
-        IntList next = current->next;
-        current->next = previous;
-        previous = current;
-        current = next;
+        IntList next = current->next; // ricordo il nodo successivo
+        current->next = previous; // il nodo corrente punta verso la parte invertita
+        previous = current; // primo nodo della parte invertita
+        current = next; // continuo dal nodo che ho salvato all'inizio
     }
 
     *lsPtr = previous;
@@ -1016,7 +1017,33 @@ void reverseRecursive(IntList *lsPtr);
 ### Soluzione semplice
 
 ```c
+void reverse(IntList *lsPtr) {
+    /* Caso base: lista vuota o con un solo nodo */
+    if (lsPtr == NULL || *lsPtr == NULL || (*lsPtr)->next == NULL) {
+        return;
+    }
+
+    /* Salviamo il primo nodo e l'inizio del resto della lista */
+    IntList first = *lsPtr;
+    IntList rest = first->next;
+
+    /* Invertiamo ricorsivamente il resto */
+    reverse(&rest);
+
+    /* Mettiamo il primo nodo alla fine */
+    first->next->next = first;
+    first->next = NULL;
+
+    /* Aggiorniamo la testa */
+    *lsPtr = rest;
+}
+```
+
+### Soluzione con funzione ausiliaria
+
+```c
 static IntList reverseRecHelper(IntList ls) {
+	// caso base: lista vuota o un solo nodo
     if (ls == NULL || ls->next == NULL) {
         return ls;
     }
