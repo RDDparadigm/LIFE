@@ -34,9 +34,9 @@ L’obiettivo non è solo riconoscere lo schema, ma saper spiegare discorsivamen
 
 ## 2. Che cos’è il program counter e qual è il suo ruolo nel datapath?
 
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
+**Stato:** 🟡 
+**Ultimo ripasso:**  06/07/2026
+**Note mie:**  Solite cose sul significato del program counter
 
 > [!answer]- Risposta
 > Il program counter, o PC, è un registro che contiene l’indirizzo dell’istruzione corrente da eseguire.
@@ -47,22 +47,7 @@ L’obiettivo non è solo riconoscere lo schema, ma saper spiegare discorsivamen
 
 ---
 
-## 3. Perché l’indirizzo dell’istruzione successiva viene calcolato come PC + 4?
-
-**Stato:** 🔴  
-**Ultimo ripasso:**  
-**Note mie:**  
-
-> [!answer]- Risposta
-> L’indirizzo dell’istruzione successiva viene calcolato come `PC + 4` perché le istruzioni considerate sono lunghe 32 bit, cioè 4 byte.
->
-> La memoria è indirizzata a byte, quindi due istruzioni consecutive non hanno indirizzi che differiscono di 1, ma di 4. Se un’istruzione si trova all’indirizzo `PC`, la successiva, in esecuzione sequenziale, si trova all’indirizzo `PC + 4`.
->
-> Per questo motivo nel datapath è presente un sommatore che riceve in ingresso il valore corrente del PC e la costante 4.
-
----
-
-## 4. Quali componenti sono necessari per prelevare un’istruzione dalla memoria?
+## 3. Quali componenti sono necessari per prelevare un’istruzione dalla memoria?
 
 **Stato:** 🔴  
 **Ultimo ripasso:**  

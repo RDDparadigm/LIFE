@@ -51,7 +51,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 3. Che cos’è una cache a mappatura diretta?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -72,7 +72,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 4. Perché in una cache a mappatura diretta serve il campo tag?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -98,7 +98,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 5. A cosa serve il bit di validità in una cache?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -172,7 +172,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 8. Come si calcola la dimensione del campo tag?
 
-**Stato:** 🔴  
+**Stato:**   🟡
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -207,7 +207,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 9. Perché la dimensione reale di una cache è maggiore della sola dimensione dei dati?
 
-**Stato:** 🔴  
+**Stato:** 🟡
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -231,7 +231,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 10. Che cosa succede quando si verifica una miss in lettura?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -255,7 +255,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 11. Perché nelle cache si trasferiscono blocchi e non solo singole parole?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -350,7 +350,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 15. Come vengono gestite le miss nelle cache per le istruzioni?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -374,7 +374,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 16. Perché la gestione delle scritture in cache è più complessa della gestione delle letture?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -398,7 +398,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 17. Che cos’è la politica write-through?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -421,7 +421,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 18. A cosa serve un buffer di scrittura?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -447,7 +447,7 @@ Durante il ripasso prova sempre a spiegare un accesso alla cache “a voce”, p
 
 ## 19. Che cos’è la politica write-back?
 
-**Stato:** 🔴  
+**Stato:** 🟡 
 **Ultimo ripasso:**  
 **Note mie:**  
 

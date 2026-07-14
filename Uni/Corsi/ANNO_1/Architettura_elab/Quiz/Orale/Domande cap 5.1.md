@@ -15,7 +15,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 1. Perché nei calcolatori si usa una gerarchia di memoria?
 
-**Stato:** 🔴  
+**Stato:** 🟡 
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -30,7 +30,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 2. Come è organizzata una gerarchia di memoria e cosa succede al crescere della distanza dalla CPU?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -49,7 +49,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 3. Che cos’è un blocco nella gerarchia di memoria?
 
-**Stato:** 🔴  
+**Stato:** 🟡
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -64,7 +64,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 4. Che cosa sono hit e miss in una gerarchia di memoria?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -82,7 +82,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 5. Che cosa indicano hit rate e miss rate?
 
-**Stato:** 🔴  
+**Stato:** 🟡 
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -103,7 +103,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 6. Che differenza c’è tra hit time e miss penalty?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -121,7 +121,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 7. Come si può esprimere il tempo medio di accesso alla memoria?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -142,7 +142,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 8. Perché il principio di località rende efficace la gerarchia di memoria?
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -160,7 +160,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 9. Che cos’è la località temporale? Fai un esempio.
 
-**Stato:** 🔴  
+**Stato:** 🟡  
 **Ultimo ripasso:**  
 **Note mie:**  
 
@@ -175,7 +175,7 @@ L’obiettivo non è memorizzare le definizioni parola per parola, ma saper spie
 
 ## 10. Che cos’è la località spaziale? Fai un esempio.
 
-**Stato:** 🔴  
+**Stato:** 🟡
 **Ultimo ripasso:**  
 **Note mie:**  
 
