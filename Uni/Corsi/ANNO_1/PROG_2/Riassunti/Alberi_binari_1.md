@@ -1364,18 +1364,25 @@ void depthFirst(Tree tree) {
 
     VoidPtrStackADT s = mkVoidPtrStackADT();
 
+	// qui stiamo pushando l'albero nello stack, tenendo conto che 
+	// il primo nodo è quello più in alto 
     push(s, tree);
 
     while (!isEmpty(s)) {
+	    
+	    // qua recuperiamo il nodo dell' albero
         Tree nodePtr = (Tree) pop(s);
 
         // visita il nodo
         printf("%d ", nodePtr->data);
 
+		// prima faccio push del destro...
         if (nodePtr->right != NULL) {
             push(s, nodePtr->right);
         }
-
+		
+		// ...poi del sinistro, perché poi voglio stampare 
+		// prima il sinistro e poi il destro
         if (nodePtr->left != NULL) {
             push(s, nodePtr->left);
         }
@@ -1467,7 +1474,8 @@ void breadthFirst(Tree tree) {
     }
 
     VoidPtrQueueADT q = mkVoidPtrQueueADT();
-
+	
+	// utilizziamo la struttura della coda
     enqueue(q, tree);
 
     while (!isEmpty(q)) {
@@ -1476,10 +1484,12 @@ void breadthFirst(Tree tree) {
         // visita il nodo
         printf("%d ", nodePtr->data);
 
+		// metti in coda il nodo sinistro
         if (nodePtr->left != NULL) {
             enqueue(q, nodePtr->left);
         }
 
+		// metti in coda il nodo destro
         if (nodePtr->right != NULL) {
             enqueue(q, nodePtr->right);
         }
