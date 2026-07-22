@@ -18,7 +18,6 @@ Il carbonio ha Z = 6, quindi ogni atomo di carbonio ha 6 protoni.
 Che cos'è il numero atomico e perché identifica un elemento?
 
 ## Collegamenti
-- [[Protone]]
-- [[Atomo]]
+
 - [[Numero di massa]]
 - [[Isotopi]]

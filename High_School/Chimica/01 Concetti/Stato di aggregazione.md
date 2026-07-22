@@ -16,6 +16,3 @@ Da cosa dipende lo stato di aggregazione di una sostanza?
 ## Collegamenti
 - [[Modello particellare]]
 - [[Passaggio di stato]]
-- [[Solido]]
-- [[Liquido]]
-- [[Aeriforme]]

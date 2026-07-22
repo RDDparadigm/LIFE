@@ -1,17 +1,8 @@
----
-tipo: concetto
-tags: [chimica, concetto]
----
 
-# Condensazione
-
-## Idea
-La condensazione è il passaggio da aeriforme a liquido.
+La condensazione è il passaggio da [Aeriforme|aeriforme] a [Liquido|liquido].
 
 È il processo inverso della [[Vaporizzazione]].
 
 ## Collegamenti
+
 - [[Passaggio di stato]]
-- [[Aeriforme]]
-- [[Liquido]]
-- [[Vaporizzazione]]

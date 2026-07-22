@@ -6,10 +6,8 @@ tags: [chimica, concetto]
 # Sublimazione
 
 ## Idea
-La sublimazione è il passaggio diretto da solido ad aeriforme, senza passare dallo stato liquido.
+La sublimazione è il [[Passaggio di stato|passaggio di stato]] diretto da [[Solido|solido]] ad [[Aeriforme|aeriforme]], senza passare dallo stato [[Liquido|liquido]].
 
 ## Collegamenti
 - [[Passaggio di stato]]
-- [[Solido]]
-- [[Aeriforme]]
 - [[Brinamento]]

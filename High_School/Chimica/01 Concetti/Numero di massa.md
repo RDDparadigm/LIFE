@@ -26,6 +26,4 @@ Che differenza c'è tra numero atomico e numero di massa?
 
 ## Collegamenti
 - [[Numero atomico]]
-- [[Protone]]
-- [[Neutrone]]
 - [[Isotopi]]
