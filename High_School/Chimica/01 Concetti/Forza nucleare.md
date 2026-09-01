@@ -18,4 +18,3 @@ Perché è necessaria una forza che tenga insieme il nucleo atomico?
 - [[Neutrone]]
 - [[Atomo]]
 - [[Chimica nucleare]]
-- 
