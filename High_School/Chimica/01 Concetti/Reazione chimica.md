@@ -13,9 +13,6 @@ Le sostanze di partenza sono i [[Reagenti e prodotti|reagenti]], mentre le sosta
 ## Esempio
 Carbonio + ossigeno → diossido di carbonio.
 
-## Domanda d'esame
-Che cos'è una reazione chimica?
-
 ## Collegamenti
 - [[Trasformazione chimica]]
 - [[Equazione chimica]]

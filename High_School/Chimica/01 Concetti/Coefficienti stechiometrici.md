@@ -1,19 +1,8 @@
----
-tipo: concetto
-tags: [chimica, concetto]
----
 
-# Coefficienti stechiometrici
+I coefficienti stechiometrici sono numeri posti davanti alle [Equazione chimica|formule chimiche] in un'equazione.
 
-## Idea
-I coefficienti stechiometrici sono numeri posti davanti alle formule chimiche in un'equazione.
-
-Servono a bilanciare la reazione, cioè a fare in modo che il numero di atomi di ogni elemento sia uguale tra reagenti e prodotti.
-
-## Domanda d'esame
-A cosa servono i coefficienti stechiometrici?
+Servono a bilanciare la [[Reazione chimica|reazione]], cioè a fare in modo che il numero di atomi di ogni elemento sia uguale tra reagenti e prodotti.
 
 ## Collegamenti
-- [[Equazione chimica]]
-- [[Reazione chimica]]
+
 - [[Legge di Lavoisier]]

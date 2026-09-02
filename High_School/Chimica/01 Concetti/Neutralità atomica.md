@@ -13,9 +13,6 @@ Le cariche positive dei protoni compensano le cariche negative degli elettroni, 
 ## Esempio
 Se un atomo ha 8 protoni e 8 elettroni, è elettricamente neutro.
 
-## Domanda d'esame
-Da cosa dipende la neutralità elettrica di un atomo?
-
 ## Collegamenti
 - [[Elettrone]]
 - [[Protone]]
