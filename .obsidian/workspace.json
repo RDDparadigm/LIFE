@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High_School/Matematica/Algebra/Funzioni/Le funzioni di proporzionalita diretta e inversa.md",
+                "file": "High_School/Matematica/Algebra/Proporzionalità diretta.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Le funzioni di proporzionalita diretta e inversa"
+              "title": "Proporzionalità diretta"
             }
           }
         ]
@@ -208,7 +208,10 @@
   },
   "active": "459b8b4ae6274e90",
   "lastOpenFiles": [
+    "High_School/Matematica/Algebra/Numeri razionali e introduzione ai numeri reali.md",
+    "High_School/Matematica/Algebra/Polinomi.md",
     "High_School/Matematica/Algebra/Introduzione al calcolo letterale e monomi.md",
+    "High_School/Matematica/Algebra/Proporzionalità diretta.md",
     "High_School/Matematica/Algebra/Funzioni/Le funzioni di proporzionalita diretta e inversa.md",
     "High_School/Matematica/Algebra/Funzioni",
     "High_School/Matematica/Algebra/Funzioni.md",
@@ -234,9 +237,6 @@
     "High_School/Chimica/01 Concetti/Catione.md",
     "High_School/Chimica/01 Concetti/Anione.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_Alberi_Binari_BST.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_ADT_Generici_Void_Puntatori_Funzione.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/cheat_sheet_operativo_programmazione2_C.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_teorici_prog2.md",
     "High_School/Chimica/03 Domande esame",
     "High_School/Chimica/02 Esercizi",
     "High_School/Chimica/01 Concetti",

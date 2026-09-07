@@ -2,5 +2,6 @@
   "alwaysUpdateLinks": true,
   "openBehavior": "daily",
   "showUnsupportedFiles": true,
-  "spellcheck": false
+  "spellcheck": false,
+  "promptDelete": false
 }
