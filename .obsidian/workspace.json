@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Alberi_binari_2.md",
+                "file": "High_School/Matematica/Algebra/Funzioni/Le funzioni di proporzionalita diretta e inversa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Alberi_binari_2"
+              "title": "Le funzioni di proporzionalita diretta e inversa"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -157,8 +159,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -167,8 +169,8 @@
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "copilot-chat-view"
+              "icon": "message-square",
+              "title": "Copilot"
             }
           },
           {
@@ -206,43 +208,43 @@
   },
   "active": "459b8b4ae6274e90",
   "lastOpenFiles": [
+    "High_School/Matematica/Algebra/Introduzione al calcolo letterale e monomi.md",
+    "High_School/Matematica/Algebra/Funzioni/Le funzioni di proporzionalita diretta e inversa.md",
+    "High_School/Matematica/Algebra/Funzioni",
+    "High_School/Matematica/Algebra/Funzioni.md",
+    "High_School/Chimica/00 Mappe/Mappa Chimica.md",
+    "High_School/Chimica/00 Mappe/Mappa - Reazioni e leggi ponderali.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Alberi_binari_2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/vademecum_stringhe_C_esame.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/soglie_preparazione_prog2_aggiornate.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList/pattern_classici_liste_linkate_C.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList/Esercizi_Liste_Linkate.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
+    "High_School/Chimica/01 Concetti/Untitled.md",
+    "High_School/Chimica/01 Concetti/Tavola periodica.md",
+    "High_School/Chimica/01 Concetti/Reazione nucleare.md",
+    "High_School/Chimica/01 Concetti/Radioattività.md",
+    "High_School/Chimica/01 Concetti/Periodo.md",
+    "High_School/Chimica/01 Concetti/Gruppo della tavola periodica.md",
+    "High_School/Chimica/01 Concetti/Fusione nucleare.md",
+    "High_School/Chimica/01 Concetti/Fissione nucleare.md",
+    "High_School/Chimica/01 Concetti/Elettroni di valenza.md",
+    "High_School/Chimica/01 Concetti/Chimica nucleare.md",
+    "High_School/Chimica/01 Concetti/Catione.md",
+    "High_School/Chimica/01 Concetti/Anione.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_Alberi_Binari_BST.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_ADT_Generici_Void_Puntatori_Funzione.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/cheat_sheet_operativo_programmazione2_C.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_teorici_prog2.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Soglie_Preparazione_Esame.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Procedure_essenziali.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_Ricorsione_Generale.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_Pile_Code_Deque.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_Misti_Simulazioni_Esame_Inferno.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_Liste_Linkate.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_Insiemi.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_File_C.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esercizi_Array_Stringhe_Memoria_Dinamica.md",
-    "High_School/Chimica/START HERE - Chimica.md",
-    "High_School/Chimica/03 Domande esame/Domande - Struttura atomica.md",
-    "High_School/Chimica/03 Domande esame/Domande - Trasformazioni chimiche.md",
-    "High_School/Chimica/03 Domande esame/Domande - Trasformazioni fisiche.md",
-    "High_School/Chimica/03 Domande esame/Domande - Leggi ponderali.md",
     "High_School/Chimica/03 Domande esame",
-    "High_School/Chimica/02 Esercizi/Esercizi - Leggi ponderali.md",
     "High_School/Chimica/02 Esercizi",
-    "High_School/Chimica/01 Concetti/Viscosità.md",
-    "High_School/Chimica/01 Concetti/Vaporizzazione.md",
-    "High_School/Chimica/01 Concetti/Unità di massa atomica.md",
-    "High_School/Chimica/01 Concetti/Trasformazione fisica.md",
-    "High_School/Chimica/01 Concetti/Trasformazione chimica.md",
-    "High_School/Chimica/01 Concetti/Teoria atomica di Dalton.md",
-    "High_School/Chimica/01 Concetti/Tensione superficiale.md",
     "High_School/Chimica/01 Concetti",
     "High_School/Chimica/00 Mappe",
     "High_School/Chimica",
     "Pasted image 20260706163324.png",
     "High_School/Scienze/Le trasformazioni chimiche",
     "Reading/Dictionary/P",
-    "Reading/Dictionary",
-    "Uni/Corsi/ANNO_1/PROG_2/Progetti",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
     "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
