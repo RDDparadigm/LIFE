@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "30c0bc5724f95681",
+        "id": "42e3a9e77e7ef153",
         "type": "tabs",
         "children": [
           {
-            "id": "f142b6e8665f1cb3",
+            "id": "f07bd83daa647889",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Liste Linkate.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Liste Linkate"
             }
           }
         ]
@@ -202,8 +206,17 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "14655ead18c286c9",
+  "active": "f07bd83daa647889",
   "lastOpenFiles": [
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Insieme.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-coda.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Tipo opaco.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/soglie_preparazione_prog2_aggiornate.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/cheat_sheet_operativo_programmazione2_C.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/allenamento_esame_prog2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList/pattern_classici_liste_linkate_C.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList/Esercizi_Liste_Linkate.md",
     "High_School/Matematica/Algebra/Funzione.md",
     "High_School/Matematica/Immagini/Funzione_errata.png",
     "High_School/Matematica/Immagini/Funzione_corretta.png",
@@ -234,15 +247,7 @@
     "High_School/Matematica/Algebra/Funzioni.md",
     "High_School/Chimica/00 Mappe/Mappa Chimica.md",
     "High_School/Chimica/00 Mappe/Mappa - Reazioni e leggi ponderali.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Alberi_binari_2.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/vademecum_stringhe_C_esame.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/soglie_preparazione_prog2_aggiornate.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList/pattern_classici_liste_linkate_C.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList/Esercizi_Liste_Linkate.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
-    "High_School/Chimica/01 Concetti/Untitled.md",
-    "High_School/Chimica/01 Concetti/Tavola periodica.md",
     "High_School/Chimica/03 Domande esame",
     "High_School/Chimica/02 Esercizi",
     "High_School/Chimica/01 Concetti",
