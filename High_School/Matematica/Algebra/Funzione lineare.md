@@ -6,3 +6,7 @@ Ha un equazione del tipo ==y = mx + q== e rappresenta il grafico di una **retta*
 
 Per tracciare i suoi punti andiamo a sostituire il valore di x nell'equazione per ottenere y
 
+
+## Riferimenti
+
+[[Rette parallele]]

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5e951db43efad630",
+        "id": "30c0bc5724f95681",
         "type": "tabs",
         "children": [
           {
-            "id": "459b8b4ae6274e90",
+            "id": "f142b6e8665f1cb3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "High_School/Matematica/Algebra/Rette parallele.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Rette parallele"
+              "title": "New tab"
             }
           }
         ]
@@ -206,15 +202,28 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "5748c23cb5366a11",
+  "active": "14655ead18c286c9",
   "lastOpenFiles": [
-    "High_School/Matematica/Immagini/Funzione_lineare.png",
+    "High_School/Matematica/Algebra/Funzione.md",
+    "High_School/Matematica/Immagini/Funzione_errata.png",
+    "High_School/Matematica/Immagini/Funzione_corretta.png",
+    "High_School/Matematica/Algebra/Untitled 1.md",
+    "High_School/Matematica/Algebra/Funzione composta.md",
+    "High_School/Matematica/Algebra/Funzione inversa.md",
+    "High_School/Matematica/Immagini/Funzione_non_invertibile.png",
+    "High_School/Matematica/Immagini/Funzione_inversa_simmetria.png",
+    "High_School/Matematica/Immagini/Funzione_invertibile.png",
+    "High_School/Matematica/Algebra/Funzione cubica.md",
+    "High_School/Matematica/Immagini/Funzione_cubica_a_minore.png",
+    "High_School/Matematica/Immagini/Funzione_cubica_a_maggiore.png",
+    "High_School/Matematica/Algebra/Funzione quadratica.md",
     "High_School/Matematica/Algebra/Funzione lineare.md",
     "High_School/Matematica/Algebra/Rette parallele.md",
-    "High_School/Matematica/Algebra/Proporzionalita inversa.md",
-    "High_School/Matematica/Immagini/Proporzionalita_inversa.png",
     "High_School/Matematica/Algebra/Proporzionalità diretta.md",
-    "High_School/Matematica/Immagini/Proporzionalita_diretta.png",
+    "High_School/Matematica/Immagini/Funzione_lineare.png",
+    "High_School/Matematica/Immagini/Funzione_quadratica_a_minore.png",
+    "High_School/Matematica/Immagini/Funzione_quadratica_a_maggiore.png",
+    "High_School/Matematica/Algebra/Proporzionalita inversa.md",
     "Reading/Atomic Habits.md",
     "High_School/Matematica/Immagini",
     "High_School/Matematica/Algebra/Numeri razionali e introduzione ai numeri reali.md",
@@ -234,25 +243,11 @@
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
     "High_School/Chimica/01 Concetti/Untitled.md",
     "High_School/Chimica/01 Concetti/Tavola periodica.md",
-    "High_School/Chimica/01 Concetti/Reazione nucleare.md",
-    "High_School/Chimica/01 Concetti/Radioattività.md",
-    "High_School/Chimica/01 Concetti/Periodo.md",
-    "High_School/Chimica/01 Concetti/Gruppo della tavola periodica.md",
-    "High_School/Chimica/01 Concetti/Fusione nucleare.md",
-    "High_School/Chimica/01 Concetti/Fissione nucleare.md",
     "High_School/Chimica/03 Domande esame",
     "High_School/Chimica/02 Esercizi",
     "High_School/Chimica/01 Concetti",
     "High_School/Chimica/00 Mappe",
     "High_School/Chimica",
-    "Pasted image 20260706163324.png",
-    "High_School/Scienze/Le trasformazioni chimiche",
-    "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 2/Pasted image 20250524190714.png",
-    "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 11 parte 2/Pasted image 20250524131837.png",
-    "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520165236.png",
-    "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520181727.png",
-    "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520181651.png",
-    "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520180224.png",
-    "Uni/Corsi/ANNO_1/Fondamenti_Informatica/Riassunti/Capitolo 1 parte 1/Screenshot/Pasted image 20250520180140.png"
+    "High_School/Scienze/Le trasformazioni chimiche"
   ]
 }
