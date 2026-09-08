@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "42e3a9e77e7ef153",
+        "id": "1d1036fefb08f4a8",
         "type": "tabs",
         "children": [
           {
-            "id": "f07bd83daa647889",
+            "id": "ed6331f8bde4289e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High_School/Chimica/01 Concetti/Untitled 1.md",
+                "file": "High_School/Chimica/01 Concetti/Mole.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Mole"
             }
           }
         ]
@@ -206,10 +206,18 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "f07bd83daa647889",
+  "active": "ed6331f8bde4289e",
   "lastOpenFiles": [
-    "High_School/Chimica/01 Concetti/Massa atomica media.md",
+    "High_School/Chimica/01 Concetti/Formula di struttura.md",
+    "High_School/Chimica/01 Concetti/Mole.md",
+    "High_School/Chimica/01 Concetti/Formula molecolare.md",
+    "High_School/Chimica/01 Concetti/Composto.md",
+    "High_School/Chimica/01 Concetti/Molecola.md",
     "High_School/Chimica/01 Concetti/Untitled 1.md",
+    "High_School/Chimica/01 Concetti/Coefficienti stechiometrici.md",
+    "High_School/Chimica/01 Concetti/Reazione chimica.md",
+    "High_School/Chimica/01 Concetti/Equazione chimica.md",
+    "High_School/Chimica/01 Concetti/Massa atomica media.md",
     "High_School/Chimica/00 Mappe/Mappa - Trasformazioni della materia.md",
     "High_School/Chimica/00 Mappe/Mappa - Reazioni e leggi ponderali.md",
     "High_School/Chimica/00 Mappe/Mappa Chimica.md",
@@ -227,19 +235,11 @@
     "Uni/Corsi/ANNO_1/PROG_2/Esame/soglie_preparazione_prog2_aggiornate.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/cheat_sheet_operativo_programmazione2_C.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/allenamento_esame_prog2.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList/pattern_classici_liste_linkate_C.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList/Esercizi_Liste_Linkate.md",
-    "High_School/Matematica/Algebra/Funzione.md",
     "High_School/Matematica/Immagini/Funzione_errata.png",
     "High_School/Matematica/Immagini/Funzione_corretta.png",
-    "High_School/Matematica/Algebra/Untitled 1.md",
-    "High_School/Matematica/Algebra/Funzione composta.md",
-    "High_School/Matematica/Algebra/Funzione inversa.md",
     "High_School/Matematica/Immagini/Funzione_non_invertibile.png",
     "High_School/Matematica/Immagini/Funzione_inversa_simmetria.png",
     "High_School/Matematica/Immagini/Funzione_invertibile.png",
-    "High_School/Matematica/Algebra/Funzione cubica.md",
     "High_School/Matematica/Immagini/Funzione_cubica_a_minore.png",
     "High_School/Matematica/Immagini/Funzione_cubica_a_maggiore.png",
     "High_School/Matematica/Immagini/Funzione_lineare.png",
