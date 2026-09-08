@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_c_intermedio_demoniaco.md",
+                "file": "High_School/Chimica/01 Concetti/Untitled 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "quiz_c_intermedio_demoniaco"
+              "title": "Untitled 1"
             }
           }
         ]
@@ -206,10 +206,16 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "5748c23cb5366a11",
+  "active": "f07bd83daa647889",
   "lastOpenFiles": [
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_teorici_prog2.md",
+    "High_School/Chimica/01 Concetti/Massa atomica media.md",
+    "High_School/Chimica/01 Concetti/Untitled 1.md",
+    "High_School/Chimica/00 Mappe/Mappa - Trasformazioni della materia.md",
+    "High_School/Chimica/00 Mappe/Mappa - Reazioni e leggi ponderali.md",
+    "High_School/Chimica/00 Mappe/Mappa Chimica.md",
+    "High_School/Chimica/00 Mappe/README - Come usare questa cartella.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_c_intermedio_demoniaco.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_teorici_prog2.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_c_intermedio_demoniaco_prog2.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/warmup_prog2_C_domande_risposte_nascoste.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/warmup_prog2_C_domande_risposte_nascoste 1.md",
@@ -236,15 +242,9 @@
     "High_School/Matematica/Algebra/Funzione cubica.md",
     "High_School/Matematica/Immagini/Funzione_cubica_a_minore.png",
     "High_School/Matematica/Immagini/Funzione_cubica_a_maggiore.png",
-    "High_School/Matematica/Algebra/Funzione quadratica.md",
-    "High_School/Matematica/Algebra/Funzione lineare.md",
-    "High_School/Matematica/Algebra/Rette parallele.md",
-    "High_School/Matematica/Algebra/Proporzionalità diretta.md",
     "High_School/Matematica/Immagini/Funzione_lineare.png",
     "High_School/Matematica/Immagini/Funzione_quadratica_a_minore.png",
     "High_School/Matematica/Immagini/Funzione_quadratica_a_maggiore.png",
-    "High_School/Matematica/Algebra/Proporzionalita inversa.md",
-    "Reading/Atomic Habits.md",
     "High_School/Matematica/Immagini",
     "High_School/Matematica/Algebra/Funzioni",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList",
