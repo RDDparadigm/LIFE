@@ -120,4 +120,4 @@ Il rapporto semplice tra le masse di cloro è **3:5**.
 
 ## Collegamenti
 - [[Mappa - Reazioni e leggi ponderali]]
-- [[Domande - Leggi ponderali]]
+
