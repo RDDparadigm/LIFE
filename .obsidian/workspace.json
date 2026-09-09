@@ -1,0 +1,254 @@
+{
+  "main": {
+    "id": "67c001c06ef74bc9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e2859aef3fcc11c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b1eee25f16b60e7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "593623a4242a1fce",
+    "type": "split",
+    "children": [
+      {
+        "id": "288d8a312b995780",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5748c23cb5366a11",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1ff6c710fcb75b7d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5ed89bc2866ff9c6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 476.5
+  },
+  "right": {
+    "id": "ecb5a0688fa12bca",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d411952e6708b47",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa07ba511425ad1e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Linux/2025-10-29.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2025-10-29"
+            }
+          },
+          {
+            "id": "5ffa75e9e0e707c6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Linux/2025-10-29.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2025-10-29"
+            }
+          },
+          {
+            "id": "6ad2b91167c2b74c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "323e772f9d265203",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "High_School/Narrativa/Gli stili narrativi/Fantascienza distopia e fantasy.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Fantascienza distopia e fantasy"
+            }
+          },
+          {
+            "id": "ba6bfcf229abe6b5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "fc887ad5714d9d14",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          },
+          {
+            "id": "14655ead18c286c9",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 309.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "14655ead18c286c9",
+  "lastOpenFiles": [
+    "High_School/Chimica/01 Concetti/Mole.md",
+    "High_School/Chimica/01 Concetti/Massa molare.md",
+    "High_School/Chimica/01 Concetti/Numero di Avogadro.md",
+    "High_School/Chimica/01 Concetti/Formula di struttura.md",
+    "High_School/Chimica/01 Concetti/Formula molecolare.md",
+    "High_School/Chimica/01 Concetti/Composto.md",
+    "High_School/Chimica/01 Concetti/Molecola.md",
+    "High_School/Chimica/01 Concetti/Untitled 1.md",
+    "High_School/Chimica/01 Concetti/Coefficienti stechiometrici.md",
+    "High_School/Chimica/01 Concetti/Reazione chimica.md",
+    "High_School/Chimica/01 Concetti/Equazione chimica.md",
+    "High_School/Chimica/01 Concetti/Massa atomica media.md",
+    "High_School/Chimica/00 Mappe/Mappa - Trasformazioni della materia.md",
+    "High_School/Chimica/00 Mappe/Mappa - Reazioni e leggi ponderali.md",
+    "High_School/Chimica/00 Mappe/Mappa Chimica.md",
+    "High_School/Chimica/00 Mappe/README - Come usare questa cartella.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_c_intermedio_demoniaco.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_teorici_prog2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_c_intermedio_demoniaco_prog2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/warmup_prog2_C_domande_risposte_nascoste.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/warmup_prog2_C_domande_risposte_nascoste 1.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/ripasso_liste_alberi_stringhe_prog2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Liste Linkate.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-Insieme.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/ADT-coda.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Tipo opaco.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
+    "High_School/Matematica/Immagini/Funzione_errata.png",
+    "High_School/Matematica/Immagini/Funzione_corretta.png",
+    "High_School/Matematica/Immagini/Funzione_non_invertibile.png",
+    "High_School/Matematica/Immagini/Funzione_inversa_simmetria.png",
+    "High_School/Matematica/Immagini/Funzione_invertibile.png",
+    "High_School/Matematica/Immagini/Funzione_cubica_a_minore.png",
+    "High_School/Matematica/Immagini/Funzione_cubica_a_maggiore.png",
+    "High_School/Matematica/Immagini/Funzione_lineare.png",
+    "High_School/Matematica/Immagini/Funzione_quadratica_a_minore.png",
+    "High_School/Matematica/Immagini/Funzione_quadratica_a_maggiore.png",
+    "High_School/Matematica/Immagini",
+    "High_School/Matematica/Algebra/Funzioni",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList",
+    "High_School/Chimica/03 Domande esame",
+    "High_School/Chimica/02 Esercizi",
+    "High_School/Chimica/01 Concetti",
+    "High_School/Chimica/00 Mappe",
+    "High_School/Chimica",
+    "High_School/Scienze/Le trasformazioni chimiche"
+  ]
+}

@@ -1,9 +1,3 @@
----
-tipo: concetto
-tags: [chimica, concetto]
----
-
-# Reazione chimica
 
 ## Idea
 Una reazione chimica è un processo in cui le sostanze iniziali si trasformano in nuove sostanze.
