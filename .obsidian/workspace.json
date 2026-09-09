@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6611d52e846790ac",
+        "id": "d906a49b23ea768d",
         "type": "tabs",
         "children": [
           {
-            "id": "3b02784669e5a195",
+            "id": "5e32f6c34b2d23c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High_School/Matematica/Algebra/Equazioni equivalenti.md",
+                "file": "High_School/Matematica/Algebra/Legge di monotonia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Equazioni equivalenti"
+              "title": "Legge di monotonia"
             }
           }
         ]
@@ -206,10 +206,12 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "3b02784669e5a195",
+  "active": "5e32f6c34b2d23c9",
   "lastOpenFiles": [
-    "High_School/Matematica/Algebra/Equazioni impossibili.md",
+    "High_School/Matematica/Algebra/Legge di monotonia.md",
+    "High_School/Chimica/01 Concetti/Massa molare.md",
     "High_School/Matematica/Algebra/Equazioni equivalenti.md",
+    "High_School/Matematica/Algebra/Equazioni impossibili.md",
     "High_School/Matematica/Algebra/Equazioni indeterminate.md",
     "High_School/Matematica/Algebra/Equazioni determinate.md",
     "High_School/Matematica/Algebra/Dominio di un equazione.md",
@@ -237,7 +239,6 @@
     "High_School/Matematica/Immagini/Funzione_cubica_a_minore.png",
     "High_School/Matematica/Immagini/Funzione_cubica_a_maggiore.png",
     "High_School/Matematica/Immagini",
-    "High_School/Chimica/01 Concetti/Massa molare.md",
     "High_School/Chimica/01 Concetti/Formula molecolare.md",
     "High_School/Chimica/01 Concetti/Formula di struttura.md",
     "Mappa - Reazioni e leggi ponderali.md",
@@ -246,7 +247,6 @@
     "High_School/Chimica/00 Mappe/Mappa Chimica.md",
     "High_School/Chimica/00 Mappe/Mappa - Reazioni e leggi ponderali.md",
     "High_School/Chimica/01 Concetti/Fissione nucleare.md",
-    "High_School/Chimica/START HERE - Chimica.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Unconfirmed 798806.crdownload",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Unconfirmed 823608.crdownload",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
