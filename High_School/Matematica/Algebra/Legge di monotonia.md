@@ -6,6 +6,8 @@ Esempio
 
 Se a = b, allora a + c = b + c
 
+Se a = b, allora a * c = b * c
+
 
 ## Riferimenti
 
