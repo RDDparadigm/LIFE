@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5fd1ebe3a86d83b1",
+        "id": "d8f2271b1bd48715",
         "type": "tabs",
         "children": [
           {
-            "id": "617b076f00b894e0",
+            "id": "ff5a794e526bc7dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "High_School/Matematica/Algebra/Monomio.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Monomio"
             }
           }
         ]
@@ -202,8 +206,14 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "14655ead18c286c9",
+  "active": "ff5a794e526bc7dc",
   "lastOpenFiles": [
+    "High_School/Matematica/Algebra/Forma normale di un monomio.md",
+    "High_School/Matematica/Algebra/Monomio.md",
+    "High_School/Matematica/Algebra/Espressioni algebriche frazionarie.md",
+    "High_School/Matematica/Algebra/Espressioni algebriche intere.md",
+    "High_School/Matematica/Algebra/Espressione algebrica.md",
+    "High_School/Matematica/Algebra/Untitled",
     "conflict-files-obsidian-git.md",
     "High_School/Matematica/Algebra/Grado di un equazione.md",
     "High_School/Matematica/Algebra/Secondo principio di equivalenza.md",
@@ -225,11 +235,6 @@
     "High_School/Chimica/01 Concetti/Massa molare.md",
     "High_School/Chimica/01 Concetti/Numero di Avogadro.md",
     "High_School/Chimica/01 Concetti/Formula di struttura.md",
-    "High_School/Chimica/01 Concetti/Formula molecolare.md",
-    "High_School/Chimica/01 Concetti/Composto.md",
-    "High_School/Chimica/01 Concetti/Molecola.md",
-    "High_School/Chimica/01 Concetti/Untitled 1.md",
-    "High_School/Chimica/01 Concetti/Coefficienti stechiometrici.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
     "High_School/Matematica/Immagini/Funzione_errata.png",
     "High_School/Matematica/Immagini/Funzione_corretta.png",
@@ -248,7 +253,6 @@
     "High_School/Chimica/02 Esercizi",
     "High_School/Chimica/01 Concetti",
     "High_School/Chimica/00 Mappe",
-    "High_School/Chimica",
-    "High_School/Scienze/Le trasformazioni chimiche"
+    "High_School/Chimica"
   ]
 }
