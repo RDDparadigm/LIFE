@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "84967a23e3d7af4d",
+        "id": "5fd1ebe3a86d83b1",
         "type": "tabs",
         "children": [
           {
-            "id": "6c2b66cff13fcec4",
+            "id": "617b076f00b894e0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -202,10 +202,15 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "6c2b66cff13fcec4",
+  "active": "14655ead18c286c9",
   "lastOpenFiles": [
-    "High_School/Matematica/Algebra/Legge di monotonia.md",
+    "conflict-files-obsidian-git.md",
+    "High_School/Matematica/Algebra/Grado di un equazione.md",
+    "High_School/Matematica/Algebra/Secondo principio di equivalenza.md",
     "High_School/Matematica/Algebra/Soluzioni di un equazione.md",
+    "High_School/Matematica/Algebra/Primo principio di equivalenza.md",
+    "High_School/Matematica/Algebra/Legge di cancellazione.md",
+    "High_School/Matematica/Algebra/Legge di monotonia.md",
     "High_School/Matematica/Algebra/Equazioni indeterminate.md",
     "High_School/Matematica/Algebra/Equazioni impossibili.md",
     "High_School/Matematica/Algebra/Equazioni equivalenti.md",
@@ -225,11 +230,6 @@
     "High_School/Chimica/01 Concetti/Molecola.md",
     "High_School/Chimica/01 Concetti/Untitled 1.md",
     "High_School/Chimica/01 Concetti/Coefficienti stechiometrici.md",
-    "High_School/Chimica/01 Concetti/Reazione chimica.md",
-    "High_School/Chimica/01 Concetti/Equazione chimica.md",
-    "High_School/Chimica/01 Concetti/Massa atomica media.md",
-    "High_School/Chimica/00 Mappe/Mappa - Trasformazioni della materia.md",
-    "High_School/Chimica/00 Mappe/Mappa - Reazioni e leggi ponderali.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
     "High_School/Matematica/Immagini/Funzione_errata.png",
     "High_School/Matematica/Immagini/Funzione_corretta.png",
