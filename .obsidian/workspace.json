@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8e2859aef3fcc11c",
+        "id": "84967a23e3d7af4d",
         "type": "tabs",
         "children": [
           {
-            "id": "0b1eee25f16b60e7",
+            "id": "6c2b66cff13fcec4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -202,10 +202,10 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "14655ead18c286c9",
+  "active": "6c2b66cff13fcec4",
   "lastOpenFiles": [
-    "High_School/Matematica/Algebra/Soluzioni di un equazione.md",
     "High_School/Matematica/Algebra/Legge di monotonia.md",
+    "High_School/Matematica/Algebra/Soluzioni di un equazione.md",
     "High_School/Matematica/Algebra/Equazioni indeterminate.md",
     "High_School/Matematica/Algebra/Equazioni impossibili.md",
     "High_School/Matematica/Algebra/Equazioni equivalenti.md",

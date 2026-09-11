@@ -1,5 +1,5 @@
 
-Aggiungendo lo stesso valore ad entrambi i membri di un equazione, questa continua ad essere uguale alla precedente
+Aggiungendo lo stesso valore ad entrambi i membri di un equazione, questa continua ad essere equivalente alla precedente
 
 
 Esempio
