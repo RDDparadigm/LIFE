@@ -9,4 +9,5 @@ Per tracciare i suoi punti andiamo a sostituire il valore di x nell'equazione pe
 
 ## Riferimenti
 
-[[Rette parallele]]
+- [[Rette parallele]]
+- [[Funzione]]
