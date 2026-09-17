@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "352f472bc75c4a20",
+        "id": "01b5519179386a74",
         "type": "tabs",
         "children": [
           {
-            "id": "b95942e676ca40d2",
+            "id": "7941d8e97a33c131",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Uni/Corsi/ANNO_1/PROG_2/Esame/Prog2_strutture_C_da_imparare_Obsidian.md",
+                "file": "Uni/Corsi/ANNO_1/PROG_2/Esame/Dojo_C_Automatismi_Fondamentali.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prog2_strutture_C_da_imparare_Obsidian"
+              "title": "Dojo_C_Automatismi_Fondamentali"
             }
           }
         ]
@@ -206,13 +206,17 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "b95942e676ca40d2",
+  "active": "7941d8e97a33c131",
   "lastOpenFiles": [
-    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Liste Linkate.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/02_Dojo_C_Esercizi_Progressivi.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/Dojo_C_Automatismi_Fondamentali.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/Dojo_C_Esercizi_Progressivi.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/01_Dojo_C_Automatismi_Fondamentali.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/ripasso_liste_alberi_stringhe_prog2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_teorici_prog2.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Prog2_strutture_C_da_imparare_Obsidian.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_c_intermedio_demoniaco.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_teorici_prog2.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/ripasso_liste_alberi_stringhe_prog2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Liste Linkate.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/warmup_prog2_C_domande_risposte_nascoste.md",
     "Untitled.canvas",
     "High_School/Chimica/02 Esercizi/Esercizi - Leggi ponderali.md",
@@ -232,10 +236,6 @@
     "High_School/Matematica/Algebra/Prodotto notevole quadrato di un trinomio.md",
     "High_School/Matematica/Algebra/Prodotto notevole somma per differenza.md",
     "High_School/Matematica/Algebra/Prodotti notevoli.md",
-    "High_School/Matematica/Algebra/Prodotto tra due polinomi.md",
-    "High_School/Matematica/Algebra/Prodotto di monomio per polinomio.md",
-    "High_School/Matematica/Algebra/Polinomio completo.md",
-    "High_School/Matematica/Algebra/Polinomi ordinati.md",
     "High_School/Matematica/Algebra/Untitled",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
     "High_School/Matematica/Immagini/Funzione_errata.png",
