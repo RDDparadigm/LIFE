@@ -14,11 +14,11 @@ Esempio concreto: Dopo "abitudine attuale" io "nuova abitudine"
 
 E' facile associare la volontà come primo incipit per instaurare una nuova abitudine. Se è vero che dobbiamo desiderare di raggiungere un determinato obiettivo, è altrettanto vero che per farlo abbiamo bisogno di strutturare il nostro ambiente in modo tale che sia favorevole
 
-==Contesto==: tutto ciò che ci circonda contribuisce a rendere più consolidata un abitudine
+==Contesto== > tutto ciò che ci circonda contribuisce a rendere più consolidata un abitudine
 
 E' necessario associare a ogni abitudine il proprio luogo ed evitare di mescolare (es. il letto -> dormire, cucina -> mangiare ecc..)
 
-Ogni spazio deve avere la propria area di competenza definita
+Ogni spazio deve avere la **propria area di competenza** definita
 
 
 ### Capitolo 7 - Il segreto dell'autocontrollo
