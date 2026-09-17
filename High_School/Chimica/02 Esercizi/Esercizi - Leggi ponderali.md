@@ -118,6 +118,4 @@ Composto B = 299,68 g + 709,0 g = 1008,68 g
 **Risposta**  
 Il rapporto semplice tra le masse di cloro è **3:5**.
 
-## Collegamenti
-- [[Mappa - Reazioni e leggi ponderali]]
 
