@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b90a08d849e09a48",
+        "id": "352f472bc75c4a20",
         "type": "tabs",
         "children": [
           {
-            "id": "c45ad263b773ac87",
+            "id": "b95942e676ca40d2",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Uni/Corsi/ANNO_1/PROG_2/Esame/Prog2_strutture_C_da_imparare_Obsidian.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Prog2_strutture_C_da_imparare_Obsidian"
             }
           }
         ]
@@ -51,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reazioni",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,8 +76,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -203,8 +206,15 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "c45ad263b773ac87",
+  "active": "b95942e676ca40d2",
   "lastOpenFiles": [
+    "Uni/Corsi/ANNO_1/PROG_2/Riassunti/Liste Linkate.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/Prog2_strutture_C_da_imparare_Obsidian.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_c_intermedio_demoniaco.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/quiz_teorici_prog2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/ripasso_liste_alberi_stringhe_prog2.md",
+    "Uni/Corsi/ANNO_1/PROG_2/Esame/warmup_prog2_C_domande_risposte_nascoste.md",
+    "Untitled.canvas",
     "High_School/Chimica/02 Esercizi/Esercizi - Leggi ponderali.md",
     "Mappa - Reazioni e leggi ponderali.md",
     "Uni/Corsi/ANNO_1/Architettura_elab/Quiz/Orale/Domande slide - Appendice A.md",
@@ -226,12 +236,6 @@
     "High_School/Matematica/Algebra/Prodotto di monomio per polinomio.md",
     "High_School/Matematica/Algebra/Polinomio completo.md",
     "High_School/Matematica/Algebra/Polinomi ordinati.md",
-    "High_School/Matematica/Algebra/Polinomio simmetrico.md",
-    "High_School/Matematica/Algebra/Polinomi omogenei.md",
-    "High_School/Matematica/Algebra/Addizione e sottrazione tra monomi.md",
-    "High_School/Matematica/Algebra/Polinomio.md",
-    "High_School/Matematica/Algebra/Polinomi uguali.md",
-    "High_School/Matematica/Algebra/Grado di un polinomio.md",
     "High_School/Matematica/Algebra/Untitled",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
     "High_School/Matematica/Immagini/Funzione_errata.png",
