@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High_School/Matematica/Algebra/Disequazione letterale frazionaria.md",
+                "file": "High_School/Matematica/Algebra/Soluzioni di una disequazione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Disequazione letterale frazionaria"
+              "title": "Soluzioni di una disequazione"
             }
           }
         ]
@@ -208,12 +208,16 @@
   },
   "active": "5f4a2382ccbc9be8",
   "lastOpenFiles": [
-    "High_School/Matematica/Algebra/Disequazione frazionaria.md",
+    "High_School/Matematica/Algebra/Soluzioni di un equazione.md",
+    "High_School/Matematica/Algebra/Soluzioni di una disequazione.md",
+    "High_School/Matematica/Algebra/Dominio di un equazione.md",
+    "High_School/Matematica/Algebra/Untitled.md",
+    "High_School/Matematica/Algebra/Disuguaglianza.md",
     "High_School/Matematica/Algebra/Disequazione letterale frazionaria.md",
+    "High_School/Matematica/Algebra/Disequazione frazionaria.md",
     "High_School/Matematica/Algebra/Disequazione letterale.md",
     "High_School/Matematica/Algebra/Disequazione.md",
     "High_School/Matematica/Algebra/Disequazione intera.md",
-    "High_School/Matematica/Algebra/Disuguaglianza.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Dojo_C_Automatismi_Fondamentali.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/02_Dojo_C_Esercizi_Progressivi.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Dojo_C_Esercizi_Progressivi.md",
@@ -232,10 +236,6 @@
     "Uni/Corsi/ANNO_1/PROG_2/Progetti/Lab 2.md",
     "High_School/Matematica/Immagini/Funzione_inversa_simmetria.png",
     "Reading/Atomic Habits.md",
-    "High_School/Matematica/Algebra/Somma e sottrazione tra polinomi.md",
-    "Reading/Dictionary/P.md",
-    "High_School/Matematica/Algebra/Funzione lineare.md",
-    "High_School/Matematica/Algebra/Funzione.md",
     "High_School/Matematica/Algebra/Untitled",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
     "High_School/Matematica/Immagini/Funzione_errata.png",
