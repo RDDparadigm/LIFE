@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "037f496cda1f4b9c",
+        "id": "784eddf8e3da0732",
         "type": "tabs",
         "children": [
           {
-            "id": "b5c2f528e5fefb1d",
+            "id": "5f4a2382ccbc9be8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High_School/Matematica/Algebra/Untitled.md",
+                "file": "High_School/Matematica/Algebra/Disequazione letterale frazionaria.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Disequazione letterale frazionaria"
             }
           }
         ]
@@ -206,11 +206,12 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "b5c2f528e5fefb1d",
+  "active": "5f4a2382ccbc9be8",
   "lastOpenFiles": [
-    "High_School/Matematica/Algebra/Disequazione.md",
-    "High_School/Matematica/Algebra/Untitled.md",
     "High_School/Matematica/Algebra/Disequazione frazionaria.md",
+    "High_School/Matematica/Algebra/Disequazione letterale frazionaria.md",
+    "High_School/Matematica/Algebra/Disequazione letterale.md",
+    "High_School/Matematica/Algebra/Disequazione.md",
     "High_School/Matematica/Algebra/Disequazione intera.md",
     "High_School/Matematica/Algebra/Disuguaglianza.md",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Dojo_C_Automatismi_Fondamentali.md",
@@ -235,7 +236,6 @@
     "Reading/Dictionary/P.md",
     "High_School/Matematica/Algebra/Funzione lineare.md",
     "High_School/Matematica/Algebra/Funzione.md",
-    "High_School/Matematica/Algebra/Potenza n-esima di un binomio.md",
     "High_School/Matematica/Algebra/Untitled",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
     "High_School/Matematica/Immagini/Funzione_errata.png",
