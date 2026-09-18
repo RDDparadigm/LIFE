@@ -7,3 +7,4 @@ Esempio:
 ## Riferimenti
 
 - [[Disuguaglianza]]
+- [[Equazione]]
