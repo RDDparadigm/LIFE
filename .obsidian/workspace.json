@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High_School/Matematica/Algebra/Divisione tra polinomi.md",
+                "file": "High_School/Matematica/Algebra/Regola di Ruffini.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Divisione tra polinomi"
+              "title": "Regola di Ruffini"
             }
           }
         ]
@@ -208,6 +208,10 @@
   },
   "active": "a7d734b91f0811f7",
   "lastOpenFiles": [
+    "Pasted image 20260929101048.png",
+    "High_School/Matematica/Algebra/Divisione con resto tra polinomi.md",
+    "High_School/Matematica/Algebra/Regola di Ruffini.md",
+    "Pasted image 20260929100258.png",
     "High_School/Matematica/Algebra/Divisione tra polinomi.md",
     "High_School/Matematica/Algebra/Proprietà distributiva.md",
     "High_School/Matematica/Algebra/Proprietà associativa.md",
@@ -233,9 +237,6 @@
     "High_School/Matematica/Algebra/Disequazione frazionaria.md",
     "High_School/Matematica/Algebra/Disequazione letterale.md",
     "High_School/Matematica/Algebra/Disequazione.md",
-    "High_School/Matematica/Algebra/Disequazione intera.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/Dojo_C_Automatismi_Fondamentali.md",
-    "Uni/Corsi/ANNO_1/PROG_2/Esame/02_Dojo_C_Esercizi_Progressivi.md",
     "Untitled.canvas",
     "High_School/Matematica/Immagini/Funzione_inversa_simmetria.png",
     "High_School/Matematica/Algebra/Untitled",
@@ -246,7 +247,6 @@
     "High_School/Matematica/Immagini/Funzione_invertibile.png",
     "High_School/Matematica/Immagini/Funzione_cubica_a_minore.png",
     "High_School/Matematica/Immagini/Funzione_cubica_a_maggiore.png",
-    "High_School/Matematica/Immagini/Funzione_lineare.png",
     "High_School/Matematica/Immagini",
     "High_School/Matematica/Algebra/Funzioni",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList",
