@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High_School/Matematica/Algebra/Regola di Ruffini.md",
+                "file": "High_School/Matematica/Algebra/Teorema del resto.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regola di Ruffini"
+              "title": "Teorema del resto"
             }
           }
         ]
@@ -208,9 +208,10 @@
   },
   "active": "a7d734b91f0811f7",
   "lastOpenFiles": [
+    "High_School/Matematica/Algebra/Regola di Ruffini.md",
+    "High_School/Matematica/Algebra/Teorema del resto.md",
     "Pasted image 20260929101048.png",
     "High_School/Matematica/Algebra/Divisione con resto tra polinomi.md",
-    "High_School/Matematica/Algebra/Regola di Ruffini.md",
     "Pasted image 20260929100258.png",
     "High_School/Matematica/Algebra/Divisione tra polinomi.md",
     "High_School/Matematica/Algebra/Proprietà distributiva.md",
@@ -246,7 +247,6 @@
     "High_School/Matematica/Immagini/Funzione_non_invertibile.png",
     "High_School/Matematica/Immagini/Funzione_invertibile.png",
     "High_School/Matematica/Immagini/Funzione_cubica_a_minore.png",
-    "High_School/Matematica/Immagini/Funzione_cubica_a_maggiore.png",
     "High_School/Matematica/Immagini",
     "High_School/Matematica/Algebra/Funzioni",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList",
