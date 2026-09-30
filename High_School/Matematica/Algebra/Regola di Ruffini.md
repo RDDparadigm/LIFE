@@ -11,7 +11,7 @@ Procedimento:
 
 Esempio
 
-![[Pasted image 20260929101048.png]]
+![[Ruffini_Polinomi.png]]
 
 
 ## Riferimenti

@@ -10,7 +10,7 @@ A(x) = -4x^2 + 6x^3 + 1 e B(x) = 2x^2 + 1
 
 Vogliamo trovare Q ed R tali che -4x^2 + 6x^3 + 1 = Q(x)(2x^2 + 1) + R(x)
 
-![[Pasted image 20260929100258.png]]
+![[Divisione_tra_polinomi.png]]
 
 
 ## Riferimenti
