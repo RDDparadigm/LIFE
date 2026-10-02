@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "51b9c1be183facc2",
+        "id": "9c01a6565057ca87",
         "type": "tabs",
         "children": [
           {
-            "id": "2974e71f936cc606",
+            "id": "dcc2167287b39406",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "High_School/Matematica/Algebra/Mcm e MCD tra polinomi.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Mcm e MCD tra polinomi"
             }
           }
         ]
@@ -202,8 +206,15 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "14655ead18c286c9",
+  "active": "5748c23cb5366a11",
   "lastOpenFiles": [
+    "High_School/Matematica/Immagini/MCD_mcm_polinomi.png",
+    "High_School/Matematica/Immagini/Scomposizione_tramite_zeri_razionali.png",
+    "High_School/Matematica/Algebra/Mcm e MCD tra polinomi.md",
+    "High_School/Matematica/Algebra/Scomposizione di un polinomio tramite i suoi zeri razionali.md",
+    "High_School/Matematica/Immagini/Scomposizione_trinomio_particolare1.png",
+    "High_School/Matematica/Immagini/Scomposizione_trinomio_particolare2.png",
+    "High_School/Matematica/Algebra/Scomposizione di trinomi particolari.md",
     "High_School/Matematica/Immagini/Divisione_tra_polinomi.png",
     "High_School/Matematica/Immagini/Ruffini_Polinomi.png",
     "High_School/Matematica/Immagini/Raccoglimento_parziale.png",
@@ -231,17 +242,11 @@
     "High_School/Matematica/Algebra/Primo principio di equivalenza per le equazioni.md",
     "High_School/Matematica/Algebra/Intervalli di una disequazione.md",
     "High_School/Matematica/Immagini/Intervalli_di_una_disequazione.png",
-    "High_School/Matematica/Algebra/Soluzioni di una disequazione.md",
-    "High_School/Matematica/Algebra/Soluzioni di un equazione.md",
-    "High_School/Matematica/Algebra/Dominio di un equazione.md",
     "Untitled.canvas",
     "High_School/Matematica/Immagini/Funzione_inversa_simmetria.png",
     "High_School/Matematica/Algebra/Untitled",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/Esami Svolti – Programmazione 2 (C).pdf",
     "High_School/Matematica/Immagini/Funzione_errata.png",
-    "High_School/Matematica/Immagini/Funzione_corretta.png",
-    "High_School/Matematica/Immagini/Funzione_non_invertibile.png",
-    "High_School/Matematica/Immagini/Funzione_invertibile.png",
     "High_School/Matematica/Immagini",
     "High_School/Matematica/Algebra/Funzioni",
     "Uni/Corsi/ANNO_1/PROG_2/Esame/LinkedList",
